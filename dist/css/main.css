@@ -1,0 +1,318 @@
+@font-face {
+  font-family: "SegoeUIBold";
+  src: url("../fonts/SegoeUIBold.eot");
+  src: url("../fonts/SegoeUIBold.eot?#iefix") format("embedded-opentype"), url("../fonts/SegoeUIBold.woff") format("woff"), url("../fonts/SegoeUIBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "SegoeUIItalic";
+  src: url("../fonts/SegoeUIItalic.eot");
+  src: url("../fonts/SegoeUIItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/SegoeUIItalic.woff") format("woff"), url("../fonts/SegoeUIItalic.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "SegoeUILight";
+  src: url("../fonts/SegoeUILight.eot");
+  src: url("../fonts/SegoeUILight.eot?#iefix") format("embedded-opentype"), url("../fonts/SegoeUILight.woff") format("woff"), url("../fonts/SegoeUILight.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "SegoeUIRegular";
+  src: url("../fonts/SegoeUIRegular.eot");
+  src: url("../fonts/SegoeUIRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/SegoeUIRegular.woff") format("woff"), url("../fonts/SegoeUIRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "SegoeUISemiBold";
+  src: url("../fonts/SegoeUISemiBold.eot");
+  src: url("../fonts/SegoeUISemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/SegoeUISemiBold.woff") format("woff"), url("../fonts/SegoeUISemiBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+body {
+  font-family: "SegoeUIRegular", sans-serif;
+  padding: 0;
+  margin: 0;
+  line-height: 1em;
+  font-size: 16px; }
+  body p {
+    color: #504f4f;
+    line-height: 1.3em; }
+
+.img-holder {
+  overflow: hidden;
+  height: 100%; }
+
+img {
+  max-width: 100%; }
+
+.wrap {
+  width: 940px;
+  margin: auto; }
+
+#cache {
+  display: none; }
+
+hr {
+  margin-top: 22px;
+  margin-bottom: 22px;
+  background: #e9e6e6;
+  position: relative;
+  height: 3px;
+  border: 0; }
+  hr:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 147px;
+    height: 3px;
+    background: #0e6eb8; }
+
+h3 {
+  color: #000;
+  font-family: "SegoeUIRegular", sans-serif;
+  font-size: 30px;
+  line-height: 1em;
+  font-weight: normal; }
+
+#call_back {
+  padding: 50px 0; }
+  #call_back form .row > div {
+    display: inline-block;
+    vertical-align: middle; }
+    #call_back form .row > div.error input[type="text"],
+    #call_back form .row > div.error input[type="email"] {
+      border-color: #FF0000; }
+  #call_back form input[type="text"],
+  #call_back form input[type="email"] {
+    height: 45px;
+    width: 225px;
+    padding: 0 10px;
+    margin-right: 8px;
+    font-size: 16px;
+    font-family: "SegoeUIRegular", sans-serif;
+    line-height: 45px;
+    box-sizing: border-box;
+    border: 1px solid #999; }
+  #call_back .btn.submit {
+    font-size: 18px;
+    border: 2px solid #0e6eb8;
+    height: 45px;
+    width: 225px;
+    color: #0e6eb8;
+    text-align: center;
+    box-sizing: border-box;
+    line-height: 41px;
+    cursor: pointer; }
+    #call_back .btn.submit:hover {
+      color: #fdc300;
+      border-color: #fdc300;
+      -webkit-transition: all 0.35s;
+      transition: all 0.35s; }
+
+#advantage {
+  padding: 50px 0; }
+  #advantage h3 {
+    color: #000;
+    font-family: "SegoeUIRegular", sans-serif;
+    font-size: 30px;
+    line-height: 1em;
+    font-weight: normal; }
+  #advantage ul {
+    margin-top: 40px; }
+    #advantage ul li {
+      display: inline-block;
+      vertical-align: top;
+      width: 49%;
+      box-sizing: border-box;
+      padding: 0 30px;
+      margin-bottom: 30px; }
+      #advantage ul li .text-holder {
+        overflow: hidden; }
+        #advantage ul li .text-holder h4 {
+          font-size: 24px;
+          margin-bottom: 15px;
+          font-weight: normal;
+          color: #0e6eb8; }
+      #advantage ul li .img-holder {
+        width: 133px;
+        height: 133px;
+        border-radius: 133px;
+        float: left;
+        margin-right: 30px; }
+
+.tabs .tab-content .tab-pane {
+  display: none;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s; }
+  .tabs .tab-content .tab-pane.active {
+    display: block;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s; }
+
+[id^="modal_form"] {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  width: 600px;
+  height: 300px;
+  background: #404040;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -150px;
+  margin-left: -300px;
+  display: none;
+  opacity: 0;
+  z-index: 5;
+  padding: 0; }
+  [id^="modal_form"] .title-holder {
+    background: #0e6eb8;
+    height: 100px;
+    padding: 20px 25px 0;
+    box-sizing: border-box; }
+    [id^="modal_form"] .title-holder .title_visa {
+      float: left;
+      color: #fff;
+      font-size: 24px;
+      font-family: "SegoeUILight", sans-serif;
+      font-weight: 100;
+      line-height: 35px;
+      max-width: 350px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      margin-bottom: 4px;
+      border-bottom: 1px solid #fff; }
+    [id^="modal_form"] .title-holder .time_visa {
+      float: left;
+      color: #fff;
+      max-width: 350px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      clear: left;
+      font-family: "SegoeUILight", sans-serif;
+      font-weight: 100;
+      font-size: 18px;
+      line-height: 18px; }
+    [id^="modal_form"] .title-holder .price_visa {
+      float: right;
+      color: #fff;
+      max-width: 250px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      font-size: 30px;
+      line-height: 30px; }
+  [id^="modal_form"] .form-holder {
+    padding: 25px;
+    text-align: center; }
+    [id^="modal_form"] .form-holder .error input[type="text"],
+    [id^="modal_form"] .form-holder .error input[type="email"] {
+      border-color: #FF0000; }
+    [id^="modal_form"] .form-holder input[placeholder] {
+      color: #fff;
+      line-height: 36px;
+      -webkit-transition: line-height 0.5s ease;
+      transition: line-height 0.5s ease; }
+    [id^="modal_form"] .form-holder input[type="text"],
+    [id^="modal_form"] .form-holder input[type="email"] {
+      text-align: left;
+      width: 100%;
+      height: 36px;
+      padding: 0 12px;
+      box-sizing: border-box;
+      margin-bottom: 20px;
+      border: 1px solid #fff;
+      color: #fff;
+      border-radius: 4px;
+      font-size: 16px;
+      line-height: 36px;
+      font-family: "SegoeUILight", sans-serif;
+      font-weight: 100;
+      background: #404040;
+      -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+      transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+      box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
+      [id^="modal_form"] .form-holder input[type="text"]:focus,
+      [id^="modal_form"] .form-holder input[type="email"]:focus {
+        -webkit-transition: all 0.2s;
+        transition: all 0.2s;
+        border-color: #fdc300;
+        color: #fdc300;
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6); }
+        [id^="modal_form"] .form-holder input[type="text"]:focus input[placeholder],
+        [id^="modal_form"] .form-holder input[type="email"]:focus input[placeholder] {
+          line-height: 100px;
+          -webkit-transition: line-height 0.5s ease;
+          transition: line-height 0.5s ease; }
+    [id^="modal_form"] .form-holder .btn {
+      background-color: transparent;
+      border: 1px solid #0E6EB8;
+      border-radius: 0;
+      color: #fff;
+      font-weight: 100;
+      -webkit-transition: all 0.2s;
+      transition: all 0.2s;
+      padding: 6px 12px;
+      font-size: 16px;
+      text-align: center;
+      vertical-align: middle;
+      display: inline-block;
+      cursor: pointer;
+      line-height: 22px;
+      transition: all 0.2s; }
+      [id^="modal_form"] .form-holder .btn:hover {
+        -webkit-transition: all 0.2s;
+        transition: all 0.2s;
+        border-color: #fdc300;
+        color: #fdc300; }
+
+#overlay {
+  z-index: 3;
+  position: fixed;
+  background-color: #000;
+  opacity: 0.5;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  display: none; }
+
+#visu .tabs-menu {
+  margin-bottom: 20px; }
+  #visu .tabs-menu .nav.nav-tabs li {
+    float: left;
+    color: #008fb7;
+    border: 1px solid #dedbdb;
+    font-size: 18px;
+    padding: 12px;
+    cursor: pointer;
+    line-height: 24px;
+    margin-right: -1px;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s; }
+    #visu .tabs-menu .nav.nav-tabs li.active, #visu .tabs-menu .nav.nav-tabs li:hover {
+      background: #0e6eb8;
+      color: #fff;
+      border-color: #0e6eb8;
+      -webkit-transition: all 0.35s;
+      transition: all 0.35s; }
+
+#visu .tab-content {
+  clear: both;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: .3s;
+          transition-duration: .3s;
+  -webkit-transition-timing-function: ease-out;
+          transition-timing-function: ease-out; }
+  #visu .tab-content.closed {
+    max-height: 0;
+    -webkit-transition-duration: .3s;
+            transition-duration: .3s; }

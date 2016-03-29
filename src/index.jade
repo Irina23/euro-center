@@ -7,62 +7,232 @@ html(lang="ru")
         .page_wrapper.home
             include ./header.jade
 
-            div.container
+            .container
                 .wrap
+                    #call_back
+                        h3 Замовити дзвінок
+                        hr
+                        form.call_back_form
+                            .row
+                                div
+                                    input(type="text", placeholder="Ім'я", name="name", minlength="2", data-validate="name")
 
-                    ul.slider
-
-                        li
-                            img(src="img/content/slider.jpg")
-                        //li
-                            img(src="img/content/slider.jpg")
-
-                        //li
-                            img(src="img/content/slider.jpg")
-
-
+                                div
+                                    input(type="text", placeholder="Телефон", name="phone", data-validate="phone")
 
 
-                    .popular_product
-                        h3 Популярные товары
-                        .products
-                            .product
-                                a(href="/product.html")
-                                        .images
+                                div
+                                    input(type="email", placeholder="E-mail", name="email", data-validate="email")
 
-                                            span.new_mark NEW
-                                            span.sale_mark SALE %
-                                            img(src="img/content/img1.jpg" alt="Товар 1")
-                            .product
-                                a(href="/product.html")
-                                    .images
-                                        span.new_mark NEW
-                                        img(src="img/content/img2.jpg" alt="Товар 2")
-                            .product
-                                a(href="/product.html")
-                                    .images
-                                        img(src="img/content/img3.jpg" alt="Товар 3")
-                            .product
-                                a(href="/product.html")
-                                    .images
-                                        img(src="img/content/blog.png" alt="Товар 4")
-                            .product
-                                a(href="/product.html")
-                                    .images
-                                        img(src="img/content/slider_price2.png" alt="Товар 5")
+                                .btn.submit Надіслати
 
-                            .product
-                                a(href="/product.html")
-                                    .images
-                                        img(src="img/content/slider_price2.png" alt="Товар 5")
+                    #advantage
+                        h3 Наші переваги
+                        hr
+                        ul
+                            li
+                                .img-holder
+                                    img(src="img/content/advantage1.png")
+                                .text-holder
+                                    h4 Заголовок
+                                    p Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів.
+
+                            li
+                                .img-holder
+                                    img(src="img/content/advantage2.png")
+                                .text-holder
+                                    h4 Заголовок
+                                    p Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів.
+
+                            li
+                                .img-holder
+                                    img(src="img/content/advantage3.png")
+                                .text-holder
+                                    h4 Заголовок
+                                    p Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів.
+                            li
+                                .img-holder
+                                    img(src="img/content/advantage4.png")
+                                .text-holder
+                                    h4 Заголовок
+                                    p Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів.
+                            li
+                                .img-holder
+                                    img(src="img/content/advantage5.png")
+                                .text-holder
+                                    h4 Заголовок
+                                    p Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів.
+
+                            li
+                                .img-holder
+                                    img(src="img/content/advantage6.png")
+                                .text-holder
+                                    h4 Заголовок
+                                    p Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів.
+
+                    #visu
+                        h3 Відкриття віз
+                        hr
+
+                        .tabs
+                            .tabs-menu.cf
+                                ul.nav.nav-tabs
+                                    li(class="active" href="#poland" data-toggle="tab") Польща
+                                    li(href="#lithuania" data-toggle="tab") Литва
+                                    li(href="#netherlands" data-toggle="tab") Нідерланди
+                            .tab-content
+                                .tab-pane.active#poland
+                                    .visa_slider
+                                        .visa_item
+                                            h4 Польща (Робоча)
+                                            div Оформлення: 20 - 40 днів
+                                            div Період візи: 180/180 днів
+                                            div Вартість: 120€
+                                            div Додатковий збір: Безкоштовна реєстрація, 470 грн - Візовий центр
+                                            a(href="#modal_form_poland1" class="more open_modal") Детальніше
+                                        .visa_item
+                                            h4 Польща (Робоча)
+                                            div Оформлення: 20 - 40 днів
+                                            div Період візи: 360/360 днів
+                                            div Вартість: 400€
+                                            div Додатковий збір: Безкоштовна реєстрація, 470 грн - Візовий центр
+                                            a(href="#modal_poland2" class="more open_modal") Детальніше
+                                        .visa_item
+                                            h4 Польща (Шенген)
+                                            div Оформлення: 10 - 20 днів
+                                            div Період візи: 360/180 днів
+                                            div Вартість: 300€
+                                            div Додатковий збір: Безкоштовна реєстрація, 470 грн - Візовий центр
+                                            a(href="#modal_poland3" class="more open_modal") Детальніше
+                                        .visa_item
+                                            h4 Польща (Робоча)
+                                            div Оформлення: 10 - 20 днів
+                                            div Період візи: 720/360 днів
+                                            div Вартість: 120€
+                                            div Додатковий збір: Безкоштовна реєстрація, 470 грн - Візовий центр
+                                            a(href="#modal_poland4" class="more open_modal") Детальніше
+                                        .visa_item
+                                            h4 Польща (Шенген)
+                                            div Оформлення: 10 - 20 днів
+                                            div Період візи: 360/180 днів
+                                            div Вартість: 300€
+                                            div Додатковий збір: Безкоштовна реєстрація, 470 грн - Візовий центр
+                                            a(href="#modal_poland3" class="more open_modal") Детальніше
+                                        .visa_item
+                                            h4 Польща (Робоча)
+                                            div Оформлення: 10 - 20 днів
+                                            div Період візи: 720/360 днів
+                                            div Вартість: 120€
+                                            div Додатковий збір: Безкоштовна реєстрація, 470 грн - Візовий центр
+                                            a(href="#modal_poland4" class="more open_modal") Детальніше
+                                .tab-pane#lithuania
+                                    .visa_slider
+                                        .visa_item
+                                            h4 Литва (Шенген)
+                                            div Оформлення: 7 - 14 днів
+                                            div Період візи: 180/180 днів
+                                            div Вартість: 120€
+                                            div Додатковий збір: Безкоштовна реєстрація, 470 грн - Візовий центр
+                                            a(href="#modal_form_poland1" class="more open_modal") Детальніше
+                                        .visa_item
+                                            h4 Литва (Шенген)
+                                            div Оформлення: 7 - 14 днів
+                                            div Період візи: 360/360 днів
+                                            div Вартість: 400€
+                                            div Додатковий збір: Безкоштовна реєстрація, 470 грн - Візовий центр
+                                            a(href="#modal_poland2" class="more open_modal") Детальніше
+                                        .visa_item
+                                            h4 Литва (Шенген)
+                                            div Оформлення: 7 - 14 днів
+                                            div Період візи: 360/180 днів
+                                            div Вартість: 300€
+                                            div Додатковий збір: Безкоштовна реєстрація, 470 грн - Візовий центр
+                                            a(href="#modal_poland3" class="more open_modal") Детальніше
+                                        .visa_item
+                                            h4 Литва (Шенген)
+                                            div Оформлення: 7 - 14 днів
+                                            div Період візи: 720/360 днів
+                                            div Вартість: 120€
+                                            div Додатковий збір: Безкоштовна реєстрація, 470 грн - Візовий центр
+                                            a(href="#modal_poland4" class="more open_modal") Детальніше
+                                        .visa_item
+                                            h4 Литва (Шенген)
+                                            div Оформлення: 7 - 14 днів
+                                            div Період візи: 360/180 днів
+                                            div Вартість: 300€
+                                            div Додатковий збір: Безкоштовна реєстрація, 470 грн - Візовий центр
+                                            a(href="#modal_poland3" class="more open_modal") Детальніше
+                                        .visa_item
+                                            h4 Литва (Шенген)
+                                            div Оформлення: 7 - 14 днів
+                                            div Період візи: 720/360 днів
+                                            div Вартість: 120€
+                                            div Додатковий збір: Безкоштовна реєстрація, 470 грн - Візовий центр
+                                            a(href="#modal_poland4" class="more open_modal") Детальніше
+                                .tab-pane#netherlands
+                                    .visa_slider
+                                        .visa_item
+                                            h4 Нідерланди (Шенген)
+                                            div Оформлення: 14 - 25 днів
+                                            div Період візи: 180/180 днів
+                                            div Вартість: 120€
+                                            div Додатковий збір: Безкоштовна реєстрація, 470 грн - Візовий центр
+                                            a(href="#modal_form_poland1" class="more open_modal") Детальніше
+                                        .visa_item
+                                            h4 Нідерланди (Шенген)
+                                            div Оформлення: 14 - 25 днів
+                                            div Період візи: 360/360 днів
+                                            div Вартість: 400€
+                                            div Додатковий збір: Безкоштовна реєстрація, 470 грн - Візовий центр
+                                            a(href="#modal_poland2" class="more open_modal") Детальніше
+                                        .visa_item
+                                            h4 Нідерланди (Шенген)
+                                            div Оформлення: 14 - 25 днів
+                                            div Період візи: 360/180 днів
+                                            div Вартість: 300€
+                                            div Додатковий збір: Безкоштовна реєстрація, 470 грн - Візовий центр
+                                            a(href="#modal_poland3" class="more open_modal") Детальніше
+                                        .visa_item
+                                            h4 Нідерланди (Шенген)
+                                            div Оформлення: 14 - 25 днів
+                                            div Період візи: 720/360 днів
+                                            div Вартість: 120€
+                                            div Додатковий збір: Безкоштовна реєстрація, 470 грн - Візовий центр
+                                            a(href="#modal_poland4" class="more open_modal") Детальніше
+                                        .visa_item
+                                            h4 Нідерланди (Шенген)
+                                            div Оформлення: 14 - 25 днів
+                                            div Період візи: 360/180 днів
+                                            div Вартість: 300€
+                                            div Додатковий збір: Безкоштовна реєстрація, 470 грн - Візовий центр
+                                            a(href="#modal_poland3" class="more open_modal") Детальніше
+                                        .visa_item
+                                            h4 Нідерланди (Шенген)
+                                            div Оформлення: 14 - 25 днів
+                                            div Період візи: 720/360 днів
+                                            div Вартість: 120€
+                                            div Додатковий збір: Безкоштовна реєстрація, 470 грн - Візовий центр
+                                            a(href="#modal_poland4" class="more open_modal") Детальніше
 
 
+            #modal_form_poland1.modal_div
 
+                form.form_visa
+                    .title-holder
+                        .title_visa Польща (Робоча)
+                        .price_visa 120€
+                        .time_visa 180/180 днів
+
+                    .form-holder
+                        div
+                            input(type="text", placeholder="Ім'я", name="name", minlength="2", data-validate="name")
+                        div
+                            input(type="text", placeholder="Телефон", name="phone", data-validate="phone")
+
+                        .btn.submit Надіслати
+                        .btn.modal_close Зачинити
+            #overlay
             include ./footer.jade
 
 
 
-        section#error-wrapper
-            .error-message.success.open dsgfsdg
-            .error-message.error.open dsgfsdg
-            .error-message.warning.open dsgfsdg
