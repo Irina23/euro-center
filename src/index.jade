@@ -1,0 +1,68 @@
+doctype html
+html(lang="ru")
+    include ./head.jade
+
+
+    body
+        .page_wrapper.home
+            include ./header.jade
+
+            div.container
+                .wrap
+
+                    ul.slider
+
+                        li
+                            img(src="img/content/slider.jpg")
+                        //li
+                            img(src="img/content/slider.jpg")
+
+                        //li
+                            img(src="img/content/slider.jpg")
+
+
+
+
+                    .popular_product
+                        h3 Популярные товары
+                        .products
+                            .product
+                                a(href="/product.html")
+                                        .images
+
+                                            span.new_mark NEW
+                                            span.sale_mark SALE %
+                                            img(src="img/content/img1.jpg" alt="Товар 1")
+                            .product
+                                a(href="/product.html")
+                                    .images
+                                        span.new_mark NEW
+                                        img(src="img/content/img2.jpg" alt="Товар 2")
+                            .product
+                                a(href="/product.html")
+                                    .images
+                                        img(src="img/content/img3.jpg" alt="Товар 3")
+                            .product
+                                a(href="/product.html")
+                                    .images
+                                        img(src="img/content/blog.png" alt="Товар 4")
+                            .product
+                                a(href="/product.html")
+                                    .images
+                                        img(src="img/content/slider_price2.png" alt="Товар 5")
+
+                            .product
+                                a(href="/product.html")
+                                    .images
+                                        img(src="img/content/slider_price2.png" alt="Товар 5")
+
+
+
+            include ./footer.jade
+
+
+
+        section#error-wrapper
+            .error-message.success.open dsgfsdg
+            .error-message.error.open dsgfsdg
+            .error-message.warning.open dsgfsdg
