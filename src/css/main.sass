@@ -171,10 +171,12 @@ h3
 .tabs
   .tab-content
     .tab-pane
-      display: none
+      //display: none
+      opacity: 0
       transition: all 0.35s
       &.active
-        display: block
+        //display: block
+        opacity: 1
         transition: all 0.35s
 
 
@@ -315,7 +317,7 @@ h3
 
 #visu
   .tabs-menu
-    margin-bottom: 20px
+    margin-bottom: 40px
     .nav.nav-tabs
       li
         float: left
@@ -334,6 +336,53 @@ h3
           border-color: #0e6eb8
           transition: all 0.35s
 
+  .visa_item
+    text-align: center
+    //padding: 0 10px
+    box-sizing: border-box
+    h4
+      font-size: 24px
+      margin-bottom: 30px
+      font-weight: normal
+      color: #0e6eb8
+      line-height: 1.3em
+    a
+        font-size: 18px
+        border: 2px solid #0e6eb8
+        height: 45px
+        width: 100%
+        color: #0e6eb8
+        text-align: center
+        box-sizing: border-box
+        line-height: 41px
+        cursor: pointer
+        display: block
+        margin-top: 40px
+
+        &:hover
+          color: #fff
+          background: #0e6eb8
+          transition: all 0.35s
+          text-decoration: none
+    > div
+        margin-bottom: 20px
+
+
+        span
+          font-size: 18px
+          display: block
+
+
+
+
+        .name
+          //color: #0e6eb8
+          font-family: "SegoeUIBold", sans-serif
+          margin-bottom: 10px
+
+
+
+
   .tab-content
     clear: both
     transition-property: all
@@ -342,3 +391,51 @@ h3
     &.closed
         max-height: 0
         transition-duration: .3s
+
+
+
+
+
+.bx-wrapper
+  .bx-pager.bx-default-pager
+    position: inherit
+    bottom: inherit
+    padding-top: 40px
+    .bx-pager-item
+      a
+        background: rgba(150,150,150,0.1)
+        margin: 6px
+        transition: all 0.2s
+        box-shadow: 0 1px 1px rgba(255,255,255,0.4), inset 0 1px 1px rgba(0,0,0,0.1), 0 0 0 2px rgba(255,255,255,0.5)
+        display: inline-block
+        position: relative
+        width: 16px
+        height: 16px
+        border-radius: 16px
+        cursor: pointer
+
+  .bx-controls-direction
+
+    .bx-prev, .bx-next
+      
+      background: url("../img/icons/next.png") no-repeat
+      width: 22px
+      height: 36px
+      background-size: 100%
+      transition: all 0.35s
+
+      &:hover
+        opacity: 0.8
+        transition: all 0.35s
+        background-position: 0 0
+    .bg-next
+      right: 0
+    .bx-prev
+      left: 0
+      transform: rotate(180deg)
+
+  .bx-viewport
+    border-radius: 0
+    box-shadow: none!important
+    left: 0!important
+    border: 0!important
