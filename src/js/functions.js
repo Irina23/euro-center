@@ -69,6 +69,13 @@ jQuery(document).ready(function() {
     });
 
 
-
+    jQuery("#visu .open_modal").click(function() {
+            var title_visa = jQuery(this).closest(".tabs").find(".tabs-menu .active").text() + ' (' +jQuery(this).closest(".visa_item").find("h4").text()+ ')';
+            jQuery(".title_visa").text(title_visa);
+            var time_visa = jQuery(this).closest(".visa_item").find(".time").text();
+            jQuery(".time_visa").text(time_visa);
+            var price_visa = jQuery(this).closest(".visa_item").find(".price").text();
+            jQuery(".price_visa").text(price_visa);
+    });
 
 });
