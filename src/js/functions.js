@@ -69,18 +69,6 @@ jQuery(document).ready(function() {
     });
 
 
-    //tab height
-    jQuery('.tab-pane').each(function() {
-        var height_blok = jQuery(this).height();
-        var maxheight = 0;
-        if(maxheight < height_blok){
 
-            maxheight = height_blok;
-
-        }
-
-
-    });
-    jQuery('.tab-content').css('max-height', maxheight);
 
 });
