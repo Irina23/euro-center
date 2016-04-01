@@ -578,6 +578,9 @@ h3 {
       line-height: 1.3em;
       color: #000; }
 
+.questions {
+  margin-bottom: 100px; }
+
 #contacts {
   margin-bottom: 100px; }
   #contacts .text-holder {
@@ -629,10 +632,15 @@ h3 {
       text-align: center;
       color: #fff;
       font-size: 22px;
-      padding-top: 2px;
-      margin: 0 7px; }
+      margin: 0 7px;
+      -webkit-transition: all 0.35s;
+      transition: all 0.35s; }
       #contacts .text-holder .social a:nth-child(2) {
         margin-left: 0; }
+      #contacts .text-holder .social a:hover {
+        opacity: 0.8;
+        -webkit-transition: all 0.35s;
+        transition: all 0.35s; }
   #contacts #map {
     height: 400px;
     display: inline-block;
