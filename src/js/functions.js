@@ -93,6 +93,14 @@ jQuery(document).ready(function() {
 
     });
 
+    jQuery('.main_slider').bxSlider({
+        nextText: "",
+        prevText: "",
+        controls: false
+        //auto: true
+
+    });
+
 
 
 
@@ -132,5 +140,11 @@ jQuery(document).ready(function() {
 
 
     });
+
+
+
+
+
+
 
 });

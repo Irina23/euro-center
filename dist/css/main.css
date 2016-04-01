@@ -80,6 +80,43 @@ h3 {
   line-height: 1em;
   font-weight: normal; }
 
+header .bx-wrapper {
+  padding: 0 !important; }
+  header .bx-wrapper .bx-pager.bx-default-pager {
+    display: block; }
+
+header .main_slider .item {
+  height: 670px; }
+  header .main_slider .item .sl-content-slice {
+    width: 100%;
+    height: 50%;
+    left: -200px;
+    -webkit-transform: translateY(0%) scale(1);
+            transform: translateY(0%) scale(1);
+    top: -200px; }
+  header .main_slider .item .slider-holder {
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    text-align: center;
+    font-family: "SegoeUILight", sans-serif;
+    font-size: 18px;
+    line-height: 1.5em; }
+    header .main_slider .item .slider-holder h2 {
+      font-family: "SegoeUILight", sans-serif;
+      font-weight: normal;
+      line-height: 60px;
+      font-size: 60px;
+      margin-bottom: 30px;
+      color: #fff;
+      padding-top: 260px; }
+      header .main_slider .item .slider-holder h2 span {
+        color: #fdc300; }
+    header .main_slider .item .slider-holder .text_holder {
+      width: 650px;
+      margin: auto; }
+
 #call_back {
   padding: 50px 0; }
   #call_back form {
@@ -385,26 +422,38 @@ h3 {
   padding: 0 50px !important; }
   .bx-wrapper .bx-pager.bx-default-pager {
     display: none;
-    position: inherit;
-    bottom: inherit;
-    padding-top: 40px; }
-    .bx-wrapper .bx-pager.bx-default-pager .bx-pager-item a {
-      padding: 0;
-      display: block;
-      position: relative;
-      width: 20px;
-      height: 20px;
-      border-radius: 20px;
-      cursor: pointer;
-      background: none;
-      border: 3px solid #0e6eb8;
-      -webkit-transition: all 0.35s;
-      transition: all 0.35s;
-      box-sizing: border-box; }
-      .bx-wrapper .bx-pager.bx-default-pager .bx-pager-item a.active, .bx-wrapper .bx-pager.bx-default-pager .bx-pager-item a:hover {
-        -webkit-transition: all 0.35s;
-        transition: all 0.35s;
-        background: #0e6eb8; }
+    position: absolute;
+    bottom: 50px;
+    padding-top: 0; }
+    .bx-wrapper .bx-pager.bx-default-pager .bx-pager-item {
+      margin: 6px; }
+      .bx-wrapper .bx-pager.bx-default-pager .bx-pager-item a {
+        display: block;
+        position: relative;
+        width: 16px;
+        height: 16px;
+        padding: 0;
+        border-radius: 16px;
+        cursor: pointer;
+        box-sizing: border-box;
+        background: none;
+        box-shadow: 0 1px 1px rgba(255, 255, 255, 0.4), inset 0 1px 1px rgba(0, 0, 0, 0.1), 0 0 0 2px rgba(255, 255, 255, 0.5); }
+        .bx-wrapper .bx-pager.bx-default-pager .bx-pager-item a.active {
+          background: none;
+          box-shadow: 0 1px 1px rgba(226, 19, 19, 0.4), inset 0 1px 1px rgba(0, 0, 0, 0.1), 0 0 0 3px #fdc300; }
+          .bx-wrapper .bx-pager.bx-default-pager .bx-pager-item a.active:after {
+            content: "";
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            top: 3px;
+            left: 3px;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.8);
+            background: #fdc300; }
+        .bx-wrapper .bx-pager.bx-default-pager .bx-pager-item a:hover {
+          background: none;
+          box-shadow: 0 1px 1px rgba(226, 19, 19, 0.4), inset 0 1px 1px rgba(0, 0, 0, 0.1), 0 0 0 3px #fdc300; }
   .bx-wrapper .bx-controls-direction .bx-prev, .bx-wrapper .bx-controls-direction .bx-next {
     background: url("../img/icons/next.png") no-repeat;
     width: 22px;
