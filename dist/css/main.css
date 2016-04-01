@@ -128,39 +128,29 @@ h3 {
     #advantage ul li {
       display: inline-block;
       vertical-align: top;
-      width: 49%;
+      width: 33%;
       box-sizing: border-box;
       padding: 0 30px;
-      margin-bottom: 30px; }
+      margin-bottom: 50px;
+      text-align: center; }
       #advantage ul li .text-holder {
         overflow: hidden; }
         #advantage ul li .text-holder h4 {
           font-size: 24px;
           margin-bottom: 15px;
           font-weight: normal;
-          color: #0e6eb8; }
+          color: #0e6eb8;
+          line-height: 1em;
+          height: 24px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap; }
       #advantage ul li .img-holder {
         width: 133px;
         height: 133px;
         border-radius: 133px;
-        float: left;
-        margin-right: 30px; }
-
-.tabs .tab-content {
-  position: relative;
-  height: 450px;
-  overflow: hidden;
-  margin-bottom: 40px; }
-  .tabs .tab-content .tab-pane {
-    position: absolute;
-    top: 600px;
-    left: 0;
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s; }
-    .tabs .tab-content .tab-pane.active {
-      top: 0;
-      -webkit-transition: all 0.5s;
-      transition: all 0.5s; }
+        margin: auto;
+        margin-bottom: 30px; }
 
 [id^="modal_form"] {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
@@ -291,78 +281,108 @@ h3 {
   cursor: pointer;
   display: none; }
 
-#visu .tabs-menu {
-  margin-bottom: 40px; }
-  #visu .tabs-menu .nav.nav-tabs li {
-    float: left;
-    color: #008fb7;
-    border: 1px solid #dedbdb;
-    font-size: 18px;
-    padding: 12px;
-    cursor: pointer;
-    line-height: 24px;
-    margin-right: -1px;
-    -webkit-transition: all 0.35s;
-    transition: all 0.35s; }
-    #visu .tabs-menu .nav.nav-tabs li.active, #visu .tabs-menu .nav.nav-tabs li:hover {
-      background: #0e6eb8;
-      color: #fff;
-      border-color: #0e6eb8;
+#visu {
+  background: url("../img/bg/bg_jobs3.jpg") no-repeat center;
+  background-size: cover; }
+  #visu h3 {
+    color: #fdc300; }
+  #visu .wrap {
+    padding-top: 60px; }
+  #visu .tabs .tab-content {
+    position: relative;
+    height: 450px;
+    overflow: hidden;
+    margin-bottom: 40px; }
+    #visu .tabs .tab-content .tab-pane {
+      position: absolute;
+      top: 600px;
+      left: 0;
+      -webkit-transition: all 0.5s;
+      transition: all 0.5s; }
+      #visu .tabs .tab-content .tab-pane.active {
+        top: 0;
+        -webkit-transition: all 0.5s;
+        transition: all 0.5s; }
+  #visu .tabs-menu {
+    margin-bottom: 40px; }
+    #visu .tabs-menu .nav.nav-tabs li {
+      float: left;
+      background: #fff;
+      color: #0e6eb8;
+      font-size: 18px;
+      padding: 12px 20px;
+      cursor: pointer;
+      line-height: 24px;
+      margin-right: -1px;
       -webkit-transition: all 0.35s;
       transition: all 0.35s; }
-
-#visu .visa_item {
-  text-align: center;
-  box-sizing: border-box; }
-  #visu .visa_item h4 {
-    font-size: 24px;
-    margin-bottom: 30px;
-    font-weight: normal;
-    color: #0e6eb8;
-    line-height: 1.3em; }
-  #visu .visa_item a {
-    font-size: 18px;
-    border: 2px solid #0e6eb8;
-    height: 45px;
-    width: 100%;
-    color: #0e6eb8;
+      #visu .tabs-menu .nav.nav-tabs li.active, #visu .tabs-menu .nav.nav-tabs li:hover {
+        background: #0e6eb8;
+        color: #fff;
+        border-color: #0e6eb8;
+        -webkit-transition: all 0.35s;
+        transition: all 0.35s; }
+  #visu .visa_item {
     text-align: center;
     box-sizing: border-box;
-    line-height: 41px;
-    cursor: pointer;
-    display: block;
-    margin-top: 40px; }
-    #visu .visa_item a:hover {
-      color: #fff;
-      background: #0e6eb8;
-      -webkit-transition: all 0.35s;
-      transition: all 0.35s;
-      text-decoration: none; }
-  #visu .visa_item > div {
-    margin-bottom: 20px; }
-    #visu .visa_item > div span {
+    background: rgba(255, 255, 255, 0.5);
+    padding: 20px 0; }
+    #visu .visa_item h4 {
+      font-size: 24px;
+      margin-bottom: 30px;
+      font-weight: normal;
+      color: #0e6eb8;
+      height: 24px;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      line-height: 1em; }
+    #visu .visa_item a {
       font-size: 18px;
-      display: block; }
-    #visu .visa_item > div .name {
-      font-family: "SegoeUIBold", sans-serif;
-      margin-bottom: 10px; }
-
-#visu .tab-content {
-  clear: both;
-  -webkit-transition-property: all;
-  transition-property: all;
-  -webkit-transition-duration: .3s;
-          transition-duration: .3s;
-  -webkit-transition-timing-function: ease-out;
-          transition-timing-function: ease-out; }
-  #visu .tab-content.closed {
-    max-height: 0;
+      border: 2px solid #0e6eb8;
+      height: 45px;
+      width: 100%;
+      color: #0e6eb8;
+      text-align: center;
+      box-sizing: border-box;
+      line-height: 41px;
+      cursor: pointer;
+      display: block;
+      margin-top: 40px; }
+      #visu .visa_item a:hover {
+        color: #fff;
+        background: #0e6eb8;
+        -webkit-transition: all 0.35s;
+        transition: all 0.35s;
+        text-decoration: none; }
+    #visu .visa_item .text-holder {
+      padding: 0 20px; }
+      #visu .visa_item .text-holder > div {
+        margin-bottom: 20px; }
+        #visu .visa_item .text-holder > div span {
+          font-size: 16px;
+          display: block; }
+        #visu .visa_item .text-holder > div .name {
+          font-family: "SegoeUIBold", sans-serif;
+          margin-bottom: 10px; }
+  #visu .tab-content {
+    clear: both;
+    -webkit-transition-property: all;
+    transition-property: all;
     -webkit-transition-duration: .3s;
-            transition-duration: .3s; }
+            transition-duration: .3s;
+    -webkit-transition-timing-function: ease-out;
+            transition-timing-function: ease-out; }
+    #visu .tab-content.closed {
+      max-height: 0;
+      -webkit-transition-duration: .3s;
+              transition-duration: .3s; }
 
 .bx-wrapper {
-  margin: auto; }
+  margin: auto !important;
+  padding: 0 50px !important; }
   .bx-wrapper .bx-pager.bx-default-pager {
+    display: none;
     position: inherit;
     bottom: inherit;
     padding-top: 40px; }
@@ -390,7 +410,8 @@ h3 {
     background-size: 100%;
     -webkit-transition: all 0.35s;
     transition: all 0.35s;
-    margin-top: -18px; }
+    margin-top: -18px;
+    z-index: 2; }
     .bx-wrapper .bx-controls-direction .bx-prev:hover, .bx-wrapper .bx-controls-direction .bx-next:hover {
       opacity: 0.8;
       -webkit-transition: all 0.35s;
@@ -403,7 +424,103 @@ h3 {
     -webkit-transform: rotate(180deg);
             transform: rotate(180deg); }
   .bx-wrapper .bx-viewport {
+    background: none !important;
     border-radius: 0;
     box-shadow: none !important;
     left: 0 !important;
     border: 0 !important; }
+
+#jobs .job-holder {
+  padding: 60px 0; }
+
+#jobs .tabs .tab-content {
+  position: relative;
+  height: 570px;
+  overflow: hidden; }
+  #jobs .tabs .tab-content .tab-pane {
+    position: absolute;
+    top: 700px;
+    left: 0;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    width: 100%; }
+    #jobs .tabs .tab-content .tab-pane.active {
+      top: 0;
+      -webkit-transition: all 0.5s;
+      transition: all 0.5s; }
+
+#jobs .tabs-menu {
+  margin-bottom: 40px; }
+  #jobs .tabs-menu .nav.nav-tabs li {
+    float: left;
+    color: #008fb7;
+    border: 1px solid #dedbdb;
+    font-size: 18px;
+    padding: 12px;
+    cursor: pointer;
+    line-height: 24px;
+    margin-right: -1px;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s; }
+    #jobs .tabs-menu .nav.nav-tabs li.active, #jobs .tabs-menu .nav.nav-tabs li:hover {
+      background: #0e6eb8;
+      color: #fff;
+      border-color: #0e6eb8;
+      -webkit-transition: all 0.35s;
+      transition: all 0.35s; }
+
+#jobs .jobs_item {
+  background: #595959; }
+  #jobs .jobs_item .img-holder {
+    width: 100%;
+    height: 165px;
+    position: relative; }
+    #jobs .jobs_item .img-holder img {
+      width: 100%; }
+  #jobs .jobs_item .text-holder {
+    height: 300px;
+    color: #fff;
+    padding: 20px; }
+    #jobs .jobs_item .text-holder h4 {
+      text-align: center;
+      font-weight: normal;
+      font-family: "SegoeUILight", sans-serif;
+      font-size: 24px;
+      line-height: 1em;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden; }
+    #jobs .jobs_item .text-holder ul {
+      height: 140px;
+      overflow: hidden; }
+      #jobs .jobs_item .text-holder ul li {
+        line-height: 1.5em;
+        padding-left: 30px;
+        position: relative; }
+        #jobs .jobs_item .text-holder ul li:before {
+          position: absolute;
+          top: 9px;
+          left: 10px;
+          width: 6px;
+          height: 6px;
+          border-radius: 6px;
+          content: "";
+          background: #fdc300; }
+    #jobs .jobs_item .text-holder a {
+      font-size: 18px;
+      border: 2px solid #0e6eb8;
+      height: 45px;
+      width: 100%;
+      color: #fff;
+      text-align: center;
+      box-sizing: border-box;
+      line-height: 41px;
+      cursor: pointer;
+      display: block;
+      margin-top: 40px; }
+      #jobs .jobs_item .text-holder a:hover {
+        color: #fdc300;
+        border-color: #fdc300;
+        -webkit-transition: all 0.35s;
+        transition: all 0.35s;
+        text-decoration: none; }

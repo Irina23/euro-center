@@ -55,9 +55,26 @@ jQuery(document).ready(function() {
         jQuery('.visa_slider').each(function() {
             jQuery(this).bxSlider({
                 //auto: true,
-                minSlides: 4,
-                maxSlides: 4,
-                slideWidth: 300,
+                minSlides: 3,
+                maxSlides: 3,
+                slideWidth: 500,
+                nextText: "",
+                prevText: "",
+                slideMargin: 20
+
+            });
+        });
+
+
+    });
+    jQuery(window).load(function() {
+        //slider visa
+        jQuery('.jobs_slider').each(function() {
+            jQuery(this).bxSlider({
+                //auto: true,
+                minSlides: 3,
+                maxSlides: 3,
+                slideWidth: 500,
                 nextText: "",
                 prevText: "",
                 slideMargin: 20
@@ -76,6 +93,13 @@ jQuery(document).ready(function() {
             jQuery(".time_visa").text(time_visa);
             var price_visa = jQuery(this).closest(".visa_item").find(".price").text();
             jQuery(".price_visa").text(price_visa);
+    });
+
+    jQuery("#jobs .open_modal").click(function() {
+        var title_jobs = jQuery(this).closest(".tabs").find(".tabs-menu .active").text() + ' (' +jQuery(this).closest(".jobs_item").find("h4").text()+ ')';
+        jQuery(".title_visa").text(title_jobs);
+        jQuery(".time_visa").text("");
+        jQuery(".price_visa").text("");
     });
 
 });

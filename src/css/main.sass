@@ -148,10 +148,11 @@ h3
     li
       display: inline-block
       vertical-align: top
-      width: 49%
+      width: 33%
       box-sizing: border-box
       padding: 0 30px
-      margin-bottom: 30px
+      margin-bottom: 50px
+      text-align: center
       .text-holder
         overflow: hidden
         h4
@@ -159,33 +160,21 @@ h3
           margin-bottom: 15px
           font-weight: normal
           color: #0e6eb8
+          line-height: 1em
+          height: 24px
+          overflow: hidden
+          text-overflow: ellipsis
+          white-space: nowrap
       .img-holder
         width: 133px
         height: 133px
         border-radius: 133px
-        float: left
-        margin-right: 30px
+        margin: auto
+        margin-bottom: 30px
 
 
 
-.tabs
-  .tab-content
-    position: relative
-    height: 450px
-    overflow: hidden
-    margin-bottom: 40px
-    .tab-pane
-      //display: none
-      //opacity: 0
-      position: absolute
-      top: 600px
-      left: 0
-      transition: all 0.5s
-      &.active
-        //display: block
-        //opacity: 1
-        top: 0
-        transition: all 0.5s
+
 
 
 
@@ -224,6 +213,8 @@ h3
       text-overflow: ellipsis
       margin-bottom: 4px
       border-bottom: 1px solid #fff
+
+
     .time_visa
       float: left
       color: #fff
@@ -303,7 +294,6 @@ h3
       cursor: pointer
       line-height: 22px
       transition: all 0.2s
-
       &:hover
         transition: all 0.2s
         border-color: #fdc300
@@ -324,15 +314,38 @@ h3
 
 
 #visu
+  background: url("../img/bg/bg_jobs3.jpg") no-repeat center
+  background-size: cover
+  h3
+    color: #fdc300
+  .wrap
+    padding-top: 60px
+    //color: #fff
+
+  .tabs
+    .tab-content
+      position: relative
+      height: 450px
+      overflow: hidden
+      margin-bottom: 40px
+      .tab-pane
+        position: absolute
+        top: 600px
+        left: 0
+        transition: all 0.5s
+        &.active
+          top: 0
+          transition: all 0.5s
   .tabs-menu
     margin-bottom: 40px
     .nav.nav-tabs
       li
         float: left
-        color: #008fb7
-        border: 1px solid #dedbdb
+        background: #fff
+        color: #0e6eb8
+        //border: 1px solid #dedbdb
         font-size: 18px
-        padding: 12px
+        padding: 12px 20px
         cursor: pointer
         line-height: 24px
         margin-right: -1px
@@ -342,19 +355,27 @@ h3
           background: #0e6eb8
           color: #fff
           border-color: #0e6eb8
+
           transition: all 0.35s
 
   .visa_item
     text-align: center
     //padding: 0 10px
     box-sizing: border-box
+    //background: rgba(0, 0, 0, 0.5)
+    background: rgba(255, 255, 255, 0.5)
+    padding: 20px 0
 
     h4
       font-size: 24px
       margin-bottom: 30px
       font-weight: normal
       color: #0e6eb8
-      line-height: 1.3em
+      height: 24px
+      white-space: nowrap
+      text-overflow: ellipsis
+      overflow: hidden
+      line-height: 1em
     a
         font-size: 18px
         border: 2px solid #0e6eb8
@@ -373,12 +394,15 @@ h3
           background: #0e6eb8
           transition: all 0.35s
           text-decoration: none
-    > div
+    .text-holder
+      padding: 0 20px
+      > div
         margin-bottom: 20px
 
 
+
         span
-          font-size: 18px
+          font-size: 16px
           display: block
 
 
@@ -402,12 +426,11 @@ h3
         transition-duration: .3s
 
 
-
-
-
 .bx-wrapper
-  margin: auto
+  margin: auto!important
+  padding: 0 50px!important
   .bx-pager.bx-default-pager
+    display: none
     position: inherit
     bottom: inherit
     padding-top: 40px
@@ -427,6 +450,7 @@ h3
         transition: all 0.35s
         box-sizing: border-box
 
+
         &.active,&:hover
           transition: all 0.35s
           background: #0e6eb8
@@ -440,13 +464,15 @@ h3
   .bx-controls-direction
 
     .bx-prev, .bx-next
-      
+
       background: url("../img/icons/next.png") no-repeat
       width: 22px
       height: 36px
       background-size: 100%
       transition: all 0.35s
       margin-top: -18px
+      z-index: 2
+
 
       &:hover
         opacity: 0.8
@@ -459,7 +485,120 @@ h3
       transform: rotate(180deg)
 
   .bx-viewport
+    background: none!important
+
     border-radius: 0
     box-shadow: none!important
     left: 0!important
     border: 0!important
+
+
+#jobs
+
+
+  .job-holder
+    //background: rgba(255, 255, 255, 0.3)
+    padding: 60px 0
+  //h3
+    //color: #fdc300
+  .tabs
+    .tab-content
+      position: relative
+      height: 570px
+      overflow: hidden
+
+      .tab-pane
+        position: absolute
+        top: 700px
+        left: 0
+        transition: all 0.5s
+        width: 100%
+        &.active
+          top: 0
+          transition: all 0.5s
+  .tabs-menu
+    margin-bottom: 40px
+    .nav.nav-tabs
+      li
+        float: left
+        color: #008fb7
+        border: 1px solid #dedbdb
+        //background: #fff
+        font-size: 18px
+        padding: 12px
+        cursor: pointer
+        line-height: 24px
+        margin-right: -1px
+        transition: all 0.35s
+
+        &.active,&:hover
+          background: #0e6eb8
+          color: #fff
+          border-color: #0e6eb8
+          transition: all 0.35s
+
+
+  .jobs_item
+    background: #595959
+    .img-holder
+      width: 100%
+      height: 165px
+      position: relative
+      img
+        width: 100%
+    .text-holder
+      height: 300px
+
+      color: #fff
+      padding: 20px
+      h4
+        text-align: center
+        font-weight: normal
+        font-family: "SegoeUILight", sans-serif
+        font-size: 24px
+        line-height: 1em
+        white-space: nowrap
+        text-overflow: ellipsis
+        overflow: hidden
+
+
+      ul
+        height: 140px
+        overflow: hidden
+        li
+          //list-style-type: disc
+          line-height: 1.5em
+          padding-left: 30px
+          position: relative
+          &:before
+            position: absolute
+            top: 9px
+            left: 10px
+            width: 6px
+            height: 6px
+            border-radius: 6px
+            content: ""
+            background: #fdc300
+      a
+        font-size: 18px
+        border: 2px solid #0e6eb8
+        height: 45px
+        width: 100%
+        color: #fff
+        text-align: center
+        box-sizing: border-box
+        line-height: 41px
+        cursor: pointer
+        display: block
+        margin-top: 40px
+
+        &:hover
+          color: #fdc300
+          //background: #fdc300
+          border-color: #fdc300
+          transition: all 0.35s
+          text-decoration: none
+
+
+
+
