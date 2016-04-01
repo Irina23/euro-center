@@ -49,7 +49,7 @@ jQuery(document).ready(function() {
     });
 
 
-
+//bxslider
     jQuery(window).load(function() {
         //slider visa
         jQuery('.visa_slider').each(function() {
@@ -86,6 +86,18 @@ jQuery(document).ready(function() {
     });
 
 
+    jQuery('.slider_faq').bxSlider({
+        nextText: "",
+        prevText: "",
+        adaptiveHeight: true
+        //auto: true
+
+    });
+
+
+
+
+    //modal form text
     jQuery("#visu .open_modal").click(function() {
             var title_visa = jQuery(this).closest(".tabs").find(".tabs-menu .active").text() + ' (' +jQuery(this).closest(".visa_item").find("h4").text()+ ')';
             jQuery(".title_visa").text(title_visa);

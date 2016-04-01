@@ -82,23 +82,25 @@ h3 {
 
 #call_back {
   padding: 50px 0; }
-  #call_back form .row > div {
-    display: inline-block;
-    vertical-align: middle; }
-    #call_back form .row > div.error input[type="text"],
-    #call_back form .row > div.error input[type="email"] {
-      border-color: #FF0000; }
-  #call_back form input[type="text"],
-  #call_back form input[type="email"] {
-    height: 45px;
-    width: 225px;
-    padding: 0 10px;
-    margin-right: 8px;
-    font-size: 16px;
-    font-family: "SegoeUIRegular", sans-serif;
-    line-height: 45px;
-    box-sizing: border-box;
-    border: 1px solid #999; }
+  #call_back form {
+    margin-top: 40px; }
+    #call_back form .row > div {
+      display: inline-block;
+      vertical-align: middle; }
+      #call_back form .row > div.error input[type="text"],
+      #call_back form .row > div.error input[type="email"] {
+        border-color: #FF0000; }
+    #call_back form input[type="text"],
+    #call_back form input[type="email"] {
+      height: 45px;
+      width: 225px;
+      padding: 0 10px;
+      margin-right: 8px;
+      font-size: 16px;
+      font-family: "SegoeUIRegular", sans-serif;
+      line-height: 45px;
+      box-sizing: border-box;
+      border: 1px solid #999; }
   #call_back .btn.submit {
     font-size: 18px;
     border: 2px solid #0e6eb8;
@@ -544,3 +546,34 @@ h3 {
       height: 52px;
       overflow: hidden;
       text-overflow: ellipsis; }
+
+#faq {
+  background: url("../img/bg/bg_questions.jpg") no-repeat;
+  background-size: cover;
+  padding: 60px 0 110px; }
+  #faq h3 {
+    color: #fff; }
+  #faq .bx-viewport {
+    height: auto !important; }
+  #faq .slider_faq {
+    padding-top: 50px; }
+    #faq .slider_faq .item_faq {
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.8);
+      color: #000;
+      margin-bottom: 30px; }
+      #faq .slider_faq .item_faq:last-child {
+        margin-bottom: 0; }
+      #faq .slider_faq .item_faq h4 {
+        font-size: 24px;
+        margin-bottom: 20px;
+        line-height: 1em;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+        color: #0e6eb8;
+        font-weight: normal; }
+      #faq .slider_faq .item_faq p {
+        font-size: 16px;
+        line-height: 1.3em;
+        color: #000; }
