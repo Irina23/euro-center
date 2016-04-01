@@ -68,7 +68,7 @@ img
 
 hr
   margin-top: 22px
-  margin-bottom: 22px
+  margin-bottom: 60px
   background: #e9e6e6
   position: relative
   height: 3px
@@ -552,6 +552,8 @@ h3
 
       color: #fff
       padding: 20px
+      hr
+        margin-bottom: 22px
       h4
         text-align: center
         font-weight: normal
@@ -606,7 +608,7 @@ h3
 #how_works
 
   .works_items
-    margin: 50px auto
+    margin: 0 auto 100px
     .item
       display: inline-block
       vertical-align: middle
@@ -639,7 +641,7 @@ h3
     height: auto!important
 
   .slider_faq
-    padding-top: 50px
+    //padding-top: 50px
 
     .item_faq
       padding: 20px
@@ -661,3 +663,95 @@ h3
         font-size: 16px
         line-height: 1.3em
         color: #000
+
+
+
+
+
+
+#contacts
+  margin-bottom: 100px
+  .text-holder
+    width: 300px
+    display: inline-block
+    vertical-align: top
+    margin-right: 35px
+    h4
+      font-family: "SegoeUIBold", sans-serif
+      font-size: 18px
+      line-height: 1em
+      margin-bottom: 20px
+    a
+      color: #337ab7
+      display: block
+      line-height: 1.5em
+    p
+      line-height: 1.5em
+    > div
+      margin-bottom: 40px
+    .phone
+      position: relative
+      padding-left: 40px
+      &:before
+        position: absolute
+        content: ""
+        top: 3px
+        left: 10px
+        width:  15px
+        height: 15px
+        background: url("../img/icons/phone.png") no-repeat
+    .address
+      position: relative
+      padding-left: 40px
+      &:before
+        position: absolute
+        content: ""
+        top: 3px
+        left: 10px
+        width:  16px
+        height: 24px
+        background: url("../img/icons/pointer.png") no-repeat
+    .social
+      a
+        border-radius: 37px
+        background: #0e6eb8
+        height: 37px
+        width: 37px
+        display: inline-block
+        text-align: center
+        color: #fff
+        font-size: 22px
+        padding-top: 2px
+        margin: 0 7px
+        &:nth-child(2)
+            margin-left: 0
+
+
+  #map
+    height: 400px
+    display: inline-block
+    vertical-align: top
+    width: 600px
+
+
+
+footer
+  //height: 70px
+  background-color: #404040
+  text-align: center
+  color: #fff
+  padding: 25px 0
+
+  .wrap
+    >div
+      display: inline-block
+      vertical-align: middle
+      margin-right: 30px
+      &:last-child
+        margin-right: 0
+      span
+        color: #fdc300
+        margin-left: 5px
+      a
+        color: #337ab7
+        margin-left: 5px

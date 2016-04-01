@@ -51,7 +51,7 @@ jQuery(document).ready(function() {
 
 //bxslider
     jQuery(window).load(function() {
-        //slider visa
+
         jQuery('.visa_slider').each(function() {
             jQuery(this).bxSlider({
                 //auto: true,
@@ -66,9 +66,8 @@ jQuery(document).ready(function() {
         });
 
 
-    });
-    jQuery(window).load(function() {
-        //slider visa
+
+
         jQuery('.jobs_slider').each(function() {
             jQuery(this).bxSlider({
                 //auto: true,
@@ -112,6 +111,26 @@ jQuery(document).ready(function() {
         jQuery(".title_visa").text(title_jobs);
         jQuery(".time_visa").text("");
         jQuery(".price_visa").text("");
+    });
+
+
+
+    //map
+
+    $(window).on('load', function() {
+        // Create a map object and specify the DOM element for display.
+        var map = new google.maps.Map(document.getElementById('map'), {
+            center: {lat:49.4417281, lng: 32.0660435},
+            scrollwheel: false,
+            zoom: 16
+        });
+        var marker = new google.maps.Marker({
+            position: {lat:49.4417281, lng: 32.0660435},
+            map: map
+
+        });
+
+
     });
 
 });

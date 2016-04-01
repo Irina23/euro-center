@@ -59,7 +59,7 @@ img {
 
 hr {
   margin-top: 22px;
-  margin-bottom: 22px;
+  margin-bottom: 60px;
   background: #e9e6e6;
   position: relative;
   height: 3px;
@@ -483,6 +483,8 @@ h3 {
     height: 300px;
     color: #fff;
     padding: 20px; }
+    #jobs .jobs_item .text-holder hr {
+      margin-bottom: 22px; }
     #jobs .jobs_item .text-holder h4 {
       text-align: center;
       font-weight: normal;
@@ -528,7 +530,7 @@ h3 {
         text-decoration: none; }
 
 #how_works .works_items {
-  margin: 50px auto; }
+  margin: 0 auto 100px; }
   #how_works .works_items .item {
     display: inline-block;
     vertical-align: middle;
@@ -555,25 +557,102 @@ h3 {
     color: #fff; }
   #faq .bx-viewport {
     height: auto !important; }
-  #faq .slider_faq {
-    padding-top: 50px; }
-    #faq .slider_faq .item_faq {
-      padding: 20px;
-      background: rgba(255, 255, 255, 0.8);
-      color: #000;
-      margin-bottom: 30px; }
-      #faq .slider_faq .item_faq:last-child {
-        margin-bottom: 0; }
-      #faq .slider_faq .item_faq h4 {
-        font-size: 24px;
-        margin-bottom: 20px;
-        line-height: 1em;
-        text-overflow: ellipsis;
-        overflow: hidden;
-        white-space: nowrap;
-        color: #0e6eb8;
-        font-weight: normal; }
-      #faq .slider_faq .item_faq p {
-        font-size: 16px;
-        line-height: 1.3em;
-        color: #000; }
+  #faq .slider_faq .item_faq {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    color: #000;
+    margin-bottom: 30px; }
+    #faq .slider_faq .item_faq:last-child {
+      margin-bottom: 0; }
+    #faq .slider_faq .item_faq h4 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      line-height: 1em;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+      color: #0e6eb8;
+      font-weight: normal; }
+    #faq .slider_faq .item_faq p {
+      font-size: 16px;
+      line-height: 1.3em;
+      color: #000; }
+
+#contacts {
+  margin-bottom: 100px; }
+  #contacts .text-holder {
+    width: 300px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 35px; }
+    #contacts .text-holder h4 {
+      font-family: "SegoeUIBold", sans-serif;
+      font-size: 18px;
+      line-height: 1em;
+      margin-bottom: 20px; }
+    #contacts .text-holder a {
+      color: #337ab7;
+      display: block;
+      line-height: 1.5em; }
+    #contacts .text-holder p {
+      line-height: 1.5em; }
+    #contacts .text-holder > div {
+      margin-bottom: 40px; }
+    #contacts .text-holder .phone {
+      position: relative;
+      padding-left: 40px; }
+      #contacts .text-holder .phone:before {
+        position: absolute;
+        content: "";
+        top: 3px;
+        left: 10px;
+        width: 15px;
+        height: 15px;
+        background: url("../img/icons/phone.png") no-repeat; }
+    #contacts .text-holder .address {
+      position: relative;
+      padding-left: 40px; }
+      #contacts .text-holder .address:before {
+        position: absolute;
+        content: "";
+        top: 3px;
+        left: 10px;
+        width: 16px;
+        height: 24px;
+        background: url("../img/icons/pointer.png") no-repeat; }
+    #contacts .text-holder .social a {
+      border-radius: 37px;
+      background: #0e6eb8;
+      height: 37px;
+      width: 37px;
+      display: inline-block;
+      text-align: center;
+      color: #fff;
+      font-size: 22px;
+      padding-top: 2px;
+      margin: 0 7px; }
+      #contacts .text-holder .social a:nth-child(2) {
+        margin-left: 0; }
+  #contacts #map {
+    height: 400px;
+    display: inline-block;
+    vertical-align: top;
+    width: 600px; }
+
+footer {
+  background-color: #404040;
+  text-align: center;
+  color: #fff;
+  padding: 25px 0; }
+  footer .wrap > div {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 30px; }
+    footer .wrap > div:last-child {
+      margin-right: 0; }
+    footer .wrap > div span {
+      color: #fdc300;
+      margin-left: 5px; }
+    footer .wrap > div a {
+      color: #337ab7;
+      margin-left: 5px; }
