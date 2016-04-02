@@ -14,6 +14,7 @@
     <link href="css/template.css" rel="stylesheet" type="text/css">
     <link href="bower_components/jquery.bxslider/jquery.bxslider.css" rel="stylesheet" type="text/css">
     <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <script src="js/modernizr.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="format-detection" content="telephone=no">
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
@@ -22,25 +23,26 @@
     <div class="page_wrapper home">
       <header>
         <div class="main_slider">
-          <div style="background: url('img/content/slider1.jpg') no-repeat;background-size: cover;" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2" class="item">
-            <div class="slider-holder">
-              <div class="sl-content-slice">
-                <div class="info_slider">
+          <div id="slider" class="sl-slider-wrapper">
+            <div class="sl-slider">
+              <div data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2" class="sl-slide">
+                <div class="sl-slide-inner">
+                  <div style="background-image: url(img/content/slider1.jpg);" class="bg-img"></div>
+                  <div class="blackoute"></div>
                   <h2>Віза – це<span>&nbsp;просто!</span></h2>
-                  <div class="text_holder">Ми допомагаємо отримати візу в країни Європейського Союзу. Клієнти, звернувшись до нас, стають нашими постійними клієнтами і рекомендують нас своїм знайомим та друзям. Більше 50% нових клієнтів звертаються до нас по рекомендації.</div>
+                  <blockquote>Ми допомагаємо отримати візу в країни Європейського Союзу. Клієнти, звернувшись до нас, стають нашими постійними клієнтами і рекомендують нас своїм знайомим та друзям. Більше 50% нових клієнтів звертаються до нас по рекомендації.</blockquote>
                 </div>
               </div>
-            </div>
-          </div>
-          <div style="background: url('img/content/slider2.jpg') no-repeat;background-size: cover;" class="item">
-            <div class="slider-holder">
-              <div class="sl-content-slice">
-                <div class="info_slider">
+              <div data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2" class="sl-slide">
+                <div class="sl-slide-inner">
+                  <div style="background-image: url(img/content/slider2.jpg);" class="bg-img"></div>
+                  <div class="blackoute"></div>
                   <h2><span>Робота в Європі</span></h2>
-                  <div class="text_holder">Легальне працевлаштування в країнах Європейського Союзу. Робота за кордоном - це висока заробітна платня, можливість отримати громадянство, кар'єрне зростання та розширення кругозору і отримання нових знань.</div>
+                  <blockquote>Легальне працевлаштування в країнах Європейського Союзу. Робота за кордоном - це висока заробітна платня, можливість отримати громадянство, кар'єрне зростання та розширення кругозору і отримання нових знань.</blockquote>
                 </div>
               </div>
             </div>
+            <nav id="nav-dots" class="nav-dots"><span class="nav-dot-current"></span><span></span></nav>
           </div>
         </div>
       </header>
@@ -811,7 +813,6 @@
       </div>
       <div id="overlay"></div>
       <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3"></script>
-      <script src="js/modernizr.js"></script>
       <script src="bower_components/jquery/dist/jquery.js"></script>
       <script src="js/jquery.ba-cond.min.js"></script>
       <script src="js/jquery.slitslider.js"></script>
