@@ -318,7 +318,7 @@ img{
 }
 
 .main_slider .sl-slider h2 {
-    padding: 265px 30px 10px 30px;
+    padding: 265px 30px 30px 30px;
     line-height: 60px;
     font-size: 60px;
 }
@@ -421,7 +421,7 @@ img{
 
 .main_slider .nav-dots span {
     background: rgba(150,150,150,0.1);
-    margin: 6px;
+    margin: 6px 10px;
     -webkit-transition: all 0.2s;
     -moz-transition: all 0.2s;
     -ms-transition: all 0.2s;
