@@ -1,5 +1,30 @@
 
 header
+    #menu-holder
+        .wrap
+            #menu-icon
+                i
+                    span.icon-bar
+                    span.icon-bar
+                    span.icon-bar
+                span.menu_title Меню
+            #menu
+                ul.nav.nav-tabs
+                    li
+                        a(href="#main_slider") Головна
+                    li
+                        a(href="#advantage") Наші переваги
+                    li
+                        a(href="#visu") Візи
+
+                    li
+                        a(href="#jobs") Вакансії
+                    li
+                        a(href="#how_works") Як це працює
+                    li
+                        a(href="#faq") Поширені запитання
+                    li
+                        a(href="#contacts") Контакти
     .top-line
         .wrap
            .logo
@@ -25,7 +50,9 @@ header
                 a(href="#" class="active" data-request="onSwitchLocale" data-request-data="locale: 'uk'") Укр
                 a(href="#" data-request="onSwitchLocale" data-request-data="locale: 'ru'") Рус
 
-    .main_slider
+
+
+    #main_slider.main_slider
         #slider.sl-slider-wrapper
             .sl-slider
               .sl-slide(data-orientation='horizontal', data-slice1-rotation='-25', data-slice2-rotation='-25', data-slice1-scale='2', data-slice2-scale='2')

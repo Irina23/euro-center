@@ -546,25 +546,27 @@ header .bx-wrapper {
         transition: all 0.35s;
         text-decoration: none; }
 
-#how_works .works_items {
-  margin: 0 auto 100px; }
-  #how_works .works_items .item {
-    display: inline-block;
-    vertical-align: middle;
-    width: 24%;
-    text-align: center; }
-    #how_works .works_items .item .img-holder {
-      width: 133px;
-      height: 133px;
-      border-radius: 133px;
-      margin: 0 auto 30px; }
-    #how_works .works_items .item .text-holder {
-      color: #0e6eb8;
-      font-size: 20px;
-      line-height: 1.3em;
-      height: 52px;
-      overflow: hidden;
-      text-overflow: ellipsis; }
+#how_works {
+  padding-top: 50px; }
+  #how_works .works_items {
+    margin: 0 auto 100px; }
+    #how_works .works_items .item {
+      display: inline-block;
+      vertical-align: middle;
+      width: 24%;
+      text-align: center; }
+      #how_works .works_items .item .img-holder {
+        width: 133px;
+        height: 133px;
+        border-radius: 133px;
+        margin: 0 auto 30px; }
+      #how_works .works_items .item .text-holder {
+        color: #0e6eb8;
+        font-size: 20px;
+        line-height: 1.3em;
+        height: 52px;
+        overflow: hidden;
+        text-overflow: ellipsis; }
 
 #faq {
   background: url("../img/bg/bg_questions.jpg") no-repeat;
@@ -684,7 +686,7 @@ footer {
 
 .top-line {
   position: absolute;
-  top: 43px;
+  top: 100px;
   z-index: 5;
   width: 100%; }
   .top-line .wrap {
@@ -782,3 +784,60 @@ footer {
         -webkit-transition: all 0.35s;
         transition: all 0.35s;
         color: #fdc300; }
+
+#menu-holder {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(253, 195, 0, 0.7);
+  z-index: 10; }
+  #menu-holder #menu-icon {
+    display: none;
+    color: #fff;
+    cursor: pointer;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s; }
+    #menu-holder #menu-icon:hover {
+      -webkit-transition: all 0.35s;
+      transition: all 0.35s;
+      color: #fdc300; }
+      #menu-holder #menu-icon:hover i .icon-bar {
+        -webkit-transition: all 0.35s;
+        transition: all 0.35s;
+        background-color: #fdc300; }
+    #menu-holder #menu-icon i {
+      margin-right: 10px;
+      display: inline-block;
+      vertical-align: middle; }
+      #menu-holder #menu-icon i .icon-bar {
+        -webkit-transition: all 0.35s;
+        transition: all 0.35s;
+        background-color: #fff;
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin-bottom: 5px; }
+    #menu-holder #menu-icon .menu_title {
+      text-transform: uppercase;
+      font-size: 14px; }
+  #menu-holder #menu {
+    padding: 15px;
+    text-align: center; }
+    #menu-holder #menu li {
+      display: inline-block;
+      vertical-align: middle;
+      margin: 0 15px; }
+      #menu-holder #menu li.active a {
+        color: #0e6eb8; }
+      #menu-holder #menu li a {
+        color: #fff;
+        font-size: 18px;
+        line-height: 1em;
+        -webkit-transition: all 0.35s;
+        transition: all 0.35s; }
+        #menu-holder #menu li a:hover {
+          -webkit-transition: all 0.35s;
+          transition: all 0.35s;
+          color: #0e6eb8;
+          text-decoration: none; }

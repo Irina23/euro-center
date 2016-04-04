@@ -19,9 +19,25 @@
     <meta name="format-detection" content="telephone=no">
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
   </head>
-  <body>
+  <body data-spy="scroll" data-target="#menu" data-offset="105">
     <div class="page_wrapper home">
       <header>
+        <div id="menu-holder">
+          <div class="wrap">
+            <div id="menu-icon"><i><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></i><span class="menu_title">Меню</span></div>
+            <div id="menu">
+              <ul class="nav nav-tabs">
+                <li><a href="#main_slider">Головна</a></li>
+                <li><a href="#advantage">Наші переваги</a></li>
+                <li><a href="#visu">Візи</a></li>
+                <li><a href="#jobs">Вакансії</a></li>
+                <li><a href="#how_works">Як це працює</a></li>
+                <li><a href="#faq">Поширені запитання</a></li>
+                <li><a href="#contacts">Контакти</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
         <div class="top-line">
           <div class="wrap">
             <div class="logo"><a href="/"><img src="img/icons/main-logo.png"><span>Євроцентр</span></a></div>
@@ -40,7 +56,7 @@
             <div class="lang-holder"><a href="#" data-request="onSwitchLocale" data-request-data="locale: 'uk'" class="active">Укр</a><a href="#" data-request="onSwitchLocale" data-request-data="locale: 'ru'">Рус</a></div>
           </div>
         </div>
-        <div class="main_slider">
+        <div id="main_slider" class="main_slider">
           <div id="slider" class="sl-slider-wrapper">
             <div class="sl-slider">
               <div data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2" class="sl-slide">
@@ -838,6 +854,7 @@
       <script src="js/bootstrap_tabs.min.js"></script>
       <script src="js/alexValidate.js"></script>
       <script src="bower_components/jquery.bxslider/jquery.bxslider.js"></script>
+      <script src="js/scrollspy.js"></script>
     </div>
   </body>
 </html>

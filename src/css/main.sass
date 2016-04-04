@@ -670,6 +670,7 @@ header
 
 
 #how_works
+  padding-top: 50px
 
   .works_items
     margin: 0 auto 100px
@@ -832,7 +833,7 @@ footer
 
 .top-line
   position: absolute
-  top: 43px
+  top: 100px
   z-index: 5
   width: 100%
   .wrap
@@ -939,3 +940,70 @@ footer
           text-decoration: none
           transition: all 0.35s
           color: #fdc300
+
+
+
+#menu-holder
+      position: fixed
+      top: 0
+      left: 0
+      width: 100%
+      background: rgba(253, 195, 0, 0.7)
+      z-index: 10
+
+
+
+
+      #menu-icon
+        display: none
+        color: #fff
+        cursor: pointer
+        transition: all 0.35s
+        &:hover
+            transition: all 0.35s
+            color: #fdc300
+            i
+              .icon-bar
+                transition: all 0.35s
+                background-color: #fdc300
+        i
+          margin-right: 10px
+          display: inline-block
+          vertical-align: middle
+
+          .icon-bar
+            transition: all 0.35s
+            background-color: #fff
+            display: block
+            width: 25px
+            height: 3px
+            margin-bottom: 5px
+        .menu_title
+          text-transform: uppercase
+          font-size: 14px
+
+
+
+
+      #menu
+        padding: 15px
+        text-align: center
+        li
+          display: inline-block
+          vertical-align: middle
+          margin: 0 15px
+          //&:first-child
+            display: none
+          &.active
+            a
+              color: #0e6eb8
+          a
+            color: #fff
+            font-size: 18px
+            line-height: 1em
+            transition: all 0.35s
+            &:hover
+              transition: all 0.35s
+              color: #0e6eb8
+              text-decoration: none
+
