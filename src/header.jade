@@ -1,5 +1,30 @@
 
 header
+    .top-line
+        .wrap
+           .logo
+                a(href="/")
+                    img(src="img/icons/main-logo.png")
+                    span Євроцентр
+           .header-phone
+               .city
+                  span.city_active Черкаси
+                  ul
+                      li.active(data-filter="cherkassy") Черкаси
+                      li(data-filter="uman") Умань
+               .phone_list
+                    div.show(data-filter="cherkassy")
+                        a(href="tel:+38 (0472) 38-32-98") +38 (0472) 38-32-98
+                        a(href="tel:+38 (067) 536-73-73") +38 (067) 536-73-73
+                    div(data-filter="uman")
+                        a(href="tel:+38 (0472) 55-55-55") +38 (0472) 55-55-55
+                        a(href="tel:+38 (067) 555-55-55") +38 (067) 555-55-55
+
+
+           .lang-holder
+                a(href="#" class="active" data-request="onSwitchLocale" data-request-data="locale: 'uk'") Укр
+                a(href="#" data-request="onSwitchLocale" data-request-data="locale: 'ru'") Рус
+
     .main_slider
         #slider.sl-slider-wrapper
             .sl-slider

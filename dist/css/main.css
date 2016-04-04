@@ -681,3 +681,104 @@ footer {
     footer .wrap > div a {
       color: #337ab7;
       margin-left: 5px; }
+
+.top-line {
+  position: absolute;
+  top: 43px;
+  z-index: 5;
+  width: 100%; }
+  .top-line .wrap {
+    position: relative; }
+    .top-line .wrap > div {
+      display: inline-block;
+      vertical-align: middle;
+      padding-right: 30px; }
+      .top-line .wrap > div:last-child {
+        padding-right: 0; }
+    .top-line .wrap .logo img {
+      position: absolute;
+      left: 2px;
+      top: -34px;
+      max-width: 60px; }
+    .top-line .wrap .logo a {
+      position: relative; }
+      .top-line .wrap .logo a:hover {
+        text-decoration: none; }
+    .top-line .wrap .logo span {
+      color: #fff;
+      font-size: 36px;
+      font-family: "SegoeUILight", sans-serif;
+      line-height: 24px;
+      padding-left: 60px; }
+    .top-line .wrap .header-phone .city {
+      padding: 0 30px;
+      background: url("../img/icons/address_y.png") no-repeat;
+      color: #fff;
+      font-family: "SegoeUILight", sans-serif;
+      font-size: 16px;
+      line-height: 22px;
+      position: relative;
+      display: inline-block;
+      vertical-align: middle;
+      cursor: pointer;
+      margin-right: 30px; }
+      .top-line .wrap .header-phone .city .city_active {
+        min-width: 65px;
+        display: inline-block; }
+      .top-line .wrap .header-phone .city:after {
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        margin-top: -5px;
+        width: 16px;
+        height: 10px;
+        content: "";
+        background: url("../img/icons/select.png") no-repeat;
+        background-size: 100%;
+        cursor: pointer; }
+      .top-line .wrap .header-phone .city ul {
+        display: none;
+        position: absolute;
+        top: 22px;
+        left: 30px; }
+        .top-line .wrap .header-phone .city ul li.active {
+          display: none; }
+    .top-line .wrap .header-phone .phone_list {
+      display: inline-block;
+      vertical-align: middle; }
+      .top-line .wrap .header-phone .phone_list > div {
+        display: none; }
+        .top-line .wrap .header-phone .phone_list > div a {
+          color: #fff;
+          -webkit-transition: all 0.35s;
+          transition: all 0.35s;
+          display: inline-block;
+          vertical-align: middle;
+          font-family: "SegoeUILight", sans-serif;
+          margin-right: 20px; }
+          .top-line .wrap .header-phone .phone_list > div a:last-child {
+            margin-right: 0; }
+          .top-line .wrap .header-phone .phone_list > div a:hover {
+            text-decoration: none;
+            -webkit-transition: all 0.35s;
+            transition: all 0.35s;
+            color: #fdc300; }
+        .top-line .wrap .header-phone .phone_list > div.show {
+          display: block; }
+    .top-line .wrap .lang-holder a {
+      color: #c8c6c6;
+      font-family: "SegoeUILight", sans-serif;
+      margin-right: 15px;
+      -webkit-transition: all 0.35s;
+      transition: all 0.35s;
+      display: inline-block;
+      vertical-align: middle; }
+      .top-line .wrap .lang-holder a.active {
+        color: #fff; }
+      .top-line .wrap .lang-holder a:last-child {
+        margin-right: 0; }
+      .top-line .wrap .lang-holder a:hover {
+        text-decoration: none;
+        -webkit-transition: all 0.35s;
+        transition: all 0.35s;
+        color: #fdc300; }

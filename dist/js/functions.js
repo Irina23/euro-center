@@ -136,7 +136,27 @@ jQuery(document).ready(function() {
 
 
 
+    //city filter
+    jQuery(".header-phone .city").click(function(){
+        jQuery(this).find("ul").slideToggle();
 
+    });
+    jQuery(".header-phone .city li").click(function(){
+        var active_text=jQuery(this).text();
+        //console.log(active_text);
+        jQuery(".city_active").text(active_text);
+        jQuery(this).addClass("active").siblings().removeClass('active');
+
+        var customType = jQuery(this).attr('data-filter');
+
+
+        jQuery('.phone_list div').each(function(){
+            if(jQuery(this).attr('data-filter')==customType) jQuery(this).addClass("show"); else jQuery(this).removeClass("show");
+        });
+
+
+    });
+///main slider
     $(function() {
 
         var Page = (function() {

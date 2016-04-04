@@ -824,3 +824,118 @@ footer
       a
         color: #337ab7
         margin-left: 5px
+
+
+
+
+
+
+.top-line
+  position: absolute
+  top: 43px
+  z-index: 5
+  width: 100%
+  .wrap
+    position: relative
+    >div
+      display: inline-block
+      vertical-align: middle
+      padding-right: 30px
+      &:last-child
+        padding-right: 0
+
+    .logo
+
+      img
+        position: absolute
+        left: 2px
+        top: -34px
+        max-width: 60px
+      a
+        position: relative
+        &:hover
+          text-decoration: none
+      span
+        color: #fff
+        font-size: 36px
+        font-family: "SegoeUILight", sans-serif
+        line-height: 24px
+        padding-left: 60px
+
+    .header-phone
+      .city
+        padding: 0 30px
+        background: url("../img/icons/address_y.png") no-repeat
+        color: #fff
+        font-family: "SegoeUILight", sans-serif
+        font-size: 16px
+        line-height: 22px
+        position: relative
+        display: inline-block
+        vertical-align: middle
+        cursor: pointer
+        margin-right: 30px
+        .city_active
+          min-width: 65px
+          display: inline-block
+        &:after
+          position: absolute
+          top: 50%
+          right: 10px
+          margin-top: -5px
+          width: 16px
+          height: 10px
+          content: ""
+          background: url("../img/icons/select.png") no-repeat
+          background-size: 100%
+          cursor: pointer
+
+        ul
+          display: none
+          position: absolute
+          top: 22px
+          left: 30px
+          li
+            &.active
+              display: none
+
+
+      .phone_list
+        display: inline-block
+        vertical-align: middle
+        > div
+          display: none
+          a
+            color: #fff
+            transition: all 0.35s
+            display: inline-block
+            vertical-align: middle
+            font-family: "SegoeUILight", sans-serif
+            margin-right: 20px
+            &:last-child
+              margin-right: 0
+
+            &:hover
+              text-decoration: none
+              transition: all 0.35s
+              color: #fdc300
+          &.show
+            display: block
+
+
+    .lang-holder
+      a
+        color: #c8c6c6
+        font-family: "SegoeUILight", sans-serif
+        margin-right: 15px
+        transition: all 0.35s
+        display: inline-block
+        vertical-align: middle
+        &.active
+          color: #fff
+        &:last-child
+          margin-right: 0
+        &:hover
+          text-decoration: none
+          transition: all 0.35s
+          color: #fdc300
