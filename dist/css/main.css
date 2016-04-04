@@ -291,6 +291,8 @@ header .bx-wrapper {
 #visu {
   background: url("../img/bg/bg_visa.jpg") no-repeat center;
   background-size: cover; }
+  #visu.mobile {
+    display: none; }
   #visu h3 {
     color: #fdc300; }
   #visu .wrap {
@@ -437,9 +439,9 @@ header .bx-wrapper {
       transition: all 0.35s;
       background-position: 0 0; }
   .bx-wrapper .bx-controls-direction .bg-next {
-    right: 0; }
+    right: 0 !important; }
   .bx-wrapper .bx-controls-direction .bx-prev {
-    left: 0;
+    left: 0 !important;
     -webkit-transform: rotate(180deg);
             transform: rotate(180deg); }
   .bx-wrapper .bx-viewport {
@@ -448,6 +450,9 @@ header .bx-wrapper {
     box-shadow: none !important;
     left: 0 !important;
     border: 0 !important; }
+
+#jobs.mobile {
+  display: none; }
 
 #jobs .job-holder {
   padding: 60px 0; }
@@ -598,10 +603,11 @@ header .bx-wrapper {
       color: #000; }
 
 .questions {
-  margin-bottom: 100px; }
+  margin-bottom: 5px; }
 
 #contacts {
-  margin-bottom: 100px; }
+  margin-bottom: 100px;
+  padding-top: 50px; }
   #contacts .text-holder {
     width: 300px;
     display: inline-block;
@@ -688,7 +694,8 @@ footer {
   position: absolute;
   top: 100px;
   z-index: 5;
-  width: 100%; }
+  width: 100%;
+  text-align: center; }
   .top-line .wrap {
     position: relative; }
     .top-line .wrap > div {
@@ -726,7 +733,8 @@ footer {
       margin-right: 30px; }
       .top-line .wrap .header-phone .city .city_active {
         min-width: 65px;
-        display: inline-block; }
+        display: inline-block;
+        text-align: left; }
       .top-line .wrap .header-phone .city:after {
         position: absolute;
         top: 50%;
@@ -841,3 +849,83 @@ footer {
           transition: all 0.35s;
           color: #0e6eb8;
           text-decoration: none; }
+
+@media screen and (max-width: 1023px) {
+  .wrap {
+    width: 900px; }
+  #menu-holder #menu li {
+    margin: 0 10px; }
+  #call_back form input[type="text"], #call_back form input[type="email"] {
+    width: 212px; }
+  #contacts .text-holder {
+    margin-right: 0;
+    width: 295px; } }
+
+@media screen and (max-width: 959px) {
+  .wrap {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 20px; }
+  h3 {
+    font-size: 24px; }
+  #advantage ul li,
+  #how_works .works_items .item {
+    width: 49%; }
+  #contacts {
+    margin-bottom: 50px; }
+    #contacts .text-holder {
+      width: 100%; }
+    #contacts #map {
+      height: 230px;
+      width: 100%; }
+  #call_back form .row > div {
+    display: block;
+    margin-bottom: 20px; }
+  #call_back .btn.submit {
+    margin: auto; }
+  #call_back form {
+    margin-top: 20px; }
+  #call_back form input[type="text"], #call_back form input[type="email"] {
+    width: 100%;
+    margin: 0; }
+  body {
+    font-size: 14px; }
+  #advantage ul li .text-holder h4,
+  #faq .slider_faq .item_faq h4 {
+    font-size: 18px; }
+  .bx-wrapper {
+    padding: 0 20px !important; }
+    .bx-wrapper .bx-controls-direction .bx-prev, .bx-wrapper .bx-controls-direction .bx-next {
+      width: 16px;
+      height: 26px;
+      margin-top: -13px; }
+  #faq .slider_faq .item_faq {
+    padding: 10px; }
+    #faq .slider_faq .item_faq p {
+      font-size: 14px; }
+  #jobs .tabs-menu .nav.nav-tabs li,
+  #visu .tabs-menu .nav.nav-tabs li {
+    padding: 7px; }
+  footer .wrap > div {
+    margin-right: 10px; }
+  #jobs .job-holder {
+    padding: 50px 0; }
+    #jobs .job-holder .tabs .tab-content {
+      height: 505px; }
+    #jobs .job-holder .jobs_item .text-holder ul {
+      height: 145px; } }
+
+@media screen and (max-width: 700px) {
+  #jobs, #visu {
+    display: none; }
+    #jobs.mobile, #visu.mobile {
+      display: block; } }
+
+@media screen and (max-width: 600px) {
+  #advantage ul li,
+  #how_works .works_items .item {
+    width: 100%; }
+  [id^="modal_form"] {
+    width: calc( 100% - 20px);
+    left: 10px;
+    margin-left: 0; } }

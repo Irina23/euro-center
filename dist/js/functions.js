@@ -52,7 +52,12 @@ jQuery(document).ready(function() {
 //bxslider
     jQuery(window).load(function() {
 
-        jQuery('.visa_slider').each(function() {
+
+
+
+
+
+        jQuery('.jobs_slider1,.visa_slider1').each(function() {
             jQuery(this).bxSlider({
                 //auto: true,
                 minSlides: 3,
@@ -67,25 +72,12 @@ jQuery(document).ready(function() {
 
 
 
-
-        jQuery('.jobs_slider').each(function() {
-            jQuery(this).bxSlider({
-                //auto: true,
-                minSlides: 3,
-                maxSlides: 3,
-                slideWidth: 500,
-                nextText: "",
-                prevText: "",
-                slideMargin: 20
-
-            });
-        });
 
 
     });
 
 
-    jQuery('.slider_faq').bxSlider({
+    jQuery('.slider_faq,.jobs_slider2,.visa_slider2').bxSlider({
         nextText: "",
         prevText: "",
         adaptiveHeight: true
