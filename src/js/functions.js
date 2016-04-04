@@ -158,6 +158,18 @@ jQuery(document).ready(function() {
         top = jQuery(id).offset().top;
         jQuery('body,html').animate({scrollTop: top}, 1500);
     });
+    jQuery("#menu-icon").on("click", function () {
+        jQuery(this).next().slideToggle();
+    });
+    jQuery("#menu a").on("click", function(){
+
+        if (jQuery(window).width() <= 959) {
+            jQuery("#menu").slideToggle();
+
+        }
+
+
+    });
 ///main slider
     $(function() {
 

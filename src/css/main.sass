@@ -959,24 +959,26 @@ footer
       top: 0
       left: 0
       width: 100%
-      background: rgba(253, 195, 0, 0.7)
-      z-index: 10
+      background: rgba(253, 195, 0, 0.8)
+      z-index: 1001
+      padding: 15px 0
 
 
 
 
       #menu-icon
+
         display: none
         color: #fff
         cursor: pointer
         transition: all 0.35s
         &:hover
             transition: all 0.35s
-            color: #fdc300
+            color: #0e6eb8
             i
               .icon-bar
                 transition: all 0.35s
-                background-color: #fdc300
+                background-color: #0e6eb8
         i
           margin-right: 10px
           display: inline-block
@@ -997,7 +999,7 @@ footer
 
 
       #menu
-        padding: 15px
+
         text-align: center
         li
           display: inline-block
@@ -1105,12 +1107,56 @@ footer
         height: 145px
 
 
+  #menu-holder
+    #menu-icon
+      display: block
+    #menu
+      display: none
+      li
+        margin: 10px 0
+        display: block
+        a
+          padding: 10px 0
+
+
+
+
+  .top-line
+    .wrap
+      .header-phone .city
+        margin-right: 15px
+      > div
+        padding-right: 15px
+        &:last-child
+          padding-right: 0
+
+
+
+@media screen and (max-width: 800px)
+  .top-line
+    .wrap
+       >div
+          display: block
+          padding-right: 0
+          margin-bottom: 20px
+
+       .header-phone .city
+          margin-right: 0
+          margin-bottom: 15px
+
+
 
 @media screen and (max-width: 700px)
   #jobs,#visu
     display: none
     &.mobile
       display: block
+
+
+  body .main_slider .sl-slider h2
+    padding-top: 200px
+
+
 @media screen and (max-width: 600px)
   #advantage ul li,
   #how_works .works_items .item
@@ -1120,3 +1166,10 @@ footer
     width: calc( 100% - 20px)
     left: 10px
     margin-left: 0
+
+
+@media screen and (max-width: 480px)
+  body .main_slider .sl-slider h2
+    font-size: 24px
+    padding-top: 240px
+    padding-bottom: 0
