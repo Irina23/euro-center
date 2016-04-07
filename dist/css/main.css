@@ -763,12 +763,12 @@ header .bx-wrapper {
       text-overflow: ellipsis;
       overflow: hidden;
       white-space: nowrap;
-      color: #0e6eb8;
+      color: #000;
       font-weight: normal; }
     #faq .slider_faq .item_faq p {
-      font-size: 16px;
-      line-height: 1.3em;
-      color: #000; }
+      font-size: 14px;
+      line-height: 2em;
+      color: #727272; }
 
 .questions {
   margin-bottom: 5px; }
