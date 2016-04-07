@@ -111,6 +111,8 @@
 .bx-wrapper .bx-next {
 	right: 0;
 	background: url(images/controls.png) no-repeat -43px -32px;
+	-webkit-transform: rotate(180deg);
+	transform: rotate(180deg);
 }
 
 .bx-wrapper .bx-prev:hover {

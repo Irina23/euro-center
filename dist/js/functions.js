@@ -150,6 +150,22 @@ jQuery(document).ready(function() {
     });
 
 
+
+
+    jQuery(window).scroll(function () {
+
+        if ((jQuery(this).scrollTop() > 20) ) {
+            jQuery("#menu-holder").addClass("fixed");
+            // console.log("fbhdfh5555");
+
+
+        } else{
+            jQuery("#menu-holder").removeClass("fixed");
+        }
+    });
+
+
+
 ///menu
     jQuery("#menu").on("click","a[href^='#']", function (event) {
 

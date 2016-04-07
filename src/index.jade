@@ -8,72 +8,83 @@ html(lang="ru")
             include ./header.jade
 
             .container
-                .wrap
-                    #call_back
+                #call_back
+                    .wrap
                         h3 Замовити дзвінок
-                        hr
+
                         form.call_back_form
                             .row
                                 div
-                                    input(type="text", placeholder="Ім'я", name="name", minlength="2", data-validate="name")
+                                    input(type="text", placeholder="Ім'я:", name="name", minlength="2", data-validate="name")
 
                                 div
-                                    input(type="text", placeholder="Телефон", name="phone", data-validate="phone")
+                                    input(type="text", placeholder="Телефон:", name="phone", data-validate="phone")
 
 
                                 div
-                                    input(type="email", placeholder="E-mail", name="email", data-validate="email")
+                                    input(type="email", placeholder="E-mail:", name="email", data-validate="email")
 
                                 .btn.submit Надіслати
+                #advantage
+                        .wrap
+                            h3 Наші переваги
+                            //hr
+                            //.text-advantage.
+                                Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні.
+                                Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя,
 
-                    #advantage
-                        h3 Наші переваги
-                        hr
-                        ul
-                            li
-                                .img-holder
-                                    img(src="img/content/advantage1.png")
-                                .text-holder
-                                    h4 Заголовок
-                                    p Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів.
+                            ul
+                                li
 
-                            li
-                                .img-holder
-                                    img(src="img/content/advantage2.png")
-                                .text-holder
-                                    h4 Заголовок
-                                    p Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів.
+                                    .number 01
 
-                            li
-                                .img-holder
-                                    img(src="img/content/advantage3.png")
-                                .text-holder
-                                    h4 Заголовок
-                                    p Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів.
-                            li
-                                .img-holder
-                                    img(src="img/content/advantage4.png")
-                                .text-holder
-                                    h4 Заголовок
-                                    p Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів.
-                            li
-                                .img-holder
-                                    img(src="img/content/advantage5.png")
-                                .text-holder
-                                    h4 Заголовок
-                                    p Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів.
+                                    .text-holder
+                                        h4 Досвід
+                                        p Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар
 
-                            li
-                                .img-holder
-                                    img(src="img/content/advantage6.png")
-                                .text-holder
-                                    h4 Заголовок
-                                    p Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів.
+
+                                li
+
+                                    .number 02
+                                    .text-holder
+                                        h4 Широкий вибір
+                                        p Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар
+
+
+                                li
+
+                                    .number 03
+                                    .text-holder
+                                        h4 Повний супровід
+                                        p Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар
+
+                                li
+
+                                    .number 04
+                                    .text-holder
+                                        h4 Безкоштовні консультації
+                                        p Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар
+
+                                li
+
+                                    .number 05
+                                    .text-holder
+                                        h4 Актуальні вакансії
+                                        p Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар
+
+
+                                li
+
+                                    .number 06
+                                    .text-holder
+                                        h4 Представництво в Польщі
+                                        p Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар
+
 
                 #visu
                     .wrap.cf
                         h3 Відкриття віз
-                        hr
+                        //hr
 
                         .tabs
                             .tabs-menu.cf
@@ -86,56 +97,43 @@ html(lang="ru")
                                     .visa_slider1
                                         .visa_item
                                             .text-holder
-                                                h4 Робоча
-                                                div
-                                                    span.name Оформлення:
-                                                    span.value 20 - 40 днів
-                                                div
-                                                    span.name  Період візи:
-                                                    span.value.time 180/180 днів
-                                                div
-                                                    span.name  Вартість:
-                                                    span.value.price 120€
-                                                div
-                                                    span.name Додатковий збір:
-                                                    span.value Безкоштовна реєстрація, 470 грн - Візовий центр
+                                                .title-holder.cf
+
+                                                    h4 Робоча
+                                                    div.price €120
+                                                    div.time-holder
+                                                        span.name  Період візи:
+                                                        span.value.time 180/180 днів
+
+
+                                                .block_text
+                                                    div Оформлення 20 - 40 днів
+                                                    div
+                                                        span.value Безкоштовна реєстрація, 470 грн - Візовий центр
+                                                    div.text_visa Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар
+
+
 
                                                 a(href="#modal_form" class="more open_modal") Детальніше
 
                                         .visa_item
                                             .text-holder
-                                                h4 Робоча
-                                                div
-                                                    span.name Оформлення:
-                                                    span.value 20 - 40 днів
-                                                div
-                                                    span.name  Період візи:
-                                                    span.value.time 360/360 днів
-                                                div
-                                                    span.name  Вартість:
-                                                    span.value.price 400€
-                                                div
-                                                    span.name Додатковий збір:
-                                                    span.value Безкоштовна реєстрація, 470 грн - Візовий центр
+                                                .title-holder.cf
 
-                                                a(href="#modal_form" class="more open_modal") Детальніше
+                                                    h4 Робоча
+                                                    div.price €400
+                                                    div.time-holder
+                                                        span.name  Період візи:
+                                                        span.value.time 360/360 днів
 
 
-                                        .visa_item
-                                            .text-holder
-                                                h4 Шенген
-                                                div
-                                                    span.name Оформлення:
-                                                    span.value 10 - 20 днів
-                                                div
-                                                    span.name  Період візи:
-                                                    span.value.time 360/180 днів
-                                                div
-                                                    span.name  Вартість:
-                                                    span.value.price 30€
-                                                div
-                                                    span.name Додатковий збір:
-                                                    span.value Безкоштовна реєстрація, 470 грн - Візовий центр
+                                                .block_text
+                                                    div Оформлення 20 - 40 днів
+                                                    div
+                                                        span.value Безкоштовна реєстрація, 470 грн - Візовий центр
+                                                    div.text_visa Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар
+
+
 
                                                 a(href="#modal_form" class="more open_modal") Детальніше
 
@@ -143,175 +141,103 @@ html(lang="ru")
 
                                         .visa_item
                                             .text-holder
-                                                h4 Робоча
+                                                .title-holder.cf
 
-                                                div
-                                                    span.name Оформлення:
-                                                    span.value 10 - 20 днів
-                                                div
-                                                    span.name  Період візи:
-                                                    span.value.time 720/360 днів
-                                                div
-                                                    span.name  Вартість:
-                                                    span.value.price  120€
-                                                div
-                                                    span.name Додатковий збір:
-                                                    span.value Безкоштовна реєстрація, 470 грн - Візовий центр
+                                                    h4 Робоча
+                                                    div.price €120
+                                                    div.time-holder
+                                                        span.name  Період візи:
+                                                        span.value.time 180/180 днів
+
+
+                                                .block_text
+                                                    div Оформлення 20 - 40 днів
+                                                    div
+                                                        span.value Безкоштовна реєстрація, 470 грн - Візовий центр
+                                                    div.text_visa Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар
+
+
+
                                                 a(href="#modal_form" class="more open_modal") Детальніше
-
 
                                         .visa_item
                                             .text-holder
-                                                h4 Шенген
-                                                div
-                                                    span.name Оформлення:
-                                                    span.value 10 - 20 днів
-                                                div
-                                                    span.name  Період візи:
-                                                    span.value.time 360/180 днів
-                                                div
-                                                    span.name  Вартість:
-                                                    span.value.price  300€
-                                                div
-                                                    span.name Додатковий збір:
-                                                    span.value Безкоштовна реєстрація, 470 грн - Візовий центр
-                                                a(href="#modal_form" class="more open_modal") Детальніше
+                                                .title-holder.cf
+
+                                                    h4 Робоча
+                                                    div.price €400
+                                                    div.time-holder
+                                                        span.name  Період візи:
+                                                        span.value.time 360/360 днів
 
 
-                                        .visa_item
-                                            .text-holder
-                                                h4 Робоча
+                                                .block_text
+                                                    div Оформлення 20 - 40 днів
+                                                    div
+                                                        span.value Безкоштовна реєстрація, 470 грн - Візовий центр
+                                                    div.text_visa Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар
 
-                                                div
-                                                    span.name Оформлення:
-                                                    span.value 10 - 20 днів
-                                                div
-                                                    span.name  Період візи:
-                                                    span.value.time 720/360 днів
-                                                div
-                                                    span.name  Вартість:
-                                                    span.value.price  120€
-                                                div
-                                                    span.name Додатковий збір:
-                                                    span.value Безкоштовна реєстрація, 470 грн - Візовий центр
+
+
                                                 a(href="#modal_form" class="more open_modal") Детальніше
 
                                 .tab-pane#lithuania1
                                     .visa_slider1
                                         .visa_item
                                             .text-holder
-                                                h4 Шенген
-                                                div
-                                                    span.name Оформлення:
-                                                    span.value 7 - 14 днів
-                                                div
-                                                    span.name  Період візи:
-                                                    span.value.time 180/180 днів
-                                                div
-                                                    span.name  Вартість:
-                                                    span.value.price  120€
-                                                div
-                                                    span.name Додатковий збір:
-                                                    span.value Безкоштовна реєстрація, 470 грн - Візовий центр
+                                                .title-holder.cf
+                                                    h4 Робоча
+                                                    div.price €120
+                                                    div.time-holder
+                                                        span.name  Період візи:
+                                                        span.value.time 180/180 днів
+                                                .block_text
+                                                    div Оформлення 20 - 40 днів
+                                                    div
+                                                        span.value Безкоштовна реєстрація, 470 грн - Візовий центр
+                                                    div.text_visa Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар
                                                 a(href="#modal_form" class="more open_modal") Детальніше
-
-
-
                                         .visa_item
                                             .text-holder
-                                                h4 Шенген
-                                                div
-                                                    span.name Оформлення:
-                                                    span.value 7 - 14 днів
-                                                div
-                                                    span.name  Період візи:
-                                                    span.value.time 360/360 днів
-                                                div
-                                                    span.name  Вартість:
-                                                    span.value.price  400€
-                                                div
-                                                    span.name Додатковий збір:
-                                                    span.value Безкоштовна реєстрація, 470 грн - Візовий центр
+                                                .title-holder.cf
+                                                    h4 Робоча
+                                                    div.price €400
+                                                    div.time-holder
+                                                        span.name  Період візи:
+                                                        span.value.time 360/360 днів
+                                                .block_text
+                                                    div Оформлення 20 - 40 днів
+                                                    div
+                                                        span.value Безкоштовна реєстрація, 470 грн - Візовий центр
+                                                    div.text_visa Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар
                                                 a(href="#modal_form" class="more open_modal") Детальніше
-
-
                                         .visa_item
                                             .text-holder
-                                                h4 Шенген
-
-
-                                                div
-                                                    span.name Оформлення:
-                                                    span.value 7 - 14 днів
-                                                div
-                                                    span.name  Період візи:
-                                                    span.value.time 360/180 днів
-                                                div
-                                                    span.name  Вартість:
-                                                    span.value.price  300€
-                                                div
-                                                    span.name Додатковий збір:
-                                                    span.value Безкоштовна реєстрація, 470 грн - Візовий центр
+                                                .title-holder.cf
+                                                    h4 Робоча
+                                                    div.price €120
+                                                    div.time-holder
+                                                        span.name  Період візи:
+                                                        span.value.time 180/180 днів
+                                                .block_text
+                                                    div Оформлення 20 - 40 днів
+                                                    div
+                                                        span.value Безкоштовна реєстрація, 470 грн - Візовий центр
+                                                    div.text_visa Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар
                                                 a(href="#modal_form" class="more open_modal") Детальніше
-
-
                                         .visa_item
                                             .text-holder
-                                                h4 Шенген
-
-
-                                                div
-                                                    span.name Оформлення:
-                                                    span.value 7 - 14 днів
-                                                div
-                                                    span.name  Період візи:
-                                                    span.value.time 720/360 днів
-                                                div
-                                                    span.name  Вартість:
-                                                    span.value.price 120€
-                                                div
-                                                    span.name Додатковий збір:
-                                                    span.value Безкоштовна реєстрація, 470 грн - Візовий центр
-                                                a(href="#modal_form" class="more open_modal") Детальніше
-
-
-                                        .visa_item
-                                            .text-holder
-                                                h4 Шенген
-
-
-                                                div
-                                                    span.name Оформлення:
-                                                    span.value 7 - 14 днів
-                                                div
-                                                    span.name  Період візи:
-                                                    span.value.time 360/180 днів
-                                                div
-                                                    span.name  Вартість:
-                                                    span.value.price 300€
-                                                div
-                                                    span.name Додатковий збір:
-                                                    span.value Безкоштовна реєстрація, 470 грн - Візовий центр
-                                                a(href="#modal_form" class="more open_modal") Детальніше
-
-
-                                        .visa_item
-                                            .text-holder
-                                                h4 Шенген
-
-
-                                                div
-                                                    span.name Оформлення:
-                                                    span.value 7 - 14 днів
-                                                div
-                                                    span.name  Період візи:
-                                                    span.value.time 720/360 днів
-                                                div
-                                                    span.name  Вартість:
-                                                    span.value.price 120€
-                                                div
-                                                    span.name Додатковий збір:
-                                                    span.value Безкоштовна реєстрація, 470 грн - Візовий центр
+                                                .title-holder.cf
+                                                    h4 Робоча
+                                                    div.price €400
+                                                    div.time-holder
+                                                        span.name  Період візи:
+                                                        span.value.time 360/360 днів
+                                                .block_text
+                                                    div Оформлення 20 - 40 днів
+                                                    div
+                                                        span.value Безкоштовна реєстрація, 470 грн - Візовий центр
+                                                    div.text_visa Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар
                                                 a(href="#modal_form" class="more open_modal") Детальніше
 
 
@@ -320,120 +246,59 @@ html(lang="ru")
                                     .visa_slider1
                                         .visa_item
                                             .text-holder
-                                                h4 Шенген
-                                                div
-                                                    span.name Оформлення:
-                                                    span.value 14 - 25 днів
-                                                div
-                                                    span.name  Період візи:
-                                                    span.value.time 180/180 днів
-                                                div
-                                                    span.name  Вартість:
-                                                    span.value.price 120€
-                                                div
-                                                    span.name Додатковий збір:
-                                                    span.value Безкоштовна реєстрація, 470 грн - Візовий центр
+                                                .title-holder.cf
+                                                    h4 Робоча
+                                                    div.price €120
+                                                    div.time-holder
+                                                        span.name  Період візи:
+                                                        span.value.time 180/180 днів
+                                                .block_text
+                                                    div Оформлення 20 - 40 днів
+                                                    div
+                                                        span.value Безкоштовна реєстрація, 470 грн - Візовий центр
+                                                    div.text_visa Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар
                                                 a(href="#modal_form" class="more open_modal") Детальніше
-
-
                                         .visa_item
                                             .text-holder
-                                                h4 Шенген
-
-
-                                                div
-                                                    span.name Оформлення:
-                                                    span.value 14 - 25 днів
-                                                div
-                                                    span.name  Період візи:
-                                                    span.value.time 360/360 днів
-                                                div
-                                                    span.name  Вартість:
-                                                    span.value.price 400€
-                                                div
-                                                    span.name Додатковий збір:
-                                                    span.value Безкоштовна реєстрація, 470 грн - Візовий центр
+                                                .title-holder.cf
+                                                    h4 Робоча
+                                                    div.price €400
+                                                    div.time-holder
+                                                        span.name  Період візи:
+                                                        span.value.time 360/360 днів
+                                                .block_text
+                                                    div Оформлення 20 - 40 днів
+                                                    div
+                                                        span.value Безкоштовна реєстрація, 470 грн - Візовий центр
+                                                    div.text_visa Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар
                                                 a(href="#modal_form" class="more open_modal") Детальніше
-
-
-
-
                                         .visa_item
                                             .text-holder
-                                                h4 Шенген
-
-
-                                                div
-                                                    span.name Оформлення:
-                                                    span.value 14 - 25 днів
-                                                div
-                                                    span.name  Період візи:
-                                                    span.value.time 360/180 днів
-                                                div
-                                                    span.name  Вартість:
-                                                    span.value.price 300€
-                                                div
-                                                    span.name Додатковий збір:
-                                                    span.value Безкоштовна реєстрація, 470 грн - Візовий центр
+                                                .title-holder.cf
+                                                    h4 Робоча
+                                                    div.price €120
+                                                    div.time-holder
+                                                        span.name  Період візи:
+                                                        span.value.time 180/180 днів
+                                                .block_text
+                                                    div Оформлення 20 - 40 днів
+                                                    div
+                                                        span.value Безкоштовна реєстрація, 470 грн - Візовий центр
+                                                    div.text_visa Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар
                                                 a(href="#modal_form" class="more open_modal") Детальніше
-
-
-
                                         .visa_item
                                             .text-holder
-                                                h4 Шенген
-                                                div
-                                                    span.name Оформлення:
-                                                    span.value 14 - 25 днів
-                                                div
-                                                    span.name  Період візи:
-                                                    span.value.time 720/360 днів
-                                                div
-                                                    span.name  Вартість:
-                                                    span.value.price 120€
-                                                div
-                                                    span.name Додатковий збір:
-                                                    span.value Безкоштовна реєстрація, 470 грн - Візовий центр
-                                                a(href="#modal_form" class="more open_modal") Детальніше
-
-
-                                        .visa_item
-                                            .text-holder
-                                                h4 Шенген
-
-                                                div
-                                                    span.name Оформлення:
-                                                    span.value 14 - 25 днів
-                                                div
-                                                    span.name  Період візи:
-                                                    span.value.time 360/180 днів
-                                                div
-                                                    span.name  Вартість:
-                                                    span.value.price 300€
-                                                div
-                                                    span.name Додатковий збір:
-                                                    span.value Безкоштовна реєстрація, 470 грн - Візовий центр
-                                                a(href="#modal_form" class="more open_modal") Детальніше
-
-
-
-
-                                        .visa_item
-                                            .text-holder
-                                                h4 Шенген
-
-                                                div
-                                                    span.name Оформлення:
-                                                    span.value 14 - 25 днів
-                                                div
-                                                    span.name  Період візи:
-                                                    span.value.time 720/360 днів
-                                                div
-                                                    span.name  Вартість:
-                                                    span.value.price 120€
-                                                div
-                                                    span.name Додатковий збір:
-                                                    span.value Безкоштовна реєстрація, 470 грн - Візовий центр
+                                                .title-holder.cf
+                                                    h4 Робоча
+                                                    div.price €400
+                                                    div.time-holder
+                                                        span.name  Період візи:
+                                                        span.value.time 360/360 днів
+                                                .block_text
+                                                    div Оформлення 20 - 40 днів
+                                                    div
+                                                        span.value Безкоштовна реєстрація, 470 грн - Візовий центр
+                                                    div.text_visa Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар
                                                 a(href="#modal_form" class="more open_modal") Детальніше
 
 
@@ -442,7 +307,7 @@ html(lang="ru")
                 #visu.mobile
                     .wrap.cf
                         h3 Відкриття віз
-                        hr
+                        //hr
 
                         .tabs
                             .tabs-menu.cf
@@ -455,56 +320,43 @@ html(lang="ru")
                                     .visa_slider2
                                         .visa_item
                                             .text-holder
-                                                h4 Робоча
-                                                div
-                                                    span.name Оформлення:
-                                                    span.value 20 - 40 днів
-                                                div
-                                                    span.name  Період візи:
-                                                    span.value.time 180/180 днів
-                                                div
-                                                    span.name  Вартість:
-                                                    span.value.price 120€
-                                                div
-                                                    span.name Додатковий збір:
-                                                    span.value Безкоштовна реєстрація, 470 грн - Візовий центр
+                                                .title-holder.cf
+
+                                                    h4 Робоча
+                                                    div.price €120
+                                                    div.time-holder
+                                                        span.name  Період візи:
+                                                        span.value.time 180/180 днів
+
+
+                                                .block_text
+                                                    div Оформлення 20 - 40 днів
+                                                    div
+                                                        span.value Безкоштовна реєстрація, 470 грн - Візовий центр
+                                                    div.text_visa Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар
+
+
 
                                                 a(href="#modal_form" class="more open_modal") Детальніше
 
                                         .visa_item
                                             .text-holder
-                                                h4 Робоча
-                                                div
-                                                    span.name Оформлення:
-                                                    span.value 20 - 40 днів
-                                                div
-                                                    span.name  Період візи:
-                                                    span.value.time 360/360 днів
-                                                div
-                                                    span.name  Вартість:
-                                                    span.value.price 400€
-                                                div
-                                                    span.name Додатковий збір:
-                                                    span.value Безкоштовна реєстрація, 470 грн - Візовий центр
+                                                .title-holder.cf
 
-                                                a(href="#modal_form" class="more open_modal") Детальніше
+                                                    h4 Робоча
+                                                    div.price €400
+                                                    div.time-holder
+                                                        span.name  Період візи:
+                                                        span.value.time 360/360 днів
 
 
-                                        .visa_item
-                                            .text-holder
-                                                h4 Шенген
-                                                div
-                                                    span.name Оформлення:
-                                                    span.value 10 - 20 днів
-                                                div
-                                                    span.name  Період візи:
-                                                    span.value.time 360/180 днів
-                                                div
-                                                    span.name  Вартість:
-                                                    span.value.price 30€
-                                                div
-                                                    span.name Додатковий збір:
-                                                    span.value Безкоштовна реєстрація, 470 грн - Візовий центр
+                                                .block_text
+                                                    div Оформлення 20 - 40 днів
+                                                    div
+                                                        span.value Безкоштовна реєстрація, 470 грн - Візовий центр
+                                                    div.text_visa Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар
+
+
 
                                                 a(href="#modal_form" class="more open_modal") Детальніше
 
@@ -512,175 +364,103 @@ html(lang="ru")
 
                                         .visa_item
                                             .text-holder
-                                                h4 Робоча
+                                                .title-holder.cf
 
-                                                div
-                                                    span.name Оформлення:
-                                                    span.value 10 - 20 днів
-                                                div
-                                                    span.name  Період візи:
-                                                    span.value.time 720/360 днів
-                                                div
-                                                    span.name  Вартість:
-                                                    span.value.price  120€
-                                                div
-                                                    span.name Додатковий збір:
-                                                    span.value Безкоштовна реєстрація, 470 грн - Візовий центр
+                                                    h4 Робоча
+                                                    div.price €120
+                                                    div.time-holder
+                                                        span.name  Період візи:
+                                                        span.value.time 180/180 днів
+
+
+                                                .block_text
+                                                    div Оформлення 20 - 40 днів
+                                                    div
+                                                        span.value Безкоштовна реєстрація, 470 грн - Візовий центр
+                                                    div.text_visa Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар
+
+
+
                                                 a(href="#modal_form" class="more open_modal") Детальніше
-
 
                                         .visa_item
                                             .text-holder
-                                                h4 Шенген
-                                                div
-                                                    span.name Оформлення:
-                                                    span.value 10 - 20 днів
-                                                div
-                                                    span.name  Період візи:
-                                                    span.value.time 360/180 днів
-                                                div
-                                                    span.name  Вартість:
-                                                    span.value.price  300€
-                                                div
-                                                    span.name Додатковий збір:
-                                                    span.value Безкоштовна реєстрація, 470 грн - Візовий центр
-                                                a(href="#modal_form" class="more open_modal") Детальніше
+                                                .title-holder.cf
+
+                                                    h4 Робоча
+                                                    div.price €400
+                                                    div.time-holder
+                                                        span.name  Період візи:
+                                                        span.value.time 360/360 днів
 
 
-                                        .visa_item
-                                            .text-holder
-                                                h4 Робоча
+                                                .block_text
+                                                    div Оформлення 20 - 40 днів
+                                                    div
+                                                        span.value Безкоштовна реєстрація, 470 грн - Візовий центр
+                                                    div.text_visa Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар
 
-                                                div
-                                                    span.name Оформлення:
-                                                    span.value 10 - 20 днів
-                                                div
-                                                    span.name  Період візи:
-                                                    span.value.time 720/360 днів
-                                                div
-                                                    span.name  Вартість:
-                                                    span.value.price  120€
-                                                div
-                                                    span.name Додатковий збір:
-                                                    span.value Безкоштовна реєстрація, 470 грн - Візовий центр
+
+
                                                 a(href="#modal_form" class="more open_modal") Детальніше
 
                                 .tab-pane#lithuania2
                                     .visa_slider2
                                         .visa_item
                                             .text-holder
-                                                h4 Шенген
-                                                div
-                                                    span.name Оформлення:
-                                                    span.value 7 - 14 днів
-                                                div
-                                                    span.name  Період візи:
-                                                    span.value.time 180/180 днів
-                                                div
-                                                    span.name  Вартість:
-                                                    span.value.price  120€
-                                                div
-                                                    span.name Додатковий збір:
-                                                    span.value Безкоштовна реєстрація, 470 грн - Візовий центр
+                                                .title-holder.cf
+                                                    h4 Робоча
+                                                    div.price €120
+                                                    div.time-holder
+                                                        span.name  Період візи:
+                                                        span.value.time 180/180 днів
+                                                .block_text
+                                                    div Оформлення 20 - 40 днів
+                                                    div
+                                                        span.value Безкоштовна реєстрація, 470 грн - Візовий центр
+                                                    div.text_visa Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар
                                                 a(href="#modal_form" class="more open_modal") Детальніше
-
-
-
                                         .visa_item
                                             .text-holder
-                                                h4 Шенген
-                                                div
-                                                    span.name Оформлення:
-                                                    span.value 7 - 14 днів
-                                                div
-                                                    span.name  Період візи:
-                                                    span.value.time 360/360 днів
-                                                div
-                                                    span.name  Вартість:
-                                                    span.value.price  400€
-                                                div
-                                                    span.name Додатковий збір:
-                                                    span.value Безкоштовна реєстрація, 470 грн - Візовий центр
+                                                .title-holder.cf
+                                                    h4 Робоча
+                                                    div.price €400
+                                                    div.time-holder
+                                                        span.name  Період візи:
+                                                        span.value.time 360/360 днів
+                                                .block_text
+                                                    div Оформлення 20 - 40 днів
+                                                    div
+                                                        span.value Безкоштовна реєстрація, 470 грн - Візовий центр
+                                                    div.text_visa Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар
                                                 a(href="#modal_form" class="more open_modal") Детальніше
-
-
                                         .visa_item
                                             .text-holder
-                                                h4 Шенген
-
-
-                                                div
-                                                    span.name Оформлення:
-                                                    span.value 7 - 14 днів
-                                                div
-                                                    span.name  Період візи:
-                                                    span.value.time 360/180 днів
-                                                div
-                                                    span.name  Вартість:
-                                                    span.value.price  300€
-                                                div
-                                                    span.name Додатковий збір:
-                                                    span.value Безкоштовна реєстрація, 470 грн - Візовий центр
+                                                .title-holder.cf
+                                                    h4 Робоча
+                                                    div.price €120
+                                                    div.time-holder
+                                                        span.name  Період візи:
+                                                        span.value.time 180/180 днів
+                                                .block_text
+                                                    div Оформлення 20 - 40 днів
+                                                    div
+                                                        span.value Безкоштовна реєстрація, 470 грн - Візовий центр
+                                                    div.text_visa Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар
                                                 a(href="#modal_form" class="more open_modal") Детальніше
-
-
                                         .visa_item
                                             .text-holder
-                                                h4 Шенген
-
-
-                                                div
-                                                    span.name Оформлення:
-                                                    span.value 7 - 14 днів
-                                                div
-                                                    span.name  Період візи:
-                                                    span.value.time 720/360 днів
-                                                div
-                                                    span.name  Вартість:
-                                                    span.value.price 120€
-                                                div
-                                                    span.name Додатковий збір:
-                                                    span.value Безкоштовна реєстрація, 470 грн - Візовий центр
-                                                a(href="#modal_form" class="more open_modal") Детальніше
-
-
-                                        .visa_item
-                                            .text-holder
-                                                h4 Шенген
-
-
-                                                div
-                                                    span.name Оформлення:
-                                                    span.value 7 - 14 днів
-                                                div
-                                                    span.name  Період візи:
-                                                    span.value.time 360/180 днів
-                                                div
-                                                    span.name  Вартість:
-                                                    span.value.price 300€
-                                                div
-                                                    span.name Додатковий збір:
-                                                    span.value Безкоштовна реєстрація, 470 грн - Візовий центр
-                                                a(href="#modal_form" class="more open_modal") Детальніше
-
-
-                                        .visa_item
-                                            .text-holder
-                                                h4 Шенген
-
-
-                                                div
-                                                    span.name Оформлення:
-                                                    span.value 7 - 14 днів
-                                                div
-                                                    span.name  Період візи:
-                                                    span.value.time 720/360 днів
-                                                div
-                                                    span.name  Вартість:
-                                                    span.value.price 120€
-                                                div
-                                                    span.name Додатковий збір:
-                                                    span.value Безкоштовна реєстрація, 470 грн - Візовий центр
+                                                .title-holder.cf
+                                                    h4 Робоча
+                                                    div.price €400
+                                                    div.time-holder
+                                                        span.name  Період візи:
+                                                        span.value.time 360/360 днів
+                                                .block_text
+                                                    div Оформлення 20 - 40 днів
+                                                    div
+                                                        span.value Безкоштовна реєстрація, 470 грн - Візовий центр
+                                                    div.text_visa Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар
                                                 a(href="#modal_form" class="more open_modal") Детальніше
 
 
@@ -689,120 +469,59 @@ html(lang="ru")
                                     .visa_slider2
                                         .visa_item
                                             .text-holder
-                                                h4 Шенген
-                                                div
-                                                    span.name Оформлення:
-                                                    span.value 14 - 25 днів
-                                                div
-                                                    span.name  Період візи:
-                                                    span.value.time 180/180 днів
-                                                div
-                                                    span.name  Вартість:
-                                                    span.value.price 120€
-                                                div
-                                                    span.name Додатковий збір:
-                                                    span.value Безкоштовна реєстрація, 470 грн - Візовий центр
+                                                .title-holder.cf
+                                                    h4 Робоча
+                                                    div.price €120
+                                                    div.time-holder
+                                                        span.name  Період візи:
+                                                        span.value.time 180/180 днів
+                                                .block_text
+                                                    div Оформлення 20 - 40 днів
+                                                    div
+                                                        span.value Безкоштовна реєстрація, 470 грн - Візовий центр
+                                                    div.text_visa Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар
                                                 a(href="#modal_form" class="more open_modal") Детальніше
-
-
                                         .visa_item
                                             .text-holder
-                                                h4 Шенген
-
-
-                                                div
-                                                    span.name Оформлення:
-                                                    span.value 14 - 25 днів
-                                                div
-                                                    span.name  Період візи:
-                                                    span.value.time 360/360 днів
-                                                div
-                                                    span.name  Вартість:
-                                                    span.value.price 400€
-                                                div
-                                                    span.name Додатковий збір:
-                                                    span.value Безкоштовна реєстрація, 470 грн - Візовий центр
+                                                .title-holder.cf
+                                                    h4 Робоча
+                                                    div.price €400
+                                                    div.time-holder
+                                                        span.name  Період візи:
+                                                        span.value.time 360/360 днів
+                                                .block_text
+                                                    div Оформлення 20 - 40 днів
+                                                    div
+                                                        span.value Безкоштовна реєстрація, 470 грн - Візовий центр
+                                                    div.text_visa Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар
                                                 a(href="#modal_form" class="more open_modal") Детальніше
-
-
-
-
                                         .visa_item
                                             .text-holder
-                                                h4 Шенген
-
-
-                                                div
-                                                    span.name Оформлення:
-                                                    span.value 14 - 25 днів
-                                                div
-                                                    span.name  Період візи:
-                                                    span.value.time 360/180 днів
-                                                div
-                                                    span.name  Вартість:
-                                                    span.value.price 300€
-                                                div
-                                                    span.name Додатковий збір:
-                                                    span.value Безкоштовна реєстрація, 470 грн - Візовий центр
+                                                .title-holder.cf
+                                                    h4 Робоча
+                                                    div.price €120
+                                                    div.time-holder
+                                                        span.name  Період візи:
+                                                        span.value.time 180/180 днів
+                                                .block_text
+                                                    div Оформлення 20 - 40 днів
+                                                    div
+                                                        span.value Безкоштовна реєстрація, 470 грн - Візовий центр
+                                                    div.text_visa Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар
                                                 a(href="#modal_form" class="more open_modal") Детальніше
-
-
-
                                         .visa_item
                                             .text-holder
-                                                h4 Шенген
-                                                div
-                                                    span.name Оформлення:
-                                                    span.value 14 - 25 днів
-                                                div
-                                                    span.name  Період візи:
-                                                    span.value.time 720/360 днів
-                                                div
-                                                    span.name  Вартість:
-                                                    span.value.price 120€
-                                                div
-                                                    span.name Додатковий збір:
-                                                    span.value Безкоштовна реєстрація, 470 грн - Візовий центр
-                                                a(href="#modal_form" class="more open_modal") Детальніше
-
-
-                                        .visa_item
-                                            .text-holder
-                                                h4 Шенген
-
-                                                div
-                                                    span.name Оформлення:
-                                                    span.value 14 - 25 днів
-                                                div
-                                                    span.name  Період візи:
-                                                    span.value.time 360/180 днів
-                                                div
-                                                    span.name  Вартість:
-                                                    span.value.price 300€
-                                                div
-                                                    span.name Додатковий збір:
-                                                    span.value Безкоштовна реєстрація, 470 грн - Візовий центр
-                                                a(href="#modal_form" class="more open_modal") Детальніше
-
-
-
-
-                                        .visa_item
-                                            .text-holder
-                                                h4 Шенген
-
-                                                div
-                                                    span.name Оформлення:
-                                                    span.value 14 - 25 днів
-                                                div
-                                                    span.name  Період візи:
-                                                    span.value.time 720/360 днів
-                                                div
-                                                    span.name  Вартість:
-                                                    span.value.price 120€
-                                                div
-                                                    span.name Додатковий збір:
-                                                    span.value Безкоштовна реєстрація, 470 грн - Візовий центр
+                                                .title-holder.cf
+                                                    h4 Робоча
+                                                    div.price €400
+                                                    div.time-holder
+                                                        span.name  Період візи:
+                                                        span.value.time 360/360 днів
+                                                .block_text
+                                                    div Оформлення 20 - 40 днів
+                                                    div
+                                                        span.value Безкоштовна реєстрація, 470 грн - Візовий центр
+                                                    div.text_visa Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар
                                                 a(href="#modal_form" class="more open_modal") Детальніше
 
 
@@ -810,7 +529,7 @@ html(lang="ru")
                     .job-holder
                         .wrap
                             h3 Вакансії
-                            hr
+                            //hr
 
                             .tabs
                                 .tabs-menu.cf
@@ -827,20 +546,18 @@ html(lang="ru")
 
 
                                                 .text-holder
-                                                   h4 Вакансія
+                                                   h4 Прибиральниця
                                                    hr
                                                    .job_text
                                                         ul
-                                                            li Список 1
-                                                            li Список 1
-                                                            li Список 1
-                                                            li Список 1
-                                                            li Список 1
-                                                            li Список 1
-                                                            li Список 1
-                                                            li Список 1
-                                                            li Список 1
-                                                            li Список 1
+                                                            li - вакансия для женщин
+                                                            li - ЗП — 7-11 злотых за номер
+                                                            li - бонус за выработку
+                                                            li - трудовой договор
+                                                            li - проживание в хостеле
+                                                            li - полный социальный пакет
+
+
                                                         a(href="#modal_form" class="more open_modal") Детальніше
 
 
@@ -852,11 +569,12 @@ html(lang="ru")
                                                    hr
                                                    .job_text
                                                         ul
-                                                            li Список 1
-                                                            li Список 1
-                                                            li Список 1
-                                                            li Список 1
-                                                            li Список 1
+                                                            li - сезонна робота (липень-вересень)
+                                                            li - незалежно від погодних умов
+                                                            li - робочий день від 8 годин, 5-6 днів на тиждень
+                                                            li - ЗП 8-10 зл / год
+                                                            li - Робота для сімейних пар, студентів
+                                                            li - житло безкоштовно
                                                         a(href="#modal_form" class="more open_modal") Детальніше
 
                                             .jobs_item
@@ -867,11 +585,12 @@ html(lang="ru")
                                                    hr
                                                    .job_text
                                                         ul
-                                                            li Список 1
-                                                            li Список 1
-                                                            li Список 1
-                                                            li Список 1
-                                                            li Список 1
+                                                            li - вакансія для жінок
+                                                            li - ЗП - 8,5 злотих / год
+                                                            li - 8-годинна зміна
+                                                            li - трудовий договір на 6 міс.
+                                                            li - надається житло
+                                                            li - потрібно мед. книга
                                                         a(href="#modal_form" class="more open_modal") Детальніше
 
 
@@ -883,11 +602,12 @@ html(lang="ru")
                                                    hr
                                                    .job_text
                                                         ul
-                                                            li Список 1
-                                                            li Список 1
-                                                            li Список 1
-                                                            li Список 1
-                                                            li Список 1
+                                                            li - сезонна робота (липень-вересень)
+                                                            li - незалежно від погодних умов
+                                                            li - робочий день від 8 годин, 5-6 днів на тиждень
+                                                            li - ЗП 8-10 зл / год
+                                                            li - Робота для сімейних пар, студентів
+                                                            li - житло безкоштовно
                                                         a(href="#modal_form" class="more open_modal") Детальніше
                                             .jobs_item
                                                 .img-holder
@@ -897,11 +617,12 @@ html(lang="ru")
                                                    hr
                                                    .job_text
                                                         ul
-                                                            li Список 1
-                                                            li Список 1
-                                                            li Список 1
-                                                            li Список 1
-                                                            li Список 1
+                                                            li - вакансія для жінок
+                                                            li - ЗП - 8,5 злотих / год
+                                                            li - 8-годинна зміна
+                                                            li - трудовий договір на 6 міс.
+                                                            li - надається житло
+                                                            li - потрібно мед. книга
                                                         a(href="#modal_form" class="more open_modal") Детальніше
 
 
@@ -913,11 +634,12 @@ html(lang="ru")
                                                    hr
                                                    .job_text
                                                         ul
-                                                            li Список 1
-                                                            li Список 1
-                                                            li Список 1
-                                                            li Список 1
-                                                            li Список 1
+                                                            li - вакансія для жінок
+                                                            li - ЗП - 8,5 злотих / год
+                                                            li - 8-годинна зміна
+                                                            li - трудовий договір на 6 міс.
+                                                            li - надається житло
+                                                            li - потрібно мед. книга
                                                         a(href="#modal_form" class="more open_modal") Детальніше
 
 
@@ -1131,7 +853,7 @@ html(lang="ru")
                     .job-holder
                         .wrap
                             h3 Вакансії
-                            hr
+                            //hr
 
                             .tabs
                                 .tabs-menu.cf
@@ -1452,49 +1174,71 @@ html(lang="ru")
                 #how_works
                     .wrap
                         h3 Як це працює
-                        hr
+                        //hr
+
                         .works_items
                             .item
-                                .img-holder
+                                //.img-holder
                                     img(src="img/content/advantage4.png")
-                                .text-holder Узгодження Ваших потреб
+                                .holder-icon
+                                    i.fa.fa-mobile
+
+
+                                .text-holder Звяжіться з нами
+                                .text_works Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою"
+
                             .item
-                                .img-holder
+                                .holder-icon
+                                    i.fa.fa-pencil-square-o
+                                //.img-holder
                                     img(src="img/content/advantage3.png")
                                 .text-holder Підписання договору
+                                .text_works Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою"
+
 
                             .item
-                                .img-holder
+                                .holder-icon
+                                    i.fa.fa-briefcase
+                                //.img-holder
                                     img(src="img/content/advantage6.png")
                                 .text-holder Оформлення документів
+                                .text_works Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою"
+
                             .item
-                                .img-holder
+                                .holder-icon
+                                    i.fa.fa-check
+                                //.img-holder
                                     img(src="img/content/advantage1.png")
 
-                                .text-holder Виїзд за кордон в обумовлений термін
+                                .text-holder Отримання візи
+                                .text_works Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою"
+
+
+
+
 
 
                 #faq
                     .wrap
                         h3 Поширені запитання
-                        hr
+                        //hr
                         .slider_faq
                             .item
                                 .item_faq
-                                    h4 Запитання 1
+                                    h4 В якому місті Польщі є робота?
                                     p.
                                         Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні.
                                         Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя,
                                         коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів.
 
                                 .item_faq
-                                    h4 Запитання 1
+                                    h4 В якому місті Польщі є робота?
                                     p.
                                         Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні.
                                         Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя,
                                         коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів.
                                 .item_faq
-                                    h4 Запитання 1
+                                    h4 В якому місті Польщі є робота?
                                     p.
                                         Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні.
                                         Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя,
@@ -1508,20 +1252,20 @@ html(lang="ru")
                                         коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів.
                             .item
                                 .item_faq
-                                    h4 Запитання 1
+                                    h4 В якому місті Польщі є робота?
                                     p.
                                         Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні.
                                         Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя,
                                         коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів.
 
                                 .item_faq
-                                    h4 Запитання 1
+                                    h4 В якому місті Польщі є робота?
                                     p.
                                         Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні.
                                         Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя,
                                         коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів.
                                 .item_faq
-                                    h4 Запитання 1
+                                    h4 В якому місті Польщі є робота?
                                     p.
                                         Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні.
                                         Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя,
@@ -1538,18 +1282,18 @@ html(lang="ru")
                 #call_back.questions
                     .wrap
                         h3 Залишилися питання?
-                        hr
+                        //hr
                         form.call_back_form
                             .row
                                 div
-                                    input(type="text", placeholder="Ім'я", name="name", minlength="2", data-validate="name")
+                                    input(type="text", placeholder="Ім'я:", name="name", minlength="2", data-validate="name")
 
                                 div
-                                    input(type="text", placeholder="Телефон", name="phone", data-validate="phone")
+                                    input(type="text", placeholder="Телефон:", name="phone", data-validate="phone")
 
 
                                 div
-                                    input(type="email", placeholder="E-mail", name="email", data-validate="email")
+                                    input(type="email", placeholder="E-mail:", name="email", data-validate="email")
 
                                 .btn.submit Надіслати
 
@@ -1557,13 +1301,15 @@ html(lang="ru")
                 #contacts
                     .wrap
                         h3 Контакти
-                        hr
+                        //hr
                         .text-holder
                             .phone
+                                i.fa.fa-phone
                                 h4 Телефони
                                 a(href="tel:+38 (0472) 38-32-98") +38 (0472) 38-32-98
                                 a(href="tel:+38 (067) 536-73-73") +38 (067) 536-73-73
                             .address
+                                i.fa.fa-map-marker
                                 h4 Адреса
                                 p
                                     | 18001, м. Черкаси, вул. Смілянська,
@@ -1578,15 +1324,15 @@ html(lang="ru")
                                 a(href="https://www.facebook.com/eurocenterua" target="_blank")
                                    i.fa.fa-facebook
                         #map
-                footer
-                    .wrap
+                footer.cf
+                    .wrap.cf
                         div © 2013-2016
                             span Євроцентр
                         div розробка:
                             a(href="http://intertechcompany.com/" class="copyright" target="_blank") INTERTECH
 
             #modal_form.modal_div
-
+                .modal_close
                 form.form_visa
                     .title-holder
                         .title_visa Польща (Робоча)
@@ -1595,12 +1341,12 @@ html(lang="ru")
 
                     .form-holder
                         div
-                            input(type="text", placeholder="Ім'я", name="name", minlength="2", data-validate="name")
+                            input(type="text", placeholder="Ім'я:", name="name", minlength="2", data-validate="name")
                         div
-                            input(type="text", placeholder="Телефон", name="phone", data-validate="phone")
+                            input(type="text", placeholder="Телефон:", name="phone", data-validate="phone")
 
                         .btn.submit Надіслати
-                        .btn.modal_close Зачинити
+
             #overlay
             include ./footer.jade
 

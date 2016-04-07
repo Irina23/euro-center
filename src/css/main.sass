@@ -38,12 +38,29 @@ $main-color: #1c1c1c
   font-style: normal
   font-weight: normal
 
-
-
-
+@font-face
+  font-family: "FuturaPT-Demi"
+  src: url("../fonts/FuturaPT-Demi.eot")
+  src: url("../fonts/FuturaPT-Demi.eot?#iefix")format("embedded-opentype"),url("../fonts/FuturaPT-Demi.woff") format("woff"),url("../fonts/FuturaPT-Demi.ttf") format("truetype"), url('../fonts/FuturaPT-Demi.svg') format('svg'), url("../fonts/FuturaPT-Demi.otf") format("otf")
+  font-style: normal
+  font-weight: normal
+@font-face
+  font-family: "FuturaPT-Medium"
+  src: url("../fonts/FuturaPT-Medium.eot")
+  src: url("../fonts/FuturaPT-Medium.eot?#iefix")format("embedded-opentype"),url("../fonts/FuturaPT-Medium.woff") format("woff"),url("../fonts/FuturaPT-Medium.ttf") format("truetype"), url('../fonts/FuturaPT-Medium.svg') format('svg'), url("../fonts/FuturaPT-Medium.otf") format("otf")
+  font-style: normal
+  font-weight: normal
+@font-face
+  font-family: "FuturaPT-Light"
+  src: url("../fonts/FuturaPT-Light.eot")
+  src: url("../fonts/FuturaPT-Light.eot?#iefix")format("embedded-opentype"),url("../fonts/FuturaPT-Light.woff") format("woff"),url("../fonts/FuturaPT-Light.ttf") format("truetype"), url('../fonts/FuturaPT-Light.svg') format('svg'), url("../fonts/FuturaPT-Light.otf") format("otf")
+  font-style: normal
+  font-weight: normal
 
 body
-  font-family: "SegoeUIRegular", sans-serif
+  //font-family: "SegoeUIRegular", sans-serif
+  //font-family: 'FuturaPT-Demi', sans-serif
+  font-family: 'Open Sans', sans-serif
   padding: 0
   margin: 0
   line-height: 1em
@@ -59,7 +76,7 @@ body
 img
    max-width: 100%
 .wrap
-  width: 940px
+  width: 1200px
   margin: auto
 
 
@@ -84,10 +101,17 @@ hr
 
 h3
     color: #000
-    font-family: "SegoeUIRegular", sans-serif
-    font-size: 30px
+    //font-family: "SegoeUIRegular", sans-serif
+    //font-family: 'Roboto', sans-serif
+    //font-family: 'Open Sans', sans-serif
+    font-size: 50px
     line-height: 1em
-    font-weight: normal
+    font-weight: 300
+    text-align: center
+    margin-bottom: 70px
+    //font-size: 30px
+    //line-height: 1em
+    //font-weight: 600
 
 
 
@@ -140,11 +164,17 @@ header
 #call_back
   //width: 940px
   //margin: auto
-  padding: 50px 0
+  background: #fdc300
+  padding: 30px 0 40px
 
+  h3
+    font-size: 30px
+    line-height: 1em
+    font-weight: 600
+    text-align: left
 
   form
-    margin-top: 40px
+    margin-top: 30px
     .row
       >div
         display: inline-block
@@ -156,41 +186,61 @@ header
     input[type="text"],
     input[type="email"]
       height: 45px
-      width: 225px
+      width: 320px
       padding: 0 10px
       margin-right: 8px
       font-size: 16px
-      font-family: "SegoeUIRegular", sans-serif
+      //font-family: 'Roboto', sans-serif
+      //font-family: "SegoeUIRegular", sans-serif
+      font-weight: 400
       line-height: 45px
       box-sizing: border-box
-      border: 1px solid #999
+      border: 2px solid #fff
+      background: none
+      color: #fff
 
   .btn.submit
-    font-size: 18px
-    border: 2px solid #0e6eb8
+    font-size: 14px
+    background: #fff
     height: 45px
-    width: 225px
-    color: #0e6eb8
+    width: 200px
+    color: #000
     text-align: center
     box-sizing: border-box
-    line-height: 41px
+    line-height: 45px
     cursor: pointer
+    text-transform: uppercase
+    font-weight: 600
+    letter-spacing: 1px
 
     &:hover
-      color: #fdc300
-      border-color: #fdc300
+      background: #0e6eb8
       transition: all 0.35s
+      color: #fff
 
 #advantage
   //width: 940px
   //margin: auto
-  padding: 50px 0
+  padding: 80px 0 50px
+  background: #f8f8f8
   h3
     color: #000
-    font-family: "SegoeUIRegular", sans-serif
-    font-size: 30px
+    //font-family: "SegoeUIRegular", sans-serif
+    //font-family: 'Roboto', sans-serif
+    font-size: 50px
     line-height: 1em
-    font-weight: normal
+    font-weight: 300
+    text-align: center
+    margin-bottom: 70px
+  .text-advantage
+    text-align: center
+    //margin-bottom: 30px
+    line-height: 2em
+    color: #727272
+    width: 800px
+    margin: auto
+    margin-bottom: 70px
+    font-size: 14px
   ul
     margin-top: 40px
     li
@@ -199,20 +249,38 @@ header
       width: 33%
       box-sizing: border-box
       padding: 0 30px
-      margin-bottom: 50px
+      margin-bottom: 60px
       text-align: center
+      h4
+        font-size: 15px
+        text-align: left
+        text-transform: uppercase
+        margin-bottom: 5px
+        //font-weight: normal
+        color: #000
+        line-height: 1em
+        height: 15px
+        overflow: hidden
+        text-overflow: ellipsis
+        white-space: nowrap
+        font-weight: 600
+      .number
+        color: #fdc300
+        float: left
+        margin-right: 15px
+        font-weight: 600
+        font-size: 60px
+        line-height: 46px
       .text-holder
         overflow: hidden
-        h4
-          font-size: 24px
-          margin-bottom: 15px
-          font-weight: normal
-          color: #0e6eb8
-          line-height: 1em
-          height: 24px
-          overflow: hidden
-          text-overflow: ellipsis
-          white-space: nowrap
+        text-align: left
+        font-size: 14px
+        line-height: 1.5em
+        p
+          line-height: 1.5em
+          font-size: 13px
+          color: #727272
+
       .img-holder
         width: 133px
         height: 133px
@@ -231,20 +299,30 @@ header
 
 [id^="modal_form"]
   box-shadow: 0 5px 15px rgba(0,0,0,0.5)
-  width: 600px
-  height: 300px
-  background: #404040
+  width: 400px
+  height: 320px
+  background: #ebebeb
   position: fixed
   top: 50%
   left: 50%
-  margin-top: -150px
-  margin-left: -300px
+  margin-top: -160px
+  margin-left: -200px
   display: none
   opacity: 0
   z-index: 5
   padding: 0
+  .modal_close
+    position: absolute
+    top: 20px
+    right: 20px
+    width: 16px
+    height: 16px
+    background: url("../img/icons/close_w.png") no-repeat
+    background-size: 100%
+    cursor: pointer
+
   .title-holder
-    background: #0e6eb8
+    background: #404040
     height: 100px
     padding: 20px 25px 0
     box-sizing: border-box
@@ -252,15 +330,17 @@ header
       float: left
       color: #fff
       font-size: 24px
-      font-family: "SegoeUILight", sans-serif
-      font-weight: 100
+      //font-family: "SegoeUILight", sans-serif
+      //font-family: 'Roboto', sans-serif
+      font-weight: 300
       line-height: 35px
       max-width: 350px
+      text-transform: uppercase
       white-space: nowrap
       overflow: hidden
       text-overflow: ellipsis
-      margin-bottom: 4px
-      border-bottom: 1px solid #fff
+      //margin-bottom: 4px
+      //border-bottom: 1px solid #fff
 
 
     .time_visa
@@ -271,13 +351,15 @@ header
       overflow: hidden
       text-overflow: ellipsis
       clear: left
-      font-family: "SegoeUILight", sans-serif
-      font-weight: 100
-      font-size: 18px
-      line-height: 18px
+      //font-family: "SegoeUILight", sans-serif
+      //font-family: 'Roboto', sans-serif
+      font-weight: 300
+      font-size: 13px
+      line-height: 1em
     .price_visa
+      display: none
       float: right
-      color: #fff
+      color: #fdc300
       max-width: 250px
       white-space: nowrap
       overflow: hidden
@@ -286,7 +368,7 @@ header
       line-height: 30px
       //margin-right: 23px
   .form-holder
-    padding: 25px
+    padding: 30px 25px
     text-align: center
     .error
       input[type="text"],
@@ -304,48 +386,57 @@ header
       padding: 0 12px
       box-sizing: border-box
       margin-bottom: 20px
-      border: 1px solid #fff
-      color: #fff
-      border-radius: 4px
-      font-size: 16px
+      border: 1px solid rgba(114, 114, 114, 0.2)
+      color: #404040
+      //border-radius: 4px
+      font-size: 14px
       line-height: 36px
-      font-family: "SegoeUILight", sans-serif
-      font-weight: 100
-      background: #404040
+      //font-family: "SegoeUILight", sans-serif
+      //font-family: 'Roboto', sans-serif
+      font-weight: 400
+      background: #ebebeb
+      //background: #404040
       transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s
-      box-shadow: inset 0 1px 1px rgba(0,0,0,0.075)
+      //box-shadow: inset 0 1px 1px rgba(0,0,0,0.075)
       //transition: all 0.2s
 
 
       &:focus
         transition: all 0.2s
-        border-color: #fdc300
-        color: #fdc300
-        box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6)
+        //border-color: #fdc300
+        //color: #fdc300
+        //box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6)
         input[placeholder]
 
           line-height: 100px
           transition: line-height 0.5s ease
 
     .btn
-      background-color: transparent
-      border: 1px solid #0E6EB8
+
+      //border: 1px solid #0E6EB8
+      height: 45px
+      line-height: 45px
       border-radius: 0
-      color: #fff
-      font-weight: 100
+      color: #fdc300
+      background: #404040
+      font-weight: 300
       transition: all 0.2s
-      padding: 6px 12px
-      font-size: 16px
+      //padding: 6px 12px
+      font-size: 13px
       text-align: center
-      vertical-align: middle
-      display: inline-block
+      margin: auto
+      display: block
       cursor: pointer
-      line-height: 22px
-      transition: all 0.2s
+      width: 150px
+      text-transform: uppercase
+      letter-spacing: 1px
+
+
+
       &:hover
         transition: all 0.2s
-        border-color: #fdc300
-        color: #fdc300
+        background: #fdc300
+        color: #404040
 
 
 #overlay
@@ -362,12 +453,14 @@ header
 
 
 #visu
-  background: url("../img/bg/bg_visa.jpg") no-repeat center
-  background-size: cover
+  //background: url("../img/bg/bg_visa.jpg") no-repeat center
+  //background-size: cover
+  //background: #f5f5f5
   &.mobile
     display: none
   h3
-    color: #fdc300
+    //color: #fdc300
+    margin-bottom: 70px
   .wrap
     padding-top: 60px
     //color: #fff
@@ -387,24 +480,40 @@ header
           top: 0
           transition: all 0.5s
   .tabs-menu
-    margin-bottom: 40px
+    margin-bottom: 20px
+    padding: 0 50px
     .nav.nav-tabs
+      //display: table
+      width: 100%
+
       li
-        float: left
-        background: #fff
-        color: #0e6eb8
-        //border: 1px solid #dedbdb
-        font-size: 18px
+        //display: table-cell
+        background: #ebebeb
+        color: #404040
+        //border: 2px solid #404040
+        border-left: 0
+        border-right: 0
+        font-size: 16px
         padding: 12px 20px
         cursor: pointer
         line-height: 24px
         margin-right: -1px
         transition: all 0.35s
+        text-align: center
+        text-transform: uppercase
+        width: 367px
+        box-sizing: border-box
+        //margin-left: -3px
+        float: left
+        font-weight: 600
+        letter-spacing: 1px
+
+
 
         &.active,&:hover
-          background: #0e6eb8
+          background: #fdc300
           color: #fff
-          border-color: #0e6eb8
+          //border-color: #404040
 
           transition: all 0.35s
 
@@ -413,54 +522,100 @@ header
     //padding: 0 10px
     box-sizing: border-box
     //background: rgba(0, 0, 0, 0.5)
-    background: rgba(255, 255, 255, 0.5)
-    padding: 20px 0
+    //border: 2px solid #ebebeb
+    //background: #ebebeb
+    //padding: 15px
+
+    .text-holder
+      padding-bottom: 40px
+    .title-holder
+      position: relative
+
 
     h4
       font-size: 24px
-      margin-bottom: 30px
-      font-weight: normal
-      color: #0e6eb8
-      height: 24px
+      //margin-bottom: 30px
+      font-weight: 300
+      color: #fff
+      height: 1em
       white-space: nowrap
       text-overflow: ellipsis
       overflow: hidden
       line-height: 1em
+      float: left
+      text-transform: uppercase
+
+
+    .price
+      color: #fdc300
+      font-size: 40px
+      line-height: 1em
+      float: right
+      font-weight: 600
+      font-family: "FuturaPT-Demi", sans-serif
+      letter-spacing: 2px
+    .time-holder
+      clear: both
+      font-weight: 100
+      position: absolute
+      color: #fff
+      font-size: 13px
+      bottom: 20px
+      left:  20px
+
+    .block_text
+      padding: 40px 20px 30px
+      text-align: left
+      line-height: 1.5em
+
     a
-        font-size: 18px
-        border: 2px solid #0e6eb8
+        font-size: 13px
+        text-transform: uppercase
+        //border: 2px solid #404040
+        letter-spacing: 1px
         height: 45px
-        width: 100%
-        color: #0e6eb8
+        width: 150px
+        margin: auto
+        background: #404040
+        color: #fff
         text-align: center
         box-sizing: border-box
-        line-height: 41px
+        line-height: 45px
         cursor: pointer
         display: block
-        margin-top: 40px
+
+
 
         &:hover
-          color: #fff
-          background: #0e6eb8
+          color: #404040
+          background: #fdc300
           transition: all 0.35s
           text-decoration: none
     .text-holder
-      padding: 0 20px
-      > div
-        margin-bottom: 20px
+      background: #ebebeb
+      //padding: 15px
+      .title-holder
+        background: #404040
+        padding: 25px 20px
+        text-align: left
 
 
 
+
+    .block_text
+        font-size: 14px
+        >div
+          margin-bottom: 15px
+          color: #555555
         span
-          font-size: 16px
-          display: block
-
-
-
+          font-size: 14px
+          display: inline-block
+          vertical-align: middle
 
         .name
           //color: #0e6eb8
-          font-family: "SegoeUIBold", sans-serif
+          //font-family: "SegoeUIBold", sans-serif
+          //font-family: 'Roboto', sans-serif
           margin-bottom: 10px
 
 
@@ -532,13 +687,14 @@ header
 
     .bx-prev, .bx-next
 
-      background: url("../img/icons/next.png") no-repeat
+      background: url("../img/icons/next3.png") no-repeat
       width: 22px
-      height: 36px
+      height: 38px
       background-size: 100%
       transition: all 0.35s
       margin-top: -18px
       z-index: 2
+      transform: rotate(180deg)
 
 
       &:hover
@@ -547,9 +703,12 @@ header
         background-position: 0 0
     .bg-next
       right: 0!important
+      //transform: rotate(180deg)
+
     .bx-prev
       left: 0!important
-      transform: rotate(180deg)
+      transform: rotate(0deg)
+
 
   .bx-viewport
     background: none!important
@@ -561,11 +720,16 @@ header
 
 
 #jobs
+  background: url("../img/bg/bg_jobs.jpg") no-repeat
+  .job-holder
+    background: rgba(255, 255, 255, 0.5)
 
 
   &.mobile
     display: none
 
+  h3
+    margin-bottom: 50px
 
 
   .job-holder
@@ -588,30 +752,47 @@ header
         &.active
           top: 0
           transition: all 0.5s
-  .tabs-menu
-    margin-bottom: 40px
-    .nav.nav-tabs
-      li
-        float: left
-        color: #008fb7
-        border: 1px solid #dedbdb
-        //background: #fff
-        font-size: 18px
-        padding: 12px
-        cursor: pointer
-        line-height: 24px
-        margin-right: -1px
-        transition: all 0.35s
+    .tabs-menu
+      margin-bottom: 20px
+      padding: 0 50px
+      .nav.nav-tabs
+        //display: table
+        width: 100%
 
-        &.active,&:hover
-          background: #0e6eb8
-          color: #fff
-          border-color: #0e6eb8
+        li
+          //display: table-cell
+          background: #ebebeb
+          color: #404040
+          //border: 2px solid #404040
+          border-left: 0
+          border-right: 0
+          font-size: 16px
+          padding: 12px 20px
+          cursor: pointer
+          line-height: 24px
+          margin-right: -1px
           transition: all 0.35s
+          text-align: center
+          text-transform: uppercase
+          width: 367px
+          box-sizing: border-box
+          //margin-left: -3px
+          float: left
+          font-weight: 600
+          letter-spacing: 1px
+
+
+
+          &.active,&:hover
+            background: #fdc300
+            color: #fff
+            //border-color: #404040
+
+            transition: all 0.35s
 
 
   .jobs_item
-    background: #595959
+    background: #fff
     .img-holder
       width: 100%
       height: 165px
@@ -621,30 +802,43 @@ header
     .text-holder
       height: 300px
 
-      color: #fff
-      padding: 20px
+      color: #404040
+      //padding: 20px
       hr
-        margin-bottom: 22px
+        margin-bottom: 0
+        display: none
       h4
         text-align: center
         font-weight: normal
-        font-family: "SegoeUILight", sans-serif
-        font-size: 24px
+        //font-family: "SegoeUILight", sans-serif
+        //font-family: 'Roboto', sans-serif
+        font-size: 18px
         line-height: 1em
         white-space: nowrap
         text-overflow: ellipsis
         overflow: hidden
+        margin-bottom: 0
+        background: #fdc300
+        color: #fff
+        padding: 20px 0
+        text-transform: uppercase
 
 
+      .job_text
+        padding: 20px 20px 20px 30px
       ul
-        height: 140px
+        height: 145px
         overflow: hidden
+        margin-bottom: 10px
+        //padding: 20px
         li
           //list-style-type: disc
           line-height: 1.5em
-          padding-left: 30px
+          //padding-left: 30px
           position: relative
-          &:before
+          font-size: 14px
+          color: #727272
+          //&:before
             position: absolute
             top: 9px
             left: 10px
@@ -654,22 +848,26 @@ header
             content: ""
             background: #fdc300
       a
-        font-size: 18px
-        border: 2px solid #0e6eb8
-        height: 45px
-        width: 100%
+        font-size: 11px
+        text-transform: uppercase
+        //border: 2px solid #404040
+        letter-spacing: 1px
+        height: 40px
+        width: 140px
+        margin: auto
+        background: #404040
         color: #fff
         text-align: center
         box-sizing: border-box
-        line-height: 41px
+        line-height: 40px
         cursor: pointer
         display: block
-        margin-top: 40px
+
+
 
         &:hover
-          color: #fdc300
-          //background: #fdc300
-          border-color: #fdc300
+          color: #404040
+          background: #fdc300
           transition: all 0.35s
           text-decoration: none
 
@@ -678,26 +876,81 @@ header
 
 #how_works
   padding-top: 50px
+  padding-bottom: 100px
+
+  h3
+    margin-bottom: 70px
+
+
 
   .works_items
-    margin: 0 auto 100px
+    margin-bottom: 30px
+
     .item
       display: inline-block
       vertical-align: middle
       width: 24%
       text-align: center
+      position: relative
+      //&:after
+        position: absolute
+        top: 50%
+        right: -50%
+        border-top: 2px dotted #404040
+        content: ""
+        width: 100%
+        height: 0
+
+
+
+      &:first-child
+        .holder-icon
+          font-size: 90px
+      .text_works
+        line-height: 2em
+        text-align: center
+        font-size: 14px
+        color: #727272
+      .holder-icon
+        width: 150px
+        height: 150px
+        background: #fdc300
+        border: 2px solid #FFFFFF
+
+        border-radius: 150px
+        text-align: center
+        line-height: 150px
+        color: #fff
+        position: relative
+        font-size: 70px
+        margin: auto
+        margin-bottom: 15px
+
+
+        &:after 
+          position: absolute
+          content: ""
+          width: 140px
+          height: 140px
+          border: 3px solid #fff 
+          top: 5px
+          left: 5px
+          border-radius: 120px
+          box-sizing: border-box
+          
       .img-holder
         width: 133px
         height: 133px
         border-radius: 133px
         margin: 0 auto 30px
       .text-holder
-        color: #0e6eb8
+        color: #404040
         font-size: 20px
-        line-height: 1.3em
-        height: 52px
+        line-height: 1.5em
+        //height: 1.3em
         overflow: hidden
         text-overflow: ellipsis
+        margin-bottom: 10px
 
 
 
@@ -709,18 +962,33 @@ header
   background-size: cover
   padding: 60px 0 110px
   h3
-    color: #fff
+    //color: #fff
+    margin-bottom: 70px
   .bx-viewport
     height: auto!important
 
   .slider_faq
     //padding-top: 50px
+    .item
+      padding-top: 15px
 
     .item_faq
       padding: 20px
       background: rgba(255, 255, 255, 0.8)
       color: #000
       margin-bottom: 30px
+      border-radius: 0 6px 6px 6px
+      position: relative
+      //border-radius-top: 0
+      &:after
+        content: ''
+        position: absolute
+        width: 0
+        height: 0
+        border-bottom: 15px solid rgba(255, 255, 255, 0.8)
+        border-right: 18px solid transparent
+        left: 0
+        top: -15px
       &:last-child
         margin-bottom: 0
       h4
@@ -746,39 +1014,57 @@ header
 #contacts
   margin-bottom: 100px
   padding-top: 50px
+  h3
+    margin-bottom: 70px
   .text-holder
-    width: 300px
+    width: 400px
     display: inline-block
     vertical-align: top
     margin-right: 35px
     h4
-      font-family: "SegoeUIBold", sans-serif
-      font-size: 18px
+      //font-family: "SegoeUIBold", sans-serif
+      //font-family: 'Roboto', sans-serif
+      font-size: 16px
       line-height: 1em
-      margin-bottom: 20px
+      margin-bottom: 15px
+      font-weight: 600
     a
       color: #337ab7
       display: block
       line-height: 1.5em
+      font-size: 14px
     p
       line-height: 1.5em
+      font-size: 14px
     > div
-      margin-bottom: 40px
+      margin-bottom: 30px
     .phone
       position: relative
-      padding-left: 40px
-      &:before
+      padding-left: 25px
+      i 
         position: absolute
-        content: ""
+        top: 0
+        left: 0
+        color: #337ab7
+        font-size: 20px
+      //&:before
+        position: absolute
+        content: "\f095"
         top: 3px
         left: 10px
-        width:  15px
-        height: 15px
-        background: url("../img/icons/phone.png") no-repeat
+        //width:  15px
+        //height: 15px
+        //background: url("../img/icons/phone.png") no-repeat
     .address
       position: relative
-      padding-left: 40px
-      &:before
+      padding-left: 25px
+      i
+        position: absolute
+        top: 0
+        left: 0
+        color: #337ab7
+        font-size: 20px
+      //&:before
         position: absolute
         content: ""
         top: 3px
@@ -787,17 +1073,20 @@ header
         height: 24px
         background: url("../img/icons/pointer.png") no-repeat
     .social
+      padding-left: 25px
       a
-        border-radius: 37px
+        border-radius: 25px
         background: #0e6eb8
-        height: 37px
-        width: 37px
+        height: 25px
+        width: 25px
         display: inline-block
         text-align: center
         color: #fff
-        font-size: 22px
+        font-size: 14px
         margin: 0 7px
         transition: all 0.35s
+        padding-top: 1px
+        box-sizing: border-box
 
         &:nth-child(2)
             margin-left: 0
@@ -810,97 +1099,129 @@ header
     height: 400px
     display: inline-block
     vertical-align: top
-    width: 600px
+    width: 760px
 
 
 
 footer
   //height: 70px
-  background-color: #404040
+  background-color: #fdc300
   text-align: center
   color: #fff
-  padding: 25px 0
+  padding: 20px 0
 
   .wrap
     >div
       display: inline-block
       vertical-align: middle
       margin-right: 30px
+      font-size: 14px
+      &:first-child
+        float: left
       &:last-child
         margin-right: 0
+        float: right
       span
-        color: #fdc300
+        color: #fff
         margin-left: 5px
       a
-        color: #337ab7
+        color: #fff
         margin-left: 5px
+        font-size: 14px
 
 
 
 
-
+//.header
+  position: absolute
+  top: 0
+  left: 0
+  background: rgba(255, 255, 255, 0.8)
+  z-index: 5
+  width: 100%
+  padding-bottom: 50px
 
 .top-line
   position: absolute
-  top: 100px
+  top: 0
   z-index: 5
   width: 100%
-  text-align: center
+  //text-align: center
+  padding: 10px 0
+  background: #fff
   .wrap
     position: relative
     >div
       display: inline-block
       vertical-align: middle
-      padding-right: 30px
+      //padding-right: 200px
       &:last-child
         padding-right: 0
 
     .logo
 
+      padding-right: 30px
       img
-        position: absolute
-        left: 2px
-        top: -34px
+        //position: absolute
+        //left: 2px
+        //top: -34px
         max-width: 60px
+        display: inline-block
+        vertical-align: middle
       a
         position: relative
         &:hover
           text-decoration: none
       span
-        color: #fff
-        font-size: 36px
-        font-family: "SegoeUILight", sans-serif
+        color: #000
+        font-size: 28px
+        //font-family: "SegoeUILight", sans-serif
+        //font-family: 'Roboto', sans-serif
+        font-weight: 300
         line-height: 24px
-        padding-left: 60px
+        padding-left: 10px
+        display: inline-block
+        vertical-align: middle
 
     .header-phone
       .city
         padding: 0 30px
-        background: url("../img/icons/address_y.png") no-repeat
-        color: #fff
-        font-family: "SegoeUILight", sans-serif
+        //background: url("../img/icons/address_y.png") no-repeat
+        color: #000
+        //font-family: "SegoeUILight", sans-serif
+        //font-family: 'Roboto', sans-serif
+        font-weight: 400
         font-size: 16px
         line-height: 22px
         position: relative
         display: inline-block
         vertical-align: middle
         cursor: pointer
-        margin-right: 30px
+        //margin-right: 30px
+        &:hover
+          &:after
+            background: url("../img/icons/select2.png") no-repeat
+            background-size: 100%
+            transition: all 0.35s
         .city_active
           min-width: 65px
           display: inline-block
           text-align: left
+          font-size: 14px
+
+
         &:after
           position: absolute
           top: 50%
           right: 10px
-          margin-top: -5px
-          width: 16px
-          height: 10px
+          margin-top: -4px
+          width: 13px
+          height: 9px
           content: ""
-          background: url("../img/icons/select.png") no-repeat
+          background: url("../img/icons/select1.png") no-repeat
           background-size: 100%
           cursor: pointer
+          transition: all 0.35s
 
         ul
           display: none
@@ -908,6 +1229,7 @@ footer
           top: 22px
           left: 30px
           li
+            font-size: 14px
             &.active
               display: none
 
@@ -918,12 +1240,15 @@ footer
         > div
           display: none
           a
-            color: #fff
+            color: #000
             transition: all 0.35s
             display: inline-block
             vertical-align: middle
-            font-family: "SegoeUILight", sans-serif
+            //font-family: "SegoeUILight", sans-serif
+            //font-family: 'Roboto', sans-serif
+            font-weight: 400
             margin-right: 20px
+            font-size: 14px
             &:last-child
               margin-right: 0
 
@@ -936,15 +1261,19 @@ footer
 
 
     .lang-holder
+      padding-right: 470px
       a
-        color: #c8c6c6
-        font-family: "SegoeUILight", sans-serif
+        color: #000
+        //font-family: "SegoeUILight", sans-serif
+        //font-family: 'Roboto', sans-serif
+        font-weight: 400
         margin-right: 15px
         transition: all 0.35s
         display: inline-block
         vertical-align: middle
+        font-size: 14px
         &.active
-          color: #fff
+          color: #fdc300
         &:last-child
           margin-right: 0
         &:hover
@@ -955,13 +1284,21 @@ footer
 
 
 #menu-holder
+      //display: none
       position: fixed
-      top: 0
+      top: 70px
       left: 0
       width: 100%
-      background: rgba(253, 195, 0, 0.8)
+      //background: rgba(255, 255, 255, 0.8)
       z-index: 1001
-      padding: 15px 0
+      padding: 20px 0
+      &.fixed
+        top: 0
+        background: #fff
+        #menu
+          li
+            a
+              color: #000
 
 
 
@@ -969,16 +1306,16 @@ footer
       #menu-icon
 
         display: none
-        color: #fff
+        color: #000
         cursor: pointer
         transition: all 0.35s
         &:hover
             transition: all 0.35s
-            color: #0e6eb8
+            color: #fdc300
             i
               .icon-bar
                 transition: all 0.35s
-                background-color: #0e6eb8
+                background-color: #fdc300
         i
           margin-right: 10px
           display: inline-block
@@ -1004,20 +1341,27 @@ footer
         li
           display: inline-block
           vertical-align: middle
-          margin: 0 15px
+          margin: 0 38px
+          &:first-child
+            margin-left: 0
+          &:last-child
+            margin-right: 0
           //&:first-child
             display: none
           &.active
             a
-              color: #0e6eb8
+              color: #fdc300
           a
             color: #fff
-            font-size: 18px
+            font-size: 14px
             line-height: 1em
             transition: all 0.35s
+            text-transform: uppercase
+            letter-spacing: 1px
+            font-weight: 600
             &:hover
               transition: all 0.35s
-              color: #0e6eb8
+              color: #fdc300
               text-decoration: none
 
 @media screen and (max-width: 1023px)
@@ -1122,6 +1466,7 @@ footer
 
 
   .top-line
+
     .wrap
       .header-phone .city
         margin-right: 15px
@@ -1155,6 +1500,7 @@ footer
 
   body .main_slider .sl-slider h2
     padding-top: 200px
+
 
 
 @media screen and (max-width: 600px)

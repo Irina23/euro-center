@@ -15,6 +15,8 @@
     <link href="bower_components/jquery.bxslider/jquery.bxslider.css" rel="stylesheet" type="text/css">
     <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <script src="js/modernizr.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&amp;subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="format-detection" content="telephone=no">
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
@@ -22,6 +24,24 @@
   <body data-spy="scroll" data-target="#menu" data-offset="105">
     <div class="page_wrapper home">
       <header>
+        <div class="top-line cf">
+          <div class="wrap">
+            <div class="logo"><a href="/"><img src="img/icons/main-logo.png"><span>Євроцентр</span></a></div>
+            <div class="lang-holder"><a href="#" data-request="onSwitchLocale" data-request-data="locale: 'uk'" class="active">Укр</a><a href="#" data-request="onSwitchLocale" data-request-data="locale: 'ru'">Рус</a></div>
+            <div class="header-phone">
+              <div class="phone_list">
+                <div data-filter="cherkassy" class="show"><a href="tel:+38 (0472) 38-32-98">+38 (0472) 38-32-98</a><a href="tel:+38 (067) 536-73-73">+38 (067) 536-73-73</a></div>
+                <div data-filter="uman"><a href="tel:+38 (0472) 55-55-55">+38 (0472) 55-55-55</a><a href="tel:+38 (067) 555-55-55">+38 (067) 555-55-55</a></div>
+              </div>
+              <div class="city"><span class="city_active">Черкаси</span>
+                <ul>
+                  <li data-filter="cherkassy" class="active">Черкаси</li>
+                  <li data-filter="uman">Умань</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
         <div id="menu-holder">
           <div class="wrap">
             <div id="menu-icon"><i><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></i><span class="menu_title">Меню</span></div>
@@ -38,24 +58,6 @@
             </div>
           </div>
         </div>
-        <div class="top-line">
-          <div class="wrap">
-            <div class="logo"><a href="/"><img src="img/icons/main-logo.png"><span>Євроцентр</span></a></div>
-            <div class="header-phone">
-              <div class="city"><span class="city_active">Черкаси</span>
-                <ul>
-                  <li data-filter="cherkassy" class="active">Черкаси</li>
-                  <li data-filter="uman">Умань</li>
-                </ul>
-              </div>
-              <div class="phone_list">
-                <div data-filter="cherkassy" class="show"><a href="tel:+38 (0472) 38-32-98">+38 (0472) 38-32-98</a><a href="tel:+38 (067) 536-73-73">+38 (067) 536-73-73</a></div>
-                <div data-filter="uman"><a href="tel:+38 (0472) 55-55-55">+38 (0472) 55-55-55</a><a href="tel:+38 (067) 555-55-55">+38 (067) 555-55-55</a></div>
-              </div>
-            </div>
-            <div class="lang-holder"><a href="#" data-request="onSwitchLocale" data-request-data="locale: 'uk'" class="active">Укр</a><a href="#" data-request="onSwitchLocale" data-request-data="locale: 'ru'">Рус</a></div>
-          </div>
-        </div>
         <div id="main_slider" class="main_slider">
           <div id="slider" class="sl-slider-wrapper">
             <div class="sl-slider">
@@ -63,16 +65,19 @@
                 <div class="sl-slide-inner">
                   <div style="background-image: url(img/content/slider1.jpg);" class="bg-img"></div>
                   <div class="blackoute"></div>
-                  <h2>Віза – це<span>&nbsp;просто!</span></h2>
-                  <blockquote>Ми допомагаємо отримати візу в країни Європейського Союзу. Клієнти, звернувшись до нас, стають нашими постійними клієнтами і рекомендують нас своїм знайомим та друзям. Більше 50% нових клієнтів звертаються до нас по рекомендації.</blockquote>
+                  <h2>Легальне працевлаштування в<span>&nbsp;Європі</span></h2>
+                  <!--blockquote Працівники Євроцентра з радістю допоможуть Вам.-->
+                  <!--Ми допомагаємо отримати візу в країни Європейського Союзу. Клієнти, звернувшись до нас, стають нашими постійними клієнтами і рекомендують нас своїм знайомим та друзям. Більше 50% нових клієнтів звертаються до нас по рекомендації.-->
+                  
                 </div>
               </div>
               <div data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2" class="sl-slide">
                 <div class="sl-slide-inner">
                   <div style="background-image: url(img/content/slider2.jpg);" class="bg-img"></div>
                   <div class="blackoute"></div>
-                  <h2>Робота в<span>&nbsp;Європі</span></h2>
-                  <blockquote>Легальне працевлаштування в країнах Європейського Союзу. Робота за кордоном - це висока заробітна платня, можливість отримати громадянство, кар'єрне зростання та розширення кругозору і отримання нових знань.</blockquote>
+                  <h2>Легальне працевлаштування в<span>&nbsp;Європі</span></h2>
+                  <!--blockquote Легальне працевлаштування в країнах Європейського Союзу. Робота за кордоном - це висока заробітна платня, можливість отримати громадянство, кар'єрне зростання та розширення кругозору і отримання нових знань.-->
+                  
                 </div>
               </div>
             </div>
@@ -81,69 +86,75 @@
         </div>
       </header>
       <div class="container">
-        <div class="wrap">
-          <div id="call_back">
+        <div id="call_back">
+          <div class="wrap">
             <h3>Замовити дзвінок</h3>
-            <hr>
             <form class="call_back_form">
               <div class="row">
                 <div>
-                  <input type="text" placeholder="Ім'я" name="name" minlength="2" data-validate="name">
+                  <input type="text" placeholder="Ім'я:" name="name" minlength="2" data-validate="name">
                 </div>
                 <div>
-                  <input type="text" placeholder="Телефон" name="phone" data-validate="phone">
+                  <input type="text" placeholder="Телефон:" name="phone" data-validate="phone">
                 </div>
                 <div>
-                  <input type="email" placeholder="E-mail" name="email" data-validate="email">
+                  <input type="email" placeholder="E-mail:" name="email" data-validate="email">
                 </div>
                 <div class="btn submit">Надіслати</div>
               </div>
             </form>
           </div>
-          <div id="advantage">
+        </div>
+        <div id="advantage">
+          <div class="wrap">
             <h3>Наші переваги</h3>
-            <hr>
+            <!--hr-->
+            <!--.text-advantage.
+            Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні.
+            Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя,
+            
+            -->
             <ul>
               <li>
-                <div class="img-holder"><img src="img/content/advantage1.png"></div>
+                <div class="number">01</div>
                 <div class="text-holder">
-                  <h4>Заголовок</h4>
-                  <p>Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів.</p>
+                  <h4>Досвід</h4>
+                  <p>Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар</p>
                 </div>
               </li>
               <li>
-                <div class="img-holder"><img src="img/content/advantage2.png"></div>
+                <div class="number">02</div>
                 <div class="text-holder">
-                  <h4>Заголовок</h4>
-                  <p>Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів.</p>
+                  <h4>Широкий вибір</h4>
+                  <p>Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар</p>
                 </div>
               </li>
               <li>
-                <div class="img-holder"><img src="img/content/advantage3.png"></div>
+                <div class="number">03</div>
                 <div class="text-holder">
-                  <h4>Заголовок</h4>
-                  <p>Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів.</p>
+                  <h4>Повний супровід</h4>
+                  <p>Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар</p>
                 </div>
               </li>
               <li>
-                <div class="img-holder"><img src="img/content/advantage4.png"></div>
+                <div class="number">04</div>
                 <div class="text-holder">
-                  <h4>Заголовок</h4>
-                  <p>Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів.</p>
+                  <h4>Безкоштовні консультації</h4>
+                  <p>Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар</p>
                 </div>
               </li>
               <li>
-                <div class="img-holder"><img src="img/content/advantage5.png"></div>
+                <div class="number">05</div>
                 <div class="text-holder">
-                  <h4>Заголовок</h4>
-                  <p>Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів.</p>
+                  <h4>Актуальні вакансії</h4>
+                  <p>Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар</p>
                 </div>
               </li>
               <li>
-                <div class="img-holder"><img src="img/content/advantage6.png"></div>
+                <div class="number">06</div>
                 <div class="text-holder">
-                  <h4>Заголовок</h4>
-                  <p>Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів.</p>
+                  <h4>Представництво в Польщі</h4>
+                  <p>Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар</p>
                 </div>
               </li>
             </ul>
@@ -152,7 +163,7 @@
         <div id="visu">
           <div class="wrap cf">
             <h3>Відкриття віз</h3>
-            <hr>
+            <!--hr-->
             <div class="tabs">
               <div class="tabs-menu cf">
                 <ul class="nav nav-tabs">
@@ -166,56 +177,58 @@
                   <div class="visa_slider1">
                     <div class="visa_item">
                       <div class="text-holder">
-                        <h4>Робоча</h4>
-                        <div><span class="name">Оформлення:</span><span class="value">20 - 40 днів</span></div>
-                        <div><span class="name"> Період візи:</span><span class="value time">180/180 днів</span></div>
-                        <div><span class="name"> Вартість:</span><span class="value price">120€</span></div>
-                        <div><span class="name">Додатковий збір:</span><span class="value">Безкоштовна реєстрація, 470 грн - Візовий центр</span></div><a href="#modal_form" class="more open_modal">Детальніше</a>
+                        <div class="title-holder cf">
+                          <h4>Робоча</h4>
+                          <div class="price">€120</div>
+                          <div class="time-holder"><span class="name"> Період візи:</span><span class="value time">180/180 днів</span></div>
+                        </div>
+                        <div class="block_text">
+                          <div>Оформлення 20 - 40 днів</div>
+                          <div><span class="value">Безкоштовна реєстрація, 470 грн - Візовий центр</span></div>
+                          <div class="text_visa">Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар</div>
+                        </div><a href="#modal_form" class="more open_modal">Детальніше</a>
                       </div>
                     </div>
                     <div class="visa_item">
                       <div class="text-holder">
-                        <h4>Робоча</h4>
-                        <div><span class="name">Оформлення:</span><span class="value">20 - 40 днів</span></div>
-                        <div><span class="name"> Період візи:</span><span class="value time">360/360 днів</span></div>
-                        <div><span class="name"> Вартість:</span><span class="value price">400€</span></div>
-                        <div><span class="name">Додатковий збір:</span><span class="value">Безкоштовна реєстрація, 470 грн - Візовий центр</span></div><a href="#modal_form" class="more open_modal">Детальніше</a>
+                        <div class="title-holder cf">
+                          <h4>Робоча</h4>
+                          <div class="price">€400</div>
+                          <div class="time-holder"><span class="name"> Період візи:</span><span class="value time">360/360 днів</span></div>
+                        </div>
+                        <div class="block_text">
+                          <div>Оформлення 20 - 40 днів</div>
+                          <div><span class="value">Безкоштовна реєстрація, 470 грн - Візовий центр</span></div>
+                          <div class="text_visa">Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар</div>
+                        </div><a href="#modal_form" class="more open_modal">Детальніше</a>
                       </div>
                     </div>
                     <div class="visa_item">
                       <div class="text-holder">
-                        <h4>Шенген</h4>
-                        <div><span class="name">Оформлення:</span><span class="value">10 - 20 днів</span></div>
-                        <div><span class="name"> Період візи:</span><span class="value time">360/180 днів</span></div>
-                        <div><span class="name"> Вартість:</span><span class="value price">30€</span></div>
-                        <div><span class="name">Додатковий збір:</span><span class="value">Безкоштовна реєстрація, 470 грн - Візовий центр</span></div><a href="#modal_form" class="more open_modal">Детальніше</a>
+                        <div class="title-holder cf">
+                          <h4>Робоча</h4>
+                          <div class="price">€120</div>
+                          <div class="time-holder"><span class="name"> Період візи:</span><span class="value time">180/180 днів</span></div>
+                        </div>
+                        <div class="block_text">
+                          <div>Оформлення 20 - 40 днів</div>
+                          <div><span class="value">Безкоштовна реєстрація, 470 грн - Візовий центр</span></div>
+                          <div class="text_visa">Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар</div>
+                        </div><a href="#modal_form" class="more open_modal">Детальніше</a>
                       </div>
                     </div>
                     <div class="visa_item">
                       <div class="text-holder">
-                        <h4>Робоча</h4>
-                        <div><span class="name">Оформлення:</span><span class="value">10 - 20 днів</span></div>
-                        <div><span class="name"> Період візи:</span><span class="value time">720/360 днів</span></div>
-                        <div><span class="name"> Вартість:</span><span class="value price"> 120€</span></div>
-                        <div><span class="name">Додатковий збір:</span><span class="value">Безкоштовна реєстрація, 470 грн - Візовий центр</span></div><a href="#modal_form" class="more open_modal">Детальніше</a>
-                      </div>
-                    </div>
-                    <div class="visa_item">
-                      <div class="text-holder">
-                        <h4>Шенген</h4>
-                        <div><span class="name">Оформлення:</span><span class="value">10 - 20 днів</span></div>
-                        <div><span class="name"> Період візи:</span><span class="value time">360/180 днів</span></div>
-                        <div><span class="name"> Вартість:</span><span class="value price"> 300€</span></div>
-                        <div><span class="name">Додатковий збір:</span><span class="value">Безкоштовна реєстрація, 470 грн - Візовий центр</span></div><a href="#modal_form" class="more open_modal">Детальніше</a>
-                      </div>
-                    </div>
-                    <div class="visa_item">
-                      <div class="text-holder">
-                        <h4>Робоча</h4>
-                        <div><span class="name">Оформлення:</span><span class="value">10 - 20 днів</span></div>
-                        <div><span class="name"> Період візи:</span><span class="value time">720/360 днів</span></div>
-                        <div><span class="name"> Вартість:</span><span class="value price"> 120€</span></div>
-                        <div><span class="name">Додатковий збір:</span><span class="value">Безкоштовна реєстрація, 470 грн - Візовий центр</span></div><a href="#modal_form" class="more open_modal">Детальніше</a>
+                        <div class="title-holder cf">
+                          <h4>Робоча</h4>
+                          <div class="price">€400</div>
+                          <div class="time-holder"><span class="name"> Період візи:</span><span class="value time">360/360 днів</span></div>
+                        </div>
+                        <div class="block_text">
+                          <div>Оформлення 20 - 40 днів</div>
+                          <div><span class="value">Безкоштовна реєстрація, 470 грн - Візовий центр</span></div>
+                          <div class="text_visa">Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар</div>
+                        </div><a href="#modal_form" class="more open_modal">Детальніше</a>
                       </div>
                     </div>
                   </div>
@@ -224,56 +237,58 @@
                   <div class="visa_slider1">
                     <div class="visa_item">
                       <div class="text-holder">
-                        <h4>Шенген</h4>
-                        <div><span class="name">Оформлення:</span><span class="value">7 - 14 днів</span></div>
-                        <div><span class="name"> Період візи:</span><span class="value time">180/180 днів</span></div>
-                        <div><span class="name"> Вартість:</span><span class="value price"> 120€</span></div>
-                        <div><span class="name">Додатковий збір:</span><span class="value">Безкоштовна реєстрація, 470 грн - Візовий центр</span></div><a href="#modal_form" class="more open_modal">Детальніше</a>
+                        <div class="title-holder cf">
+                          <h4>Робоча</h4>
+                          <div class="price">€120</div>
+                          <div class="time-holder"><span class="name"> Період візи:</span><span class="value time">180/180 днів</span></div>
+                        </div>
+                        <div class="block_text">
+                          <div>Оформлення 20 - 40 днів</div>
+                          <div><span class="value">Безкоштовна реєстрація, 470 грн - Візовий центр</span></div>
+                          <div class="text_visa">Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар</div>
+                        </div><a href="#modal_form" class="more open_modal">Детальніше</a>
                       </div>
                     </div>
                     <div class="visa_item">
                       <div class="text-holder">
-                        <h4>Шенген</h4>
-                        <div><span class="name">Оформлення:</span><span class="value">7 - 14 днів</span></div>
-                        <div><span class="name"> Період візи:</span><span class="value time">360/360 днів</span></div>
-                        <div><span class="name"> Вартість:</span><span class="value price"> 400€</span></div>
-                        <div><span class="name">Додатковий збір:</span><span class="value">Безкоштовна реєстрація, 470 грн - Візовий центр</span></div><a href="#modal_form" class="more open_modal">Детальніше</a>
+                        <div class="title-holder cf">
+                          <h4>Робоча</h4>
+                          <div class="price">€400</div>
+                          <div class="time-holder"><span class="name"> Період візи:</span><span class="value time">360/360 днів</span></div>
+                        </div>
+                        <div class="block_text">
+                          <div>Оформлення 20 - 40 днів</div>
+                          <div><span class="value">Безкоштовна реєстрація, 470 грн - Візовий центр</span></div>
+                          <div class="text_visa">Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар</div>
+                        </div><a href="#modal_form" class="more open_modal">Детальніше</a>
                       </div>
                     </div>
                     <div class="visa_item">
                       <div class="text-holder">
-                        <h4>Шенген</h4>
-                        <div><span class="name">Оформлення:</span><span class="value">7 - 14 днів</span></div>
-                        <div><span class="name"> Період візи:</span><span class="value time">360/180 днів</span></div>
-                        <div><span class="name"> Вартість:</span><span class="value price"> 300€</span></div>
-                        <div><span class="name">Додатковий збір:</span><span class="value">Безкоштовна реєстрація, 470 грн - Візовий центр</span></div><a href="#modal_form" class="more open_modal">Детальніше</a>
+                        <div class="title-holder cf">
+                          <h4>Робоча</h4>
+                          <div class="price">€120</div>
+                          <div class="time-holder"><span class="name"> Період візи:</span><span class="value time">180/180 днів</span></div>
+                        </div>
+                        <div class="block_text">
+                          <div>Оформлення 20 - 40 днів</div>
+                          <div><span class="value">Безкоштовна реєстрація, 470 грн - Візовий центр</span></div>
+                          <div class="text_visa">Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар</div>
+                        </div><a href="#modal_form" class="more open_modal">Детальніше</a>
                       </div>
                     </div>
                     <div class="visa_item">
                       <div class="text-holder">
-                        <h4>Шенген</h4>
-                        <div><span class="name">Оформлення:</span><span class="value">7 - 14 днів</span></div>
-                        <div><span class="name"> Період візи:</span><span class="value time">720/360 днів</span></div>
-                        <div><span class="name"> Вартість:</span><span class="value price">120€</span></div>
-                        <div><span class="name">Додатковий збір:</span><span class="value">Безкоштовна реєстрація, 470 грн - Візовий центр</span></div><a href="#modal_form" class="more open_modal">Детальніше</a>
-                      </div>
-                    </div>
-                    <div class="visa_item">
-                      <div class="text-holder">
-                        <h4>Шенген</h4>
-                        <div><span class="name">Оформлення:</span><span class="value">7 - 14 днів</span></div>
-                        <div><span class="name"> Період візи:</span><span class="value time">360/180 днів</span></div>
-                        <div><span class="name"> Вартість:</span><span class="value price">300€</span></div>
-                        <div><span class="name">Додатковий збір:</span><span class="value">Безкоштовна реєстрація, 470 грн - Візовий центр</span></div><a href="#modal_form" class="more open_modal">Детальніше</a>
-                      </div>
-                    </div>
-                    <div class="visa_item">
-                      <div class="text-holder">
-                        <h4>Шенген</h4>
-                        <div><span class="name">Оформлення:</span><span class="value">7 - 14 днів</span></div>
-                        <div><span class="name"> Період візи:</span><span class="value time">720/360 днів</span></div>
-                        <div><span class="name"> Вартість:</span><span class="value price">120€</span></div>
-                        <div><span class="name">Додатковий збір:</span><span class="value">Безкоштовна реєстрація, 470 грн - Візовий центр</span></div><a href="#modal_form" class="more open_modal">Детальніше</a>
+                        <div class="title-holder cf">
+                          <h4>Робоча</h4>
+                          <div class="price">€400</div>
+                          <div class="time-holder"><span class="name"> Період візи:</span><span class="value time">360/360 днів</span></div>
+                        </div>
+                        <div class="block_text">
+                          <div>Оформлення 20 - 40 днів</div>
+                          <div><span class="value">Безкоштовна реєстрація, 470 грн - Візовий центр</span></div>
+                          <div class="text_visa">Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар</div>
+                        </div><a href="#modal_form" class="more open_modal">Детальніше</a>
                       </div>
                     </div>
                   </div>
@@ -282,56 +297,58 @@
                   <div class="visa_slider1">
                     <div class="visa_item">
                       <div class="text-holder">
-                        <h4>Шенген</h4>
-                        <div><span class="name">Оформлення:</span><span class="value">14 - 25 днів</span></div>
-                        <div><span class="name"> Період візи:</span><span class="value time">180/180 днів</span></div>
-                        <div><span class="name"> Вартість:</span><span class="value price">120€</span></div>
-                        <div><span class="name">Додатковий збір:</span><span class="value">Безкоштовна реєстрація, 470 грн - Візовий центр</span></div><a href="#modal_form" class="more open_modal">Детальніше</a>
+                        <div class="title-holder cf">
+                          <h4>Робоча</h4>
+                          <div class="price">€120</div>
+                          <div class="time-holder"><span class="name"> Період візи:</span><span class="value time">180/180 днів</span></div>
+                        </div>
+                        <div class="block_text">
+                          <div>Оформлення 20 - 40 днів</div>
+                          <div><span class="value">Безкоштовна реєстрація, 470 грн - Візовий центр</span></div>
+                          <div class="text_visa">Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар</div>
+                        </div><a href="#modal_form" class="more open_modal">Детальніше</a>
                       </div>
                     </div>
                     <div class="visa_item">
                       <div class="text-holder">
-                        <h4>Шенген</h4>
-                        <div><span class="name">Оформлення:</span><span class="value">14 - 25 днів</span></div>
-                        <div><span class="name"> Період візи:</span><span class="value time">360/360 днів</span></div>
-                        <div><span class="name"> Вартість:</span><span class="value price">400€</span></div>
-                        <div><span class="name">Додатковий збір:</span><span class="value">Безкоштовна реєстрація, 470 грн - Візовий центр</span></div><a href="#modal_form" class="more open_modal">Детальніше</a>
+                        <div class="title-holder cf">
+                          <h4>Робоча</h4>
+                          <div class="price">€400</div>
+                          <div class="time-holder"><span class="name"> Період візи:</span><span class="value time">360/360 днів</span></div>
+                        </div>
+                        <div class="block_text">
+                          <div>Оформлення 20 - 40 днів</div>
+                          <div><span class="value">Безкоштовна реєстрація, 470 грн - Візовий центр</span></div>
+                          <div class="text_visa">Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар</div>
+                        </div><a href="#modal_form" class="more open_modal">Детальніше</a>
                       </div>
                     </div>
                     <div class="visa_item">
                       <div class="text-holder">
-                        <h4>Шенген</h4>
-                        <div><span class="name">Оформлення:</span><span class="value">14 - 25 днів</span></div>
-                        <div><span class="name"> Період візи:</span><span class="value time">360/180 днів</span></div>
-                        <div><span class="name"> Вартість:</span><span class="value price">300€</span></div>
-                        <div><span class="name">Додатковий збір:</span><span class="value">Безкоштовна реєстрація, 470 грн - Візовий центр</span></div><a href="#modal_form" class="more open_modal">Детальніше</a>
+                        <div class="title-holder cf">
+                          <h4>Робоча</h4>
+                          <div class="price">€120</div>
+                          <div class="time-holder"><span class="name"> Період візи:</span><span class="value time">180/180 днів</span></div>
+                        </div>
+                        <div class="block_text">
+                          <div>Оформлення 20 - 40 днів</div>
+                          <div><span class="value">Безкоштовна реєстрація, 470 грн - Візовий центр</span></div>
+                          <div class="text_visa">Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар</div>
+                        </div><a href="#modal_form" class="more open_modal">Детальніше</a>
                       </div>
                     </div>
                     <div class="visa_item">
                       <div class="text-holder">
-                        <h4>Шенген</h4>
-                        <div><span class="name">Оформлення:</span><span class="value">14 - 25 днів</span></div>
-                        <div><span class="name"> Період візи:</span><span class="value time">720/360 днів</span></div>
-                        <div><span class="name"> Вартість:</span><span class="value price">120€</span></div>
-                        <div><span class="name">Додатковий збір:</span><span class="value">Безкоштовна реєстрація, 470 грн - Візовий центр</span></div><a href="#modal_form" class="more open_modal">Детальніше</a>
-                      </div>
-                    </div>
-                    <div class="visa_item">
-                      <div class="text-holder">
-                        <h4>Шенген</h4>
-                        <div><span class="name">Оформлення:</span><span class="value">14 - 25 днів</span></div>
-                        <div><span class="name"> Період візи:</span><span class="value time">360/180 днів</span></div>
-                        <div><span class="name"> Вартість:</span><span class="value price">300€</span></div>
-                        <div><span class="name">Додатковий збір:</span><span class="value">Безкоштовна реєстрація, 470 грн - Візовий центр</span></div><a href="#modal_form" class="more open_modal">Детальніше</a>
-                      </div>
-                    </div>
-                    <div class="visa_item">
-                      <div class="text-holder">
-                        <h4>Шенген</h4>
-                        <div><span class="name">Оформлення:</span><span class="value">14 - 25 днів</span></div>
-                        <div><span class="name"> Період візи:</span><span class="value time">720/360 днів</span></div>
-                        <div><span class="name"> Вартість:</span><span class="value price">120€</span></div>
-                        <div><span class="name">Додатковий збір:</span><span class="value">Безкоштовна реєстрація, 470 грн - Візовий центр</span></div><a href="#modal_form" class="more open_modal">Детальніше</a>
+                        <div class="title-holder cf">
+                          <h4>Робоча</h4>
+                          <div class="price">€400</div>
+                          <div class="time-holder"><span class="name"> Період візи:</span><span class="value time">360/360 днів</span></div>
+                        </div>
+                        <div class="block_text">
+                          <div>Оформлення 20 - 40 днів</div>
+                          <div><span class="value">Безкоштовна реєстрація, 470 грн - Візовий центр</span></div>
+                          <div class="text_visa">Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар</div>
+                        </div><a href="#modal_form" class="more open_modal">Детальніше</a>
                       </div>
                     </div>
                   </div>
@@ -343,7 +360,7 @@
         <div id="visu" class="mobile">
           <div class="wrap cf">
             <h3>Відкриття віз</h3>
-            <hr>
+            <!--hr-->
             <div class="tabs">
               <div class="tabs-menu cf">
                 <ul class="nav nav-tabs">
@@ -357,56 +374,58 @@
                   <div class="visa_slider2">
                     <div class="visa_item">
                       <div class="text-holder">
-                        <h4>Робоча</h4>
-                        <div><span class="name">Оформлення:</span><span class="value">20 - 40 днів</span></div>
-                        <div><span class="name"> Період візи:</span><span class="value time">180/180 днів</span></div>
-                        <div><span class="name"> Вартість:</span><span class="value price">120€</span></div>
-                        <div><span class="name">Додатковий збір:</span><span class="value">Безкоштовна реєстрація, 470 грн - Візовий центр</span></div><a href="#modal_form" class="more open_modal">Детальніше</a>
+                        <div class="title-holder cf">
+                          <h4>Робоча</h4>
+                          <div class="price">€120</div>
+                          <div class="time-holder"><span class="name"> Період візи:</span><span class="value time">180/180 днів</span></div>
+                        </div>
+                        <div class="block_text">
+                          <div>Оформлення 20 - 40 днів</div>
+                          <div><span class="value">Безкоштовна реєстрація, 470 грн - Візовий центр</span></div>
+                          <div class="text_visa">Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар</div>
+                        </div><a href="#modal_form" class="more open_modal">Детальніше</a>
                       </div>
                     </div>
                     <div class="visa_item">
                       <div class="text-holder">
-                        <h4>Робоча</h4>
-                        <div><span class="name">Оформлення:</span><span class="value">20 - 40 днів</span></div>
-                        <div><span class="name"> Період візи:</span><span class="value time">360/360 днів</span></div>
-                        <div><span class="name"> Вартість:</span><span class="value price">400€</span></div>
-                        <div><span class="name">Додатковий збір:</span><span class="value">Безкоштовна реєстрація, 470 грн - Візовий центр</span></div><a href="#modal_form" class="more open_modal">Детальніше</a>
+                        <div class="title-holder cf">
+                          <h4>Робоча</h4>
+                          <div class="price">€400</div>
+                          <div class="time-holder"><span class="name"> Період візи:</span><span class="value time">360/360 днів</span></div>
+                        </div>
+                        <div class="block_text">
+                          <div>Оформлення 20 - 40 днів</div>
+                          <div><span class="value">Безкоштовна реєстрація, 470 грн - Візовий центр</span></div>
+                          <div class="text_visa">Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар</div>
+                        </div><a href="#modal_form" class="more open_modal">Детальніше</a>
                       </div>
                     </div>
                     <div class="visa_item">
                       <div class="text-holder">
-                        <h4>Шенген</h4>
-                        <div><span class="name">Оформлення:</span><span class="value">10 - 20 днів</span></div>
-                        <div><span class="name"> Період візи:</span><span class="value time">360/180 днів</span></div>
-                        <div><span class="name"> Вартість:</span><span class="value price">30€</span></div>
-                        <div><span class="name">Додатковий збір:</span><span class="value">Безкоштовна реєстрація, 470 грн - Візовий центр</span></div><a href="#modal_form" class="more open_modal">Детальніше</a>
+                        <div class="title-holder cf">
+                          <h4>Робоча</h4>
+                          <div class="price">€120</div>
+                          <div class="time-holder"><span class="name"> Період візи:</span><span class="value time">180/180 днів</span></div>
+                        </div>
+                        <div class="block_text">
+                          <div>Оформлення 20 - 40 днів</div>
+                          <div><span class="value">Безкоштовна реєстрація, 470 грн - Візовий центр</span></div>
+                          <div class="text_visa">Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар</div>
+                        </div><a href="#modal_form" class="more open_modal">Детальніше</a>
                       </div>
                     </div>
                     <div class="visa_item">
                       <div class="text-holder">
-                        <h4>Робоча</h4>
-                        <div><span class="name">Оформлення:</span><span class="value">10 - 20 днів</span></div>
-                        <div><span class="name"> Період візи:</span><span class="value time">720/360 днів</span></div>
-                        <div><span class="name"> Вартість:</span><span class="value price"> 120€</span></div>
-                        <div><span class="name">Додатковий збір:</span><span class="value">Безкоштовна реєстрація, 470 грн - Візовий центр</span></div><a href="#modal_form" class="more open_modal">Детальніше</a>
-                      </div>
-                    </div>
-                    <div class="visa_item">
-                      <div class="text-holder">
-                        <h4>Шенген</h4>
-                        <div><span class="name">Оформлення:</span><span class="value">10 - 20 днів</span></div>
-                        <div><span class="name"> Період візи:</span><span class="value time">360/180 днів</span></div>
-                        <div><span class="name"> Вартість:</span><span class="value price"> 300€</span></div>
-                        <div><span class="name">Додатковий збір:</span><span class="value">Безкоштовна реєстрація, 470 грн - Візовий центр</span></div><a href="#modal_form" class="more open_modal">Детальніше</a>
-                      </div>
-                    </div>
-                    <div class="visa_item">
-                      <div class="text-holder">
-                        <h4>Робоча</h4>
-                        <div><span class="name">Оформлення:</span><span class="value">10 - 20 днів</span></div>
-                        <div><span class="name"> Період візи:</span><span class="value time">720/360 днів</span></div>
-                        <div><span class="name"> Вартість:</span><span class="value price"> 120€</span></div>
-                        <div><span class="name">Додатковий збір:</span><span class="value">Безкоштовна реєстрація, 470 грн - Візовий центр</span></div><a href="#modal_form" class="more open_modal">Детальніше</a>
+                        <div class="title-holder cf">
+                          <h4>Робоча</h4>
+                          <div class="price">€400</div>
+                          <div class="time-holder"><span class="name"> Період візи:</span><span class="value time">360/360 днів</span></div>
+                        </div>
+                        <div class="block_text">
+                          <div>Оформлення 20 - 40 днів</div>
+                          <div><span class="value">Безкоштовна реєстрація, 470 грн - Візовий центр</span></div>
+                          <div class="text_visa">Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар</div>
+                        </div><a href="#modal_form" class="more open_modal">Детальніше</a>
                       </div>
                     </div>
                   </div>
@@ -415,56 +434,58 @@
                   <div class="visa_slider2">
                     <div class="visa_item">
                       <div class="text-holder">
-                        <h4>Шенген</h4>
-                        <div><span class="name">Оформлення:</span><span class="value">7 - 14 днів</span></div>
-                        <div><span class="name"> Період візи:</span><span class="value time">180/180 днів</span></div>
-                        <div><span class="name"> Вартість:</span><span class="value price"> 120€</span></div>
-                        <div><span class="name">Додатковий збір:</span><span class="value">Безкоштовна реєстрація, 470 грн - Візовий центр</span></div><a href="#modal_form" class="more open_modal">Детальніше</a>
+                        <div class="title-holder cf">
+                          <h4>Робоча</h4>
+                          <div class="price">€120</div>
+                          <div class="time-holder"><span class="name"> Період візи:</span><span class="value time">180/180 днів</span></div>
+                        </div>
+                        <div class="block_text">
+                          <div>Оформлення 20 - 40 днів</div>
+                          <div><span class="value">Безкоштовна реєстрація, 470 грн - Візовий центр</span></div>
+                          <div class="text_visa">Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар</div>
+                        </div><a href="#modal_form" class="more open_modal">Детальніше</a>
                       </div>
                     </div>
                     <div class="visa_item">
                       <div class="text-holder">
-                        <h4>Шенген</h4>
-                        <div><span class="name">Оформлення:</span><span class="value">7 - 14 днів</span></div>
-                        <div><span class="name"> Період візи:</span><span class="value time">360/360 днів</span></div>
-                        <div><span class="name"> Вартість:</span><span class="value price"> 400€</span></div>
-                        <div><span class="name">Додатковий збір:</span><span class="value">Безкоштовна реєстрація, 470 грн - Візовий центр</span></div><a href="#modal_form" class="more open_modal">Детальніше</a>
+                        <div class="title-holder cf">
+                          <h4>Робоча</h4>
+                          <div class="price">€400</div>
+                          <div class="time-holder"><span class="name"> Період візи:</span><span class="value time">360/360 днів</span></div>
+                        </div>
+                        <div class="block_text">
+                          <div>Оформлення 20 - 40 днів</div>
+                          <div><span class="value">Безкоштовна реєстрація, 470 грн - Візовий центр</span></div>
+                          <div class="text_visa">Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар</div>
+                        </div><a href="#modal_form" class="more open_modal">Детальніше</a>
                       </div>
                     </div>
                     <div class="visa_item">
                       <div class="text-holder">
-                        <h4>Шенген</h4>
-                        <div><span class="name">Оформлення:</span><span class="value">7 - 14 днів</span></div>
-                        <div><span class="name"> Період візи:</span><span class="value time">360/180 днів</span></div>
-                        <div><span class="name"> Вартість:</span><span class="value price"> 300€</span></div>
-                        <div><span class="name">Додатковий збір:</span><span class="value">Безкоштовна реєстрація, 470 грн - Візовий центр</span></div><a href="#modal_form" class="more open_modal">Детальніше</a>
+                        <div class="title-holder cf">
+                          <h4>Робоча</h4>
+                          <div class="price">€120</div>
+                          <div class="time-holder"><span class="name"> Період візи:</span><span class="value time">180/180 днів</span></div>
+                        </div>
+                        <div class="block_text">
+                          <div>Оформлення 20 - 40 днів</div>
+                          <div><span class="value">Безкоштовна реєстрація, 470 грн - Візовий центр</span></div>
+                          <div class="text_visa">Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар</div>
+                        </div><a href="#modal_form" class="more open_modal">Детальніше</a>
                       </div>
                     </div>
                     <div class="visa_item">
                       <div class="text-holder">
-                        <h4>Шенген</h4>
-                        <div><span class="name">Оформлення:</span><span class="value">7 - 14 днів</span></div>
-                        <div><span class="name"> Період візи:</span><span class="value time">720/360 днів</span></div>
-                        <div><span class="name"> Вартість:</span><span class="value price">120€</span></div>
-                        <div><span class="name">Додатковий збір:</span><span class="value">Безкоштовна реєстрація, 470 грн - Візовий центр</span></div><a href="#modal_form" class="more open_modal">Детальніше</a>
-                      </div>
-                    </div>
-                    <div class="visa_item">
-                      <div class="text-holder">
-                        <h4>Шенген</h4>
-                        <div><span class="name">Оформлення:</span><span class="value">7 - 14 днів</span></div>
-                        <div><span class="name"> Період візи:</span><span class="value time">360/180 днів</span></div>
-                        <div><span class="name"> Вартість:</span><span class="value price">300€</span></div>
-                        <div><span class="name">Додатковий збір:</span><span class="value">Безкоштовна реєстрація, 470 грн - Візовий центр</span></div><a href="#modal_form" class="more open_modal">Детальніше</a>
-                      </div>
-                    </div>
-                    <div class="visa_item">
-                      <div class="text-holder">
-                        <h4>Шенген</h4>
-                        <div><span class="name">Оформлення:</span><span class="value">7 - 14 днів</span></div>
-                        <div><span class="name"> Період візи:</span><span class="value time">720/360 днів</span></div>
-                        <div><span class="name"> Вартість:</span><span class="value price">120€</span></div>
-                        <div><span class="name">Додатковий збір:</span><span class="value">Безкоштовна реєстрація, 470 грн - Візовий центр</span></div><a href="#modal_form" class="more open_modal">Детальніше</a>
+                        <div class="title-holder cf">
+                          <h4>Робоча</h4>
+                          <div class="price">€400</div>
+                          <div class="time-holder"><span class="name"> Період візи:</span><span class="value time">360/360 днів</span></div>
+                        </div>
+                        <div class="block_text">
+                          <div>Оформлення 20 - 40 днів</div>
+                          <div><span class="value">Безкоштовна реєстрація, 470 грн - Візовий центр</span></div>
+                          <div class="text_visa">Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар</div>
+                        </div><a href="#modal_form" class="more open_modal">Детальніше</a>
                       </div>
                     </div>
                   </div>
@@ -473,56 +494,58 @@
                   <div class="visa_slider2">
                     <div class="visa_item">
                       <div class="text-holder">
-                        <h4>Шенген</h4>
-                        <div><span class="name">Оформлення:</span><span class="value">14 - 25 днів</span></div>
-                        <div><span class="name"> Період візи:</span><span class="value time">180/180 днів</span></div>
-                        <div><span class="name"> Вартість:</span><span class="value price">120€</span></div>
-                        <div><span class="name">Додатковий збір:</span><span class="value">Безкоштовна реєстрація, 470 грн - Візовий центр</span></div><a href="#modal_form" class="more open_modal">Детальніше</a>
+                        <div class="title-holder cf">
+                          <h4>Робоча</h4>
+                          <div class="price">€120</div>
+                          <div class="time-holder"><span class="name"> Період візи:</span><span class="value time">180/180 днів</span></div>
+                        </div>
+                        <div class="block_text">
+                          <div>Оформлення 20 - 40 днів</div>
+                          <div><span class="value">Безкоштовна реєстрація, 470 грн - Візовий центр</span></div>
+                          <div class="text_visa">Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар</div>
+                        </div><a href="#modal_form" class="more open_modal">Детальніше</a>
                       </div>
                     </div>
                     <div class="visa_item">
                       <div class="text-holder">
-                        <h4>Шенген</h4>
-                        <div><span class="name">Оформлення:</span><span class="value">14 - 25 днів</span></div>
-                        <div><span class="name"> Період візи:</span><span class="value time">360/360 днів</span></div>
-                        <div><span class="name"> Вартість:</span><span class="value price">400€</span></div>
-                        <div><span class="name">Додатковий збір:</span><span class="value">Безкоштовна реєстрація, 470 грн - Візовий центр</span></div><a href="#modal_form" class="more open_modal">Детальніше</a>
+                        <div class="title-holder cf">
+                          <h4>Робоча</h4>
+                          <div class="price">€400</div>
+                          <div class="time-holder"><span class="name"> Період візи:</span><span class="value time">360/360 днів</span></div>
+                        </div>
+                        <div class="block_text">
+                          <div>Оформлення 20 - 40 днів</div>
+                          <div><span class="value">Безкоштовна реєстрація, 470 грн - Візовий центр</span></div>
+                          <div class="text_visa">Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар</div>
+                        </div><a href="#modal_form" class="more open_modal">Детальніше</a>
                       </div>
                     </div>
                     <div class="visa_item">
                       <div class="text-holder">
-                        <h4>Шенген</h4>
-                        <div><span class="name">Оформлення:</span><span class="value">14 - 25 днів</span></div>
-                        <div><span class="name"> Період візи:</span><span class="value time">360/180 днів</span></div>
-                        <div><span class="name"> Вартість:</span><span class="value price">300€</span></div>
-                        <div><span class="name">Додатковий збір:</span><span class="value">Безкоштовна реєстрація, 470 грн - Візовий центр</span></div><a href="#modal_form" class="more open_modal">Детальніше</a>
+                        <div class="title-holder cf">
+                          <h4>Робоча</h4>
+                          <div class="price">€120</div>
+                          <div class="time-holder"><span class="name"> Період візи:</span><span class="value time">180/180 днів</span></div>
+                        </div>
+                        <div class="block_text">
+                          <div>Оформлення 20 - 40 днів</div>
+                          <div><span class="value">Безкоштовна реєстрація, 470 грн - Візовий центр</span></div>
+                          <div class="text_visa">Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар</div>
+                        </div><a href="#modal_form" class="more open_modal">Детальніше</a>
                       </div>
                     </div>
                     <div class="visa_item">
                       <div class="text-holder">
-                        <h4>Шенген</h4>
-                        <div><span class="name">Оформлення:</span><span class="value">14 - 25 днів</span></div>
-                        <div><span class="name"> Період візи:</span><span class="value time">720/360 днів</span></div>
-                        <div><span class="name"> Вартість:</span><span class="value price">120€</span></div>
-                        <div><span class="name">Додатковий збір:</span><span class="value">Безкоштовна реєстрація, 470 грн - Візовий центр</span></div><a href="#modal_form" class="more open_modal">Детальніше</a>
-                      </div>
-                    </div>
-                    <div class="visa_item">
-                      <div class="text-holder">
-                        <h4>Шенген</h4>
-                        <div><span class="name">Оформлення:</span><span class="value">14 - 25 днів</span></div>
-                        <div><span class="name"> Період візи:</span><span class="value time">360/180 днів</span></div>
-                        <div><span class="name"> Вартість:</span><span class="value price">300€</span></div>
-                        <div><span class="name">Додатковий збір:</span><span class="value">Безкоштовна реєстрація, 470 грн - Візовий центр</span></div><a href="#modal_form" class="more open_modal">Детальніше</a>
-                      </div>
-                    </div>
-                    <div class="visa_item">
-                      <div class="text-holder">
-                        <h4>Шенген</h4>
-                        <div><span class="name">Оформлення:</span><span class="value">14 - 25 днів</span></div>
-                        <div><span class="name"> Період візи:</span><span class="value time">720/360 днів</span></div>
-                        <div><span class="name"> Вартість:</span><span class="value price">120€</span></div>
-                        <div><span class="name">Додатковий збір:</span><span class="value">Безкоштовна реєстрація, 470 грн - Візовий центр</span></div><a href="#modal_form" class="more open_modal">Детальніше</a>
+                        <div class="title-holder cf">
+                          <h4>Робоча</h4>
+                          <div class="price">€400</div>
+                          <div class="time-holder"><span class="name"> Період візи:</span><span class="value time">360/360 днів</span></div>
+                        </div>
+                        <div class="block_text">
+                          <div>Оформлення 20 - 40 днів</div>
+                          <div><span class="value">Безкоштовна реєстрація, 470 грн - Візовий центр</span></div>
+                          <div class="text_visa">Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар</div>
+                        </div><a href="#modal_form" class="more open_modal">Детальніше</a>
                       </div>
                     </div>
                   </div>
@@ -535,7 +558,7 @@
           <div class="job-holder">
             <div class="wrap">
               <h3>Вакансії</h3>
-              <hr>
+              <!--hr-->
               <div class="tabs">
                 <div class="tabs-menu cf">
                   <ul class="nav nav-tabs">
@@ -550,20 +573,16 @@
                       <div class="jobs_item">
                         <div class="img-holder"><img src="img/content/cleaning.jpg"></div>
                         <div class="text-holder">
-                          <h4>Вакансія</h4>
+                          <h4>Прибиральниця</h4>
                           <hr>
                           <div class="job_text">
                             <ul>
-                              <li>Список 1</li>
-                              <li>Список 1</li>
-                              <li>Список 1</li>
-                              <li>Список 1</li>
-                              <li>Список 1</li>
-                              <li>Список 1</li>
-                              <li>Список 1</li>
-                              <li>Список 1</li>
-                              <li>Список 1</li>
-                              <li>Список 1</li>
+                              <li>- вакансия для женщин</li>
+                              <li>- ЗП — 7-11 злотых за номер</li>
+                              <li>- бонус за выработку</li>
+                              <li>- трудовой договор</li>
+                              <li>- проживание в хостеле</li>
+                              <li>- полный социальный пакет</li>
                             </ul><a href="#modal_form" class="more open_modal">Детальніше</a>
                           </div>
                         </div>
@@ -575,11 +594,12 @@
                           <hr>
                           <div class="job_text">
                             <ul>
-                              <li>Список 1</li>
-                              <li>Список 1</li>
-                              <li>Список 1</li>
-                              <li>Список 1</li>
-                              <li>Список 1</li>
+                              <li>- сезонна робота (липень-вересень)</li>
+                              <li>- незалежно від погодних умов</li>
+                              <li>- робочий день від 8 годин, 5-6 днів на тиждень</li>
+                              <li>- ЗП 8-10 зл / год</li>
+                              <li>- Робота для сімейних пар, студентів</li>
+                              <li>- житло безкоштовно</li>
                             </ul><a href="#modal_form" class="more open_modal">Детальніше</a>
                           </div>
                         </div>
@@ -591,11 +611,12 @@
                           <hr>
                           <div class="job_text">
                             <ul>
-                              <li>Список 1</li>
-                              <li>Список 1</li>
-                              <li>Список 1</li>
-                              <li>Список 1</li>
-                              <li>Список 1</li>
+                              <li>- вакансія для жінок</li>
+                              <li>- ЗП - 8,5 злотих / год</li>
+                              <li>- 8-годинна зміна</li>
+                              <li>- трудовий договір на 6 міс.</li>
+                              <li>- надається житло</li>
+                              <li>- потрібно мед. книга</li>
                             </ul><a href="#modal_form" class="more open_modal">Детальніше</a>
                           </div>
                         </div>
@@ -607,11 +628,12 @@
                           <hr>
                           <div class="job_text">
                             <ul>
-                              <li>Список 1</li>
-                              <li>Список 1</li>
-                              <li>Список 1</li>
-                              <li>Список 1</li>
-                              <li>Список 1</li>
+                              <li>- сезонна робота (липень-вересень)</li>
+                              <li>- незалежно від погодних умов</li>
+                              <li>- робочий день від 8 годин, 5-6 днів на тиждень</li>
+                              <li>- ЗП 8-10 зл / год</li>
+                              <li>- Робота для сімейних пар, студентів</li>
+                              <li>- житло безкоштовно</li>
                             </ul><a href="#modal_form" class="more open_modal">Детальніше</a>
                           </div>
                         </div>
@@ -623,11 +645,12 @@
                           <hr>
                           <div class="job_text">
                             <ul>
-                              <li>Список 1</li>
-                              <li>Список 1</li>
-                              <li>Список 1</li>
-                              <li>Список 1</li>
-                              <li>Список 1</li>
+                              <li>- вакансія для жінок</li>
+                              <li>- ЗП - 8,5 злотих / год</li>
+                              <li>- 8-годинна зміна</li>
+                              <li>- трудовий договір на 6 міс.</li>
+                              <li>- надається житло</li>
+                              <li>- потрібно мед. книга</li>
                             </ul><a href="#modal_form" class="more open_modal">Детальніше</a>
                           </div>
                         </div>
@@ -639,11 +662,12 @@
                           <hr>
                           <div class="job_text">
                             <ul>
-                              <li>Список 1</li>
-                              <li>Список 1</li>
-                              <li>Список 1</li>
-                              <li>Список 1</li>
-                              <li>Список 1</li>
+                              <li>- вакансія для жінок</li>
+                              <li>- ЗП - 8,5 злотих / год</li>
+                              <li>- 8-годинна зміна</li>
+                              <li>- трудовий договір на 6 міс.</li>
+                              <li>- надається житло</li>
+                              <li>- потрібно мед. книга</li>
                             </ul><a href="#modal_form" class="more open_modal">Детальніше</a>
                           </div>
                         </div>
@@ -869,7 +893,7 @@
           <div class="job-holder">
             <div class="wrap">
               <h3>Вакансії</h3>
-              <hr>
+              <!--hr-->
               <div class="tabs">
                 <div class="tabs-menu cf">
                   <ul class="nav nav-tabs">
@@ -1202,23 +1226,37 @@
         <div id="how_works">
           <div class="wrap">
             <h3>Як це працює</h3>
-            <hr>
+            <!--hr-->
             <div class="works_items">
               <div class="item">
-                <div class="img-holder"><img src="img/content/advantage4.png"></div>
-                <div class="text-holder">Узгодження Ваших потреб</div>
+                <!--.img-holderimg(src="img/content/advantage4.png")
+                -->
+                <div class="holder-icon"><i class="fa fa-mobile"></i></div>
+                <div class="text-holder">Звяжіться з нами</div>
+                <div class="text_works">Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою"</div>
               </div>
               <div class="item">
-                <div class="img-holder"><img src="img/content/advantage3.png"></div>
+                <div class="holder-icon"><i class="fa fa-pencil-square-o"></i></div>
+                <!--.img-holderimg(src="img/content/advantage3.png")
+                -->
                 <div class="text-holder">Підписання договору</div>
+                <div class="text_works">Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою"</div>
               </div>
               <div class="item">
-                <div class="img-holder"><img src="img/content/advantage6.png"></div>
+                <div class="holder-icon"><i class="fa fa-briefcase"></i></div>
+                <!--.img-holderimg(src="img/content/advantage6.png")
+                -->
                 <div class="text-holder">Оформлення документів</div>
+                <div class="text_works">Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою"</div>
               </div>
               <div class="item">
-                <div class="img-holder"><img src="img/content/advantage1.png"></div>
-                <div class="text-holder">Виїзд за кордон в обумовлений термін</div>
+                <div class="holder-icon"><i class="fa fa-check"></i></div>
+                <!--.img-holder
+                img(src="img/content/advantage1.png")
+                
+                -->
+                <div class="text-holder">Отримання візи</div>
+                <div class="text_works">Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою"</div>
               </div>
             </div>
           </div>
@@ -1226,11 +1264,11 @@
         <div id="faq">
           <div class="wrap">
             <h3>Поширені запитання</h3>
-            <hr>
+            <!--hr-->
             <div class="slider_faq">
               <div class="item">
                 <div class="item_faq">
-                  <h4>Запитання 1</h4>
+                  <h4>В якому місті Польщі є робота?</h4>
                   <p>
                     Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні.
                     Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя,
@@ -1239,7 +1277,7 @@
                   </p>
                 </div>
                 <div class="item_faq">
-                  <h4>Запитання 1</h4>
+                  <h4>В якому місті Польщі є робота?</h4>
                   <p>
                     Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні.
                     Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя,
@@ -1247,7 +1285,7 @@
                   </p>
                 </div>
                 <div class="item_faq">
-                  <h4>Запитання 1</h4>
+                  <h4>В якому місті Польщі є робота?</h4>
                   <p>
                     Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні.
                     Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя,
@@ -1265,7 +1303,7 @@
               </div>
               <div class="item">
                 <div class="item_faq">
-                  <h4>Запитання 1</h4>
+                  <h4>В якому місті Польщі є робота?</h4>
                   <p>
                     Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні.
                     Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя,
@@ -1274,7 +1312,7 @@
                   </p>
                 </div>
                 <div class="item_faq">
-                  <h4>Запитання 1</h4>
+                  <h4>В якому місті Польщі є робота?</h4>
                   <p>
                     Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні.
                     Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя,
@@ -1282,7 +1320,7 @@
                   </p>
                 </div>
                 <div class="item_faq">
-                  <h4>Запитання 1</h4>
+                  <h4>В якому місті Польщі є робота?</h4>
                   <p>
                     Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні.
                     Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя,
@@ -1306,17 +1344,17 @@
         <div id="call_back" class="questions">
           <div class="wrap">
             <h3>Залишилися питання?</h3>
-            <hr>
+            <!--hr-->
             <form class="call_back_form">
               <div class="row">
                 <div>
-                  <input type="text" placeholder="Ім'я" name="name" minlength="2" data-validate="name">
+                  <input type="text" placeholder="Ім'я:" name="name" minlength="2" data-validate="name">
                 </div>
                 <div>
-                  <input type="text" placeholder="Телефон" name="phone" data-validate="phone">
+                  <input type="text" placeholder="Телефон:" name="phone" data-validate="phone">
                 </div>
                 <div>
-                  <input type="email" placeholder="E-mail" name="email" data-validate="email">
+                  <input type="email" placeholder="E-mail:" name="email" data-validate="email">
                 </div>
                 <div class="btn submit">Надіслати</div>
               </div>
@@ -1326,12 +1364,12 @@
         <div id="contacts">
           <div class="wrap">
             <h3>Контакти</h3>
-            <hr>
+            <!--hr-->
             <div class="text-holder">
-              <div class="phone">
+              <div class="phone"><i class="fa fa-phone"></i>
                 <h4>Телефони</h4><a href="tel:+38 (0472) 38-32-98">+38 (0472) 38-32-98</a><a href="tel:+38 (067) 536-73-73">+38 (067) 536-73-73</a>
               </div>
-              <div class="address">
+              <div class="address"><i class="fa fa-map-marker"></i>
                 <h4>Адреса</h4>
                 <p>18001, м. Черкаси, вул. Смілянська,<br>буд. 23, оф. 45 (Біля Будинку Торгівлі)</p>
               </div>
@@ -1342,14 +1380,15 @@
             <div id="map"></div>
           </div>
         </div>
-        <footer>
-          <div class="wrap">
+        <footer class="cf">
+          <div class="wrap cf">
             <div>© 2013-2016<span>Євроцентр</span></div>
             <div>розробка:<a href="http://intertechcompany.com/" target="_blank" class="copyright">INTERTECH</a></div>
           </div>
         </footer>
       </div>
       <div id="modal_form" class="modal_div">
+        <div class="modal_close"></div>
         <form class="form_visa">
           <div class="title-holder">
             <div class="title_visa">Польща (Робоча)</div>
@@ -1358,13 +1397,12 @@
           </div>
           <div class="form-holder">
             <div>
-              <input type="text" placeholder="Ім'я" name="name" minlength="2" data-validate="name">
+              <input type="text" placeholder="Ім'я:" name="name" minlength="2" data-validate="name">
             </div>
             <div>
-              <input type="text" placeholder="Телефон" name="phone" data-validate="phone">
+              <input type="text" placeholder="Телефон:" name="phone" data-validate="phone">
             </div>
             <div class="btn submit">Надіслати</div>
-            <div class="btn modal_close">Зачинити</div>
           </div>
         </form>
       </div>

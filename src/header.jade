@@ -1,5 +1,33 @@
 
 header
+
+    .top-line.cf
+        .wrap
+            .logo
+                a(href="/")
+                    img(src="img/icons/main-logo.png")
+                    span Євроцентр
+            .lang-holder
+                a(href="#" class="active" data-request="onSwitchLocale" data-request-data="locale: 'uk'") Укр
+                a(href="#" data-request="onSwitchLocale" data-request-data="locale: 'ru'") Рус
+            .header-phone
+
+                .phone_list
+                    div.show(data-filter="cherkassy")
+                        a(href="tel:+38 (0472) 38-32-98") +38 (0472) 38-32-98
+                        a(href="tel:+38 (067) 536-73-73") +38 (067) 536-73-73
+                    div(data-filter="uman")
+                        a(href="tel:+38 (0472) 55-55-55") +38 (0472) 55-55-55
+                        a(href="tel:+38 (067) 555-55-55") +38 (067) 555-55-55
+                .city
+                    span.city_active Черкаси
+                    ul
+                        li.active(data-filter="cherkassy") Черкаси
+                        li(data-filter="uman") Умань
+
+
+
+
     #menu-holder
         .wrap
             #menu-icon
@@ -25,30 +53,7 @@ header
                         a(href="#faq") Поширені запитання
                     li
                         a(href="#contacts") Контакти
-    .top-line
-        .wrap
-           .logo
-                a(href="/")
-                    img(src="img/icons/main-logo.png")
-                    span Євроцентр
-           .header-phone
-               .city
-                  span.city_active Черкаси
-                  ul
-                      li.active(data-filter="cherkassy") Черкаси
-                      li(data-filter="uman") Умань
-               .phone_list
-                    div.show(data-filter="cherkassy")
-                        a(href="tel:+38 (0472) 38-32-98") +38 (0472) 38-32-98
-                        a(href="tel:+38 (067) 536-73-73") +38 (067) 536-73-73
-                    div(data-filter="uman")
-                        a(href="tel:+38 (0472) 55-55-55") +38 (0472) 55-55-55
-                        a(href="tel:+38 (067) 555-55-55") +38 (067) 555-55-55
 
-
-           .lang-holder
-                a(href="#" class="active" data-request="onSwitchLocale" data-request-data="locale: 'uk'") Укр
-                a(href="#" data-request="onSwitchLocale" data-request-data="locale: 'ru'") Рус
 
 
 
@@ -60,9 +65,10 @@ header
                   .bg-img(style='background-image: url(img/content/slider1.jpg);')
                   .blackoute
 
-                  h2 Віза – це
-                    span &nbsp;просто!
-                  blockquote Ми допомагаємо отримати візу в країни Європейського Союзу. Клієнти, звернувшись до нас, стають нашими постійними клієнтами і рекомендують нас своїм знайомим та друзям. Більше 50% нових клієнтів звертаються до нас по рекомендації.
+                  h2 Легальне працевлаштування в
+                        span &nbsp;Європі
+                  //blockquote Працівники Євроцентра з радістю допоможуть Вам.
+                  //Ми допомагаємо отримати візу в країни Європейського Союзу. Клієнти, звернувшись до нас, стають нашими постійними клієнтами і рекомендують нас своїм знайомим та друзям. Більше 50% нових клієнтів звертаються до нас по рекомендації.
 
 
               .sl-slide(data-orientation='horizontal', data-slice1-rotation='-25', data-slice2-rotation='-25', data-slice1-scale='2', data-slice2-scale='2')
@@ -70,9 +76,9 @@ header
                   .bg-img(style='background-image: url(img/content/slider2.jpg);')
                   .blackoute
 
-                  h2 Робота в
+                  h2 Легальне працевлаштування в
                     span &nbsp;Європі
-                  blockquote Легальне працевлаштування в країнах Європейського Союзу. Робота за кордоном - це висока заробітна платня, можливість отримати громадянство, кар'єрне зростання та розширення кругозору і отримання нових знань.
+                  //blockquote Легальне працевлаштування в країнах Європейського Союзу. Робота за кордоном - це висока заробітна платня, можливість отримати громадянство, кар'єрне зростання та розширення кругозору і отримання нових знань.
 
 
             nav#nav-dots.nav-dots
