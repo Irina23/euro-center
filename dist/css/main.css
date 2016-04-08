@@ -360,7 +360,7 @@ header .bx-wrapper {
 
 #visu .tabs .tab-content {
   position: relative;
-  height: 450px;
+  height: 500px;
   overflow: hidden;
   margin-bottom: 40px; }
   #visu .tabs .tab-content .tab-pane {
@@ -497,39 +497,35 @@ header .bx-wrapper {
   margin: auto !important;
   padding: 0 50px !important; }
   .bx-wrapper .bx-pager.bx-default-pager {
-    display: none;
     position: absolute;
-    bottom: 50px;
+    bottom: -50px;
     padding-top: 0; }
-    .bx-wrapper .bx-pager.bx-default-pager .bx-pager-item {
-      margin: 6px; }
-      .bx-wrapper .bx-pager.bx-default-pager .bx-pager-item a {
-        display: block;
-        position: relative;
-        width: 16px;
-        height: 16px;
-        padding: 0;
-        border-radius: 16px;
-        cursor: pointer;
-        box-sizing: border-box;
+    .bx-wrapper .bx-pager.bx-default-pager .bx-pager-item a {
+      display: block;
+      position: relative;
+      width: 75px;
+      font-size: 14px;
+      padding: 0;
+      cursor: pointer;
+      box-sizing: border-box;
+      background: none;
+      text-indent: 0;
+      text-align: left;
+      color: #A09F9F;
+      padding-bottom: 4px;
+      border-bottom: 4px solid #A09F9F;
+      height: auto;
+      border-radius: 0;
+      margin: 0; }
+      .bx-wrapper .bx-pager.bx-default-pager .bx-pager-item a.active {
         background: none;
-        box-shadow: 0 1px 1px rgba(255, 255, 255, 0.4), inset 0 1px 1px rgba(0, 0, 0, 0.1), 0 0 0 2px rgba(255, 255, 255, 0.5); }
-        .bx-wrapper .bx-pager.bx-default-pager .bx-pager-item a.active {
-          background: none;
-          box-shadow: 0 1px 1px rgba(226, 19, 19, 0.4), inset 0 1px 1px rgba(0, 0, 0, 0.1), 0 0 0 3px #fdc300; }
-          .bx-wrapper .bx-pager.bx-default-pager .bx-pager-item a.active:after {
-            content: "";
-            position: absolute;
-            width: 10px;
-            height: 10px;
-            top: 3px;
-            left: 3px;
-            border-radius: 10px;
-            background: rgba(255, 255, 255, 0.8);
-            background: #fdc300; }
-        .bx-wrapper .bx-pager.bx-default-pager .bx-pager-item a:hover {
-          background: none;
-          box-shadow: 0 1px 1px rgba(226, 19, 19, 0.4), inset 0 1px 1px rgba(0, 0, 0, 0.1), 0 0 0 3px #fdc300; }
+        border-color: #404040;
+        color: #404040; }
+      .bx-wrapper .bx-pager.bx-default-pager .bx-pager-item a:hover {
+        background: none;
+        border-color: #404040;
+        color: #404040;
+        text-decoration: none; }
   .bx-wrapper .bx-controls-direction .bx-prev, .bx-wrapper .bx-controls-direction .bx-next {
     background: url("../img/icons/next3.png") no-repeat;
     width: 22px;
@@ -792,6 +788,9 @@ header .bx-wrapper {
       font-size: 14px;
       line-height: 2em;
       color: #313131; }
+  #faq .bx-wrapper .bx-controls-direction .bx-prev, #faq .bx-wrapper .bx-controls-direction .bx-next {
+    background: url("../img/icons/next4.png") no-repeat;
+    background-size: 100%; }
 
 .questions {
   margin-bottom: 5px; }
