@@ -982,11 +982,9 @@ footer {
           width: 150px;
           font-size: 14px;
           margin: 0 5px;
-          height: 32px;
-          overflow: hidden; }
-        .top-line .wrap .header-phone .phone_list > div .block_address {
-          height: 32px;
-          overflow: hidden; }
+          height: 39px;
+          overflow: hidden;
+          line-height: 1.3em; }
         .top-line .wrap .header-phone .phone_list > div .block_phone {
           position: relative; }
         .top-line .wrap .header-phone .phone_list > div a {
@@ -1101,7 +1099,7 @@ footer {
     width: 960px;
     margin: auto; }
   .top-line .wrap .lang-holder {
-    padding-right: 230px; }
+    padding-right: 190px; }
   #menu-holder #menu li {
     margin: 0 19px; }
   #call_back form input[type="text"], #call_back form input[type="email"] {
@@ -1150,7 +1148,7 @@ footer {
     padding-right: 0; }
   .top-line .wrap .header-phone {
     float: right;
-    margin-top: 17px; }
+    margin-top: 7px; }
   .top-line .wrap .header-phone .city {
     margin-right: 15px; }
   .top-line .wrap > div {
@@ -1305,6 +1303,14 @@ footer {
     top: 180px; }
   #faq .slider_faq .item_faq h4 {
     white-space: inherit; } }
+
+@media screen and (max-width: 500px) {
+  .top-line .wrap .header-phone .phone_list > div .block_phone, .top-line .wrap .header-phone .phone_list > div .block_address {
+    display: block;
+    margin: auto;
+    margin-bottom: 15px; }
+    .top-line .wrap .header-phone .phone_list > div .block_phone:last-child, .top-line .wrap .header-phone .phone_list > div .block_address:last-child {
+      margin-bottom: 0; } }
 
 @media screen and (max-width: 480px) {
   body .main_slider .sl-slider h2 {

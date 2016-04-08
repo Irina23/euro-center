@@ -1341,11 +1341,12 @@ footer
             width: 150px
             font-size: 14px
             margin: 0 5px
-            height: 32px
+            height: 39px
             overflow: hidden
+            line-height: 1.3em
           .block_address
-            height: 32px
-            overflow: hidden
+            //height: 32px
+            //overflow: hidden
           .block_phone
             //height: 16px
             //overflow: hidden
@@ -1513,7 +1514,7 @@ footer
   .top-line
     .wrap
       .lang-holder
-        padding-right: 230px
+        padding-right: 190px
 
   #menu-holder
     #menu
@@ -1576,7 +1577,7 @@ footer
         padding-right: 0
       .header-phone
         float: right
-        margin-top: 17px
+        margin-top: 7px
 
       .header-phone .city
         margin-right: 15px
@@ -1794,6 +1795,16 @@ footer
     top: 180px
   #faq .slider_faq .item_faq h4
     white-space: inherit
+
+@media screen and (max-width: 500px)
+  .top-line .wrap .header-phone .phone_list > div .block_phone, .top-line .wrap .header-phone .phone_list > div .block_address
+
+    display: block
+    margin: auto
+    margin-bottom: 15px
+    &:last-child
+       margin-bottom: 0
+
 
 @media screen and (max-width: 480px)
   body .main_slider .sl-slider h2
