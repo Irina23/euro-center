@@ -629,3 +629,11 @@ img{
 #call_back input[type="email"]::-moz-placeholder{
     color: #fff;
 }
+
+
+@media screen and (max-width: 1199px){
+    body .main_slider .sl-slider h2{
+        font-size: 50px!important;
+    }
+
+}

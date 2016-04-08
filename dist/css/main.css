@@ -109,14 +109,14 @@ header .bx-wrapper {
 
 #call_back {
   background: #fdc300;
-  padding: 30px 0 40px; }
+  padding: 20px 0 30px; }
   #call_back h3 {
-    font-size: 30px;
+    font-size: 24px;
     line-height: 1em;
     font-weight: 600;
     text-align: left; }
   #call_back form {
-    margin-top: 30px; }
+    margin-top: 20px; }
     #call_back form .row > div {
       display: inline-block;
       vertical-align: middle; }
@@ -150,7 +150,7 @@ header .bx-wrapper {
     font-weight: 600;
     letter-spacing: 1px; }
     #call_back .btn.submit:hover {
-      background: #0e6eb8;
+      background: #404040;
       -webkit-transition: all 0.35s;
       transition: all 0.35s;
       color: #fff; }
@@ -562,7 +562,7 @@ header .bx-wrapper {
 #jobs {
   background: url("../img/bg/bg_jobs.jpg") no-repeat; }
   #jobs .job-holder {
-    background: rgba(255, 255, 255, 0.5); }
+    background: rgba(255, 255, 255, 0.7); }
   #jobs.mobile {
     display: none; }
   #jobs h3 {
@@ -622,7 +622,7 @@ header .bx-wrapper {
       #jobs .jobs_item .img-holder img {
         width: 100%; }
     #jobs .jobs_item .text-holder {
-      height: 300px;
+      height: 330px;
       color: #404040; }
       #jobs .jobs_item .text-holder hr {
         margin-bottom: 0;
@@ -645,7 +645,7 @@ header .bx-wrapper {
       #jobs .jobs_item .text-holder ul {
         height: 145px;
         overflow: hidden;
-        margin-bottom: 10px; }
+        margin-bottom: 30px; }
         #jobs .jobs_item .text-holder ul li {
           line-height: 1.5em;
           position: relative;
@@ -739,7 +739,7 @@ header .bx-wrapper {
   #faq .slider_faq .item {
     padding-top: 15px; }
   #faq .slider_faq .item_faq {
-    padding: 20px;
+    padding: 20px 30px;
     background: rgba(255, 255, 255, 0.8);
     color: #000;
     margin-bottom: 30px;
@@ -759,16 +759,39 @@ header .bx-wrapper {
     #faq .slider_faq .item_faq h4 {
       font-size: 24px;
       margin-bottom: 20px;
-      line-height: 1em;
+      line-height: 1.3em;
       text-overflow: ellipsis;
       overflow: hidden;
       white-space: nowrap;
       color: #000;
-      font-weight: normal; }
+      font-weight: normal;
+      position: relative;
+      padding: 0 35px;
+      display: inline-block; }
+      #faq .slider_faq .item_faq h4:before {
+        position: absolute;
+        bottom: 5px;
+        left: 0;
+        width: 20px;
+        height: 15px;
+        background: url("../img/icons/quotes.png") no-repeat;
+        background-size: 100%;
+        content: ""; }
+      #faq .slider_faq .item_faq h4:after {
+        position: absolute;
+        top: 7px;
+        right: 0;
+        width: 20px;
+        height: 15px;
+        background: url("../img/icons/quotes.png") no-repeat;
+        background-size: 100%;
+        content: "";
+        -webkit-transform: rotate(180deg);
+                transform: rotate(180deg); }
     #faq .slider_faq .item_faq p {
       font-size: 14px;
       line-height: 2em;
-      color: #727272; }
+      color: #313131; }
 
 .questions {
   margin-bottom: 5px; }
@@ -1053,16 +1076,78 @@ footer {
           color: #fdc300;
           text-decoration: none; }
 
+@media screen and (max-width: 1299px) {
+  .wrap {
+    width: 960px;
+    margin: auto; }
+  .top-line .wrap .lang-holder {
+    padding-right: 230px; }
+  #menu-holder #menu li {
+    margin: 0 19px; }
+  #call_back form input[type="text"], #call_back form input[type="email"] {
+    width: 250px; }
+  #call_back .btn.submit {
+    width: 170px; }
+  #advantage ul li {
+    padding: 0 10px; }
+  #visu .tabs-menu .nav.nav-tabs li,
+  #jobs .tabs .tabs-menu .nav.nav-tabs li {
+    width: 287px; }
+  #visu .visa_item .price {
+    font-size: 35px; }
+  #visu .visa_item .time-holder {
+    font-size: 12px; }
+  #how_works .works_items .item .holder-icon {
+    width: 130px;
+    height: 130px;
+    border-radius: 130px;
+    line-height: 130px; }
+  #how_works .works_items .item .holder-icon:after {
+    width: 120px;
+    height: 120px; }
+  #how_works .works_items .item .text-holder {
+    font-size: 18px; }
+  #how_works .works_items .item .text_works {
+    font-size: 13px; }
+  #contacts .text-holder {
+    width: 300px; }
+  #contacts #map {
+    width: 620px; } }
+
 @media screen and (max-width: 1023px) {
   .wrap {
     width: 900px; }
   #menu-holder #menu li {
     margin: 0 10px; }
   #call_back form input[type="text"], #call_back form input[type="email"] {
-    width: 212px; }
+    width: 230px; }
   #contacts .text-holder {
     margin-right: 0;
-    width: 295px; } }
+    width: 295px; }
+    #contacts .text-holder .top-line .wrap .lang-holder {
+      padding-right: 0; }
+  .top-line .wrap .lang-holder {
+    padding-right: 0; }
+  .top-line .wrap .header-phone {
+    float: right;
+    margin-top: 17px; }
+  .top-line .wrap .header-phone .city {
+    margin-right: 15px; }
+  .top-line .wrap > div {
+    padding-right: 15px; }
+    .top-line .wrap > div:last-child {
+      padding-right: 0; }
+  #visu .tabs-menu .nav.nav-tabs li, #jobs .tabs .tabs-menu .nav.nav-tabs li {
+    width: 267px; }
+  #visu .visa_item .price {
+    font-size: 32px; }
+  #how_works .works_items .item .text-holder {
+    font-size: 16px; }
+  #how_works .works_items .item {
+    padding: 0 10px;
+    box-sizing: border-box; }
+  #contacts #map {
+    width: 600px; } }
 
 @media screen and (max-width: 959px) {
   .wrap {
@@ -1095,7 +1180,9 @@ footer {
     font-size: 14px; }
   #advantage ul li .text-holder h4,
   #faq .slider_faq .item_faq h4 {
-    font-size: 18px; }
+    font-size: 18px;
+    height: auto;
+    line-height: 1em; }
   .bx-wrapper {
     padding: 0 20px !important; }
     .bx-wrapper .bx-controls-direction .bx-prev, .bx-wrapper .bx-controls-direction .bx-next {
@@ -1122,25 +1209,53 @@ footer {
   #menu-holder #menu {
     display: none; }
     #menu-holder #menu li {
-      margin: 10px 0;
+      padding: 15px 0;
       display: block; }
       #menu-holder #menu li a {
-        padding: 10px 0; }
-  .top-line .wrap .header-phone .city {
-    margin-right: 15px; }
-  .top-line .wrap > div {
-    padding-right: 15px; }
-    .top-line .wrap > div:last-child {
-      padding-right: 0; } }
+        padding: 15px 0; }
+  body .main_slider .sl-slider-wrapper {
+    height: 480px; }
+  body .main_slider #slider .sl-slider h2 {
+    font-size: 30px !important;
+    margin-top: 230px; }
+  #menu-holder #menu-icon .menu_title {
+    color: #fff; }
+  #menu-holder.fixed #menu-icon .menu_title {
+    color: #000; }
+    #menu-holder.fixed #menu-icon .menu_title:hover {
+      color: #fdc300; }
+  #menu-holder.fixed #menu-icon:hover i .icon-bar {
+    background: #fdc300; }
+  #menu-holder.fixed #menu-icon i .icon-bar {
+    background: #000; }
+  #visu .tabs-menu, #jobs .tabs .tabs-menu {
+    padding: 0 20px; }
+  #visu .tabs-menu .nav.nav-tabs li, #jobs .tabs .tabs-menu .nav.nav-tabs li {
+    width: 33.3%; }
+  #how_works {
+    padding-bottom: 50px; }
+    #how_works .works_items {
+      margin-bottom: 0; }
+  #advantage ul li, #how_works .works_items .item {
+    margin-bottom: 30px; }
+  .top-line .wrap .header-phone .phone_list > div a {
+    display: block;
+    line-height: 1.5em; }
+  #advantage {
+    padding: 40px 0 40px; }
+    #advantage h3 {
+      font-size: 24px; }
+  #advantage ul li .text-holder h4, #faq .slider_faq .item_faq h4 {
+    font-size: 16px; } }
 
 @media screen and (max-width: 800px) {
   .top-line .wrap > div {
-    display: block;
-    padding-right: 0;
-    margin-bottom: 20px; }
+    padding-right: 0; }
   .top-line .wrap .header-phone .city {
     margin-right: 0;
-    margin-bottom: 15px; } }
+    margin-bottom: 15px; }
+  .top-line .wrap .header-phone {
+    margin-top: 5px; } }
 
 @media screen and (max-width: 700px) {
   #jobs, #visu {
@@ -1148,7 +1263,15 @@ footer {
     #jobs.mobile, #visu.mobile {
       display: block; }
   body .main_slider .sl-slider h2 {
-    padding-top: 200px; } }
+    padding-top: 200px; }
+  .top-line .wrap .header-phone {
+    float: none; }
+  .top-line .wrap > div {
+    display: block;
+    padding-right: 0;
+    margin-bottom: 20px; }
+  body .main_slider #slider .sl-slider h2 {
+    margin-top: 100px; } }
 
 @media screen and (max-width: 600px) {
   #advantage ul li,
@@ -1157,10 +1280,23 @@ footer {
   [id^="modal_form"] {
     width: calc( 100% - 20px);
     left: 10px;
-    margin-left: 0; } }
+    margin-left: 0; }
+  #menu-holder {
+    top: 180px; }
+  #faq .slider_faq .item_faq h4 {
+    white-space: inherit; } }
 
 @media screen and (max-width: 480px) {
   body .main_slider .sl-slider h2 {
     font-size: 24px;
     padding-top: 240px;
-    padding-bottom: 0; } }
+    padding-bottom: 0; }
+  #visu .tabs-menu .nav.nav-tabs li, #jobs .tabs .tabs-menu .nav.nav-tabs li {
+    display: block;
+    width: 100%; }
+  #visu h3, #jobs h3, #faq h3 {
+    margin-bottom: 40px; }
+  body .main_slider #slider .sl-slider h2 {
+    margin-top: 50px; }
+  body .main_slider #slider .sl-slider h2 {
+    font-size: 24px !important; } }
