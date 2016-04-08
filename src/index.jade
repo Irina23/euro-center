@@ -1306,15 +1306,29 @@ html(lang="ru")
                             .phone
                                 i.fa.fa-phone
                                 h4 Телефони
-                                a(href="tel:+38 (0472) 38-32-98") +38 (0472) 38-32-98
-                                a(href="tel:+38 (067) 536-73-73") +38 (067) 536-73-73
+                                .phone_list
+                                    div.show(data-filter="cherkassy")
+                                        a(href="tel:+38 (0472) 38-32-98") +38 (0472) 38-32-98
+                                        a(href="tel:+38 (067) 536-73-73") +38 (067) 536-73-73
+                                    div(data-filter="uman")
+                                        a(href="tel:+38 (0472) 55-55-55") +38 (0472) 55-55-55
+                                        a(href="tel:+38 (067) 555-55-55") +38 (067) 555-55-55
+
                             .address
                                 i.fa.fa-map-marker
                                 h4 Адреса
-                                p
-                                    | 18001, м. Черкаси, вул. Смілянська,
-                                    br
-                                    | буд. 23, оф. 45 (Біля Будинку Торгівлі)
+                                .address_list
+                                    div.show(data-filter="cherkassy")
+                                        p
+                                            | 18001, м. Черкаси, вул. Смілянська,
+                                            br
+                                            | буд. 23, оф. 45 (Біля Будинку Торгівлі)
+                                    div(data-filter="uman")
+                                        p
+                                            | 18001, м. Умань, вул. Смілянська,
+                                            br
+                                            | буд. 23, оф. 45 (Біля Будинку Торгівлі)
+
                             .social
                                 h4 Соціальні мережі
                                 a(href="https://vk.com/eurocenterua" target="_blank")

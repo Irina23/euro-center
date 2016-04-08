@@ -823,6 +823,10 @@ header .bx-wrapper {
     #contacts .text-holder .phone {
       position: relative;
       padding-left: 25px; }
+      #contacts .text-holder .phone .phone_list > div {
+        display: none; }
+        #contacts .text-holder .phone .phone_list > div.show {
+          display: block; }
       #contacts .text-holder .phone i {
         position: absolute;
         top: 0;
@@ -832,6 +836,10 @@ header .bx-wrapper {
     #contacts .text-holder .address {
       position: relative;
       padding-left: 25px; }
+      #contacts .text-holder .address .address_list > div {
+        display: none; }
+        #contacts .text-holder .address .address_list > div.show {
+          display: block; }
       #contacts .text-holder .address i {
         position: absolute;
         top: 0;

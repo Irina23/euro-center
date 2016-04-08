@@ -142,7 +142,7 @@ jQuery(document).ready(function() {
         var customType = jQuery(this).attr('data-filter');
 
 
-        jQuery('.phone_list div').each(function(){
+        jQuery('.phone_list div, .address_list div').each(function(){
             if(jQuery(this).attr('data-filter')==customType) jQuery(this).addClass("show"); else jQuery(this).removeClass("show");
         });
 
