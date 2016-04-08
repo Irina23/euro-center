@@ -256,7 +256,7 @@ header
       color: #fff
 
   .btn.submit
-    font-size: 14px
+    font-size: 13px
     background: #fff
     height: 45px
     width: 200px
@@ -1239,11 +1239,12 @@ footer
 .top-line
   position: absolute
   top: 0
-  z-index: 5
+  //z-index: 5
   width: 100%
   //text-align: center
   padding: 10px 0
   background: #fff
+  z-index: 1002
   .wrap
     position: relative
     >div
@@ -1334,6 +1335,48 @@ footer
         vertical-align: middle
         > div
           display: none
+          .block_phone, .block_address
+            display: inline-block
+            vertical-align: middle
+            width: 150px
+            font-size: 14px
+            margin: 0 5px
+            height: 32px
+            overflow: hidden
+          .block_address
+            height: 32px
+            overflow: hidden
+          .block_phone
+            //height: 16px
+            //overflow: hidden
+            position: relative
+            //padding-right: 20px
+
+            //ul
+              position: absolute
+              top: 22px
+              left: -10px
+              display: none
+              background: #fff
+              z-index: 1002
+              padding: 10px
+              width: 100%
+              padding-top: 0
+            //&.open
+              height: auto
+              ul
+                display: block
+            //&:after
+              position: absolute
+              top: 50%
+              right: 10px
+              margin-top: -4px
+              width: 13px
+              height: 9px
+              content: ""
+              background: url("../img/icons/select1.png") no-repeat
+              background-size: 100%
+              cursor: pointer
           a
             color: #000
             transition: all 0.35s
@@ -1356,7 +1399,7 @@ footer
 
 
     .lang-holder
-      padding-right: 470px
+      padding-right: 430px
       a
         color: #000
         //font-family: "SegoeUILight", sans-serif

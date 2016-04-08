@@ -137,7 +137,7 @@ header .bx-wrapper {
       background: none;
       color: #fff; }
   #call_back .btn.submit {
-    font-size: 14px;
+    font-size: 13px;
     background: #fff;
     height: 45px;
     width: 200px;
@@ -900,10 +900,10 @@ footer {
 .top-line {
   position: absolute;
   top: 0;
-  z-index: 5;
   width: 100%;
   padding: 10px 0;
-  background: #fff; }
+  background: #fff;
+  z-index: 1002; }
   .top-line .wrap {
     position: relative; }
     .top-line .wrap > div {
@@ -976,6 +976,19 @@ footer {
       vertical-align: middle; }
       .top-line .wrap .header-phone .phone_list > div {
         display: none; }
+        .top-line .wrap .header-phone .phone_list > div .block_phone, .top-line .wrap .header-phone .phone_list > div .block_address {
+          display: inline-block;
+          vertical-align: middle;
+          width: 150px;
+          font-size: 14px;
+          margin: 0 5px;
+          height: 32px;
+          overflow: hidden; }
+        .top-line .wrap .header-phone .phone_list > div .block_address {
+          height: 32px;
+          overflow: hidden; }
+        .top-line .wrap .header-phone .phone_list > div .block_phone {
+          position: relative; }
         .top-line .wrap .header-phone .phone_list > div a {
           color: #000;
           -webkit-transition: all 0.35s;
@@ -995,7 +1008,7 @@ footer {
         .top-line .wrap .header-phone .phone_list > div.show {
           display: block; }
     .top-line .wrap .lang-holder {
-      padding-right: 470px; }
+      padding-right: 430px; }
       .top-line .wrap .lang-holder a {
         color: #000;
         font-weight: 400;

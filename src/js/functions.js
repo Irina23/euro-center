@@ -150,6 +150,12 @@ jQuery(document).ready(function() {
     });
 
 
+/*
+    jQuery(".header-phone .block_phone").click(function(){
+        jQuery(this).toggleClass("open");
+
+    });*/
+
 
 
     jQuery(window).scroll(function () {
