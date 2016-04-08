@@ -1094,6 +1094,12 @@ footer {
           color: #fdc300;
           text-decoration: none; }
 
+.message {
+  text-align: center;
+  margin-top: 35px;
+  font-size: 18px;
+  font-weight: 600; }
+
 @media screen and (max-width: 1299px) {
   .wrap {
     width: 960px;
