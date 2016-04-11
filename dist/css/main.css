@@ -407,6 +407,8 @@ header .bx-wrapper {
 #visu .visa_item {
   text-align: center;
   box-sizing: border-box; }
+  #visu .visa_item.bx-clone {
+    display: none; }
   #visu .visa_item .text-holder {
     padding-bottom: 40px; }
   #visu .visa_item .title-holder {
@@ -428,8 +430,7 @@ header .bx-wrapper {
     line-height: 1em;
     float: right;
     font-weight: 600;
-    font-family: "FuturaPT-Demi", sans-serif;
-    letter-spacing: 2px; }
+    font-family: "FuturaPT-Demi", sans-serif; }
   #visu .visa_item .time-holder {
     clear: both;
     font-weight: 100;

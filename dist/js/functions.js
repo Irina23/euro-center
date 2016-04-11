@@ -29,6 +29,7 @@ jQuery(document).ready(function() {
 
     open_modal.click( function(event){
         event.preventDefault();
+        console.log("1111");
         var div = $(this).attr('href');
         overlay.fadeIn(400,
             function(){
@@ -80,8 +81,11 @@ jQuery(document).ready(function() {
     jQuery('.slider_faq,.jobs_slider2,.visa_slider2').bxSlider({
         nextText: "",
         prevText: "",
-        adaptiveHeight: true
-        //auto: true
+        adaptiveHeight: true,
+        infiniteLoop: false,
+
+        hideControlOnEnd: false
+                //auto: true
 
     });
 
@@ -97,6 +101,7 @@ jQuery(document).ready(function() {
             jQuery(".time_visa").text(time_visa);
             var price_visa = jQuery(this).closest(".visa_item").find(".price").text();
             jQuery(".price_visa").text(price_visa);
+            console.log("222");
     });
 
     jQuery("#jobs .open_modal").click(function() {
