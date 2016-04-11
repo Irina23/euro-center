@@ -29,7 +29,7 @@ jQuery(document).ready(function() {
 
     open_modal.click( function(event){
         event.preventDefault();
-        console.log("1111");
+
         var div = $(this).attr('href');
         overlay.fadeIn(400,
             function(){
@@ -98,11 +98,20 @@ jQuery(document).ready(function() {
     jQuery("#visu .open_modal").click(function() {
             var title_visa = jQuery(this).closest(".tabs").find(".tabs-menu .active").text() + ' (' +jQuery(this).closest(".visa_item").find("h4").text()+ ')';
             jQuery(".title_visa").text(title_visa);
+            var country_visa = jQuery(this).closest(".tabs").find(".tabs-menu .active").text();
+            var name_visa = jQuery(this).closest(".visa_item").find("h4").text();
+
             var time_visa = jQuery(this).closest(".visa_item").find(".time").text();
             jQuery(".time_visa").text(time_visa);
+
             var price_visa = jQuery(this).closest(".visa_item").find(".price").text();
             jQuery(".price_visa").text(price_visa);
-            console.log("222");
+            jQuery("input[name='visa[type]']").attr("value", name_visa);
+            jQuery("input[name='visa[country]']").attr("value", country_visa);
+            jQuery("input[name='visa[period]']").attr("value", time_visa);
+            jQuery("input[name='visa[price]']").attr("value", price_visa);
+
+
     });
 
     jQuery("#jobs .open_modal").click(function() {
@@ -110,6 +119,10 @@ jQuery(document).ready(function() {
         jQuery(".title_visa").text(title_jobs);
         jQuery(".time_visa").text("");
         jQuery(".price_visa").text("");
+        var country_job = jQuery(this).closest(".tabs").find(".tabs-menu .active").text();
+        var name_job = jQuery(this).closest(".jobs_item").find("h4").text();
+        jQuery("input[name='job[title]']").attr("value", name_job);
+        jQuery("input[name='job[country]']").attr("value", country_job);
     });
 
 

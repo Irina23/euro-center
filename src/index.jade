@@ -562,7 +562,7 @@ html(lang="ru")
                                                             li - полный социальный пакет
 
 
-                                                        a(href="#modal_form" class="more open_modal") Детальніше
+                                                        a(href="#modal_form_job" class="more open_modal") Детальніше
 
 
                                             .jobs_item
@@ -1365,7 +1365,33 @@ html(lang="ru")
                         div
                             input(type="text", placeholder="Телефон:", name="phone", data-validate="phone")
 
+                        input(type="hidden" name="visa[type]")
+                        input(type="hidden" name="visa[country]")
+                        input(type="hidden" name="visa[price]")
+                        input(type="hidden" name="visa[period]")
                         .btn.submit Надіслати
+
+            #modal_form_job.modal_div
+                .modal_close
+                form.form_visa
+                    .title-holder
+                        .title_visa Польща (Робоча)
+                        .price_visa 120€
+                        .time_visa 180/180 днів
+
+
+                    .form-holder
+                        .message_modal  Форма успешно отправлена
+                        div
+                            input(type="text", placeholder="Ім'я:", name="name", minlength="2", data-validate="name")
+                        div
+                            input(type="text", placeholder="Телефон:", name="phone", data-validate="phone")
+
+                        input(type="hidden" name="job[title]")
+                        input(type="hidden" name="job[country]")
+                        .btn.submit Надіслати
+
+
 
             #overlay
             include ./footer.jade

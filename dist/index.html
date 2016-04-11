@@ -587,7 +587,7 @@
                               <li>- трудовой договор</li>
                               <li>- проживание в хостеле</li>
                               <li>- полный социальный пакет</li>
-                            </ul><a href="#modal_form" class="more open_modal">Детальніше</a>
+                            </ul><a href="#modal_form_job" class="more open_modal">Детальніше</a>
                           </div>
                         </div>
                       </div>
@@ -1418,6 +1418,32 @@
             <div>
               <input type="text" placeholder="Телефон:" name="phone" data-validate="phone">
             </div>
+            <input type="hidden" name="visa[type]">
+            <input type="hidden" name="visa[country]">
+            <input type="hidden" name="visa[price]">
+            <input type="hidden" name="visa[period]">
+            <div class="btn submit">Надіслати</div>
+          </div>
+        </form>
+      </div>
+      <div id="modal_form_job" class="modal_div">
+        <div class="modal_close"></div>
+        <form class="form_visa">
+          <div class="title-holder">
+            <div class="title_visa">Польща (Робоча)</div>
+            <div class="price_visa">120€</div>
+            <div class="time_visa">180/180 днів</div>
+          </div>
+          <div class="form-holder">
+            <div class="message_modal"> Форма успешно отправлена</div>
+            <div>
+              <input type="text" placeholder="Ім'я:" name="name" minlength="2" data-validate="name">
+            </div>
+            <div>
+              <input type="text" placeholder="Телефон:" name="phone" data-validate="phone">
+            </div>
+            <input type="hidden" name="job[title]">
+            <input type="hidden" name="job[country]">
             <div class="btn submit">Надіслати</div>
           </div>
         </form>
