@@ -280,7 +280,8 @@ header .bx-wrapper {
       line-height: 30px; }
   [id^="modal_form"] .form-holder {
     padding: 30px 25px;
-    text-align: center; }
+    text-align: center;
+    position: relative; }
     [id^="modal_form"] .form-holder .error input[type="text"],
     [id^="modal_form"] .form-holder .error input[type="email"] {
       border-color: #FF0000; }
@@ -336,6 +337,22 @@ header .bx-wrapper {
         transition: all 0.2s;
         background: #fdc300;
         color: #404040; }
+    [id^="modal_form"] .form-holder .message_modal {
+      position: absolute;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      left: 0;
+      background: #fff;
+      box-sizing: border-box;
+      padding: 90px 20px 20px;
+      display: none;
+      -webkit-transition: all 0.35s;
+      transition: all 0.35s; }
+      [id^="modal_form"] .form-holder .message_modal.show {
+        display: block;
+        -webkit-transition: all 0.35s;
+        transition: all 0.35s; }
 
 #overlay {
   z-index: 3;
@@ -430,7 +447,8 @@ header .bx-wrapper {
     line-height: 1em;
     float: right;
     font-weight: 600;
-    font-family: "FuturaPT-Demi", sans-serif; }
+    font-family: "FuturaPT-Demi", sans-serif;
+    letter-spacing: 1px; }
   #visu .visa_item .time-holder {
     clear: both;
     font-weight: 100;

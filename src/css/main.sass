@@ -426,6 +426,7 @@ header
   .form-holder
     padding: 30px 25px
     text-align: center
+    position: relative
     .error
       input[type="text"],
       input[type="email"]
@@ -493,6 +494,21 @@ header
         transition: all 0.2s
         background: #fdc300
         color: #404040
+    .message_modal
+        position: absolute
+        top: 0
+        height: 100%
+        width: 100%
+        left: 0
+        background: #fff
+        box-sizing: border-box
+        padding: 90px 20px 20px
+        display: none
+        transition: all 0.35s
+        &.show
+          display: block
+          transition: all 0.35s
+
 
 
 #overlay
@@ -611,7 +627,7 @@ header
       float: right
       font-weight: 600
       font-family: "FuturaPT-Demi", sans-serif
-      //letter-spacing: 2px
+      letter-spacing: 1px
     .time-holder
       clear: both
       font-weight: 100
