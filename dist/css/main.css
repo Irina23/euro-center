@@ -489,7 +489,7 @@ header .bx-wrapper {
       text-align: left; }
   #visu .visa_item .block_text {
     font-size: 14px; }
-    #visu .visa_item .block_text > div {
+    #visu .visa_item .block_text > div, #visu .visa_item .block_text p {
       margin-bottom: 15px;
       color: #555555; }
     #visu .visa_item .block_text span {
