@@ -713,6 +713,8 @@ header
     position: absolute
     bottom: -50px
     padding-top: 0
+    left: 0
+
 
     .bx-pager-item
 
@@ -1113,7 +1115,8 @@ header
 .questions
   margin-bottom: 5px
 
-
+body .bx-wrapper .bx-controls-direction a
+  text-indent: 0
 #contacts
   margin-bottom: 100px
   padding-top: 50px
@@ -1784,7 +1787,16 @@ footer
       font-size: 24px
   #advantage ul li .text-holder h4, #faq .slider_faq .item_faq h4
     font-size: 16px
-    
+
+
+
+  #contacts
+    .wrap
+      min-height: 590px
+    h3
+      margin-bottom: 40px
+    [id^="map"]
+      top: 360px
 
 @media screen and (max-width: 800px)
   .top-line
