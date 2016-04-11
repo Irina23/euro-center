@@ -628,6 +628,9 @@ header
       font-weight: 600
       font-family: "FuturaPT-Demi", sans-serif
       letter-spacing: 1px
+      position: absolute
+      top: 20px
+      right: 15px
     .time-holder
       clear: both
       font-weight: 100
@@ -641,6 +644,9 @@ header
       padding: 40px 20px 30px
       text-align: left
       line-height: 1.5em
+      box-sizing: border-box
+      height: 240px
+      overflow: hidden
 
     a
         font-size: 13px
@@ -1798,6 +1804,12 @@ footer
     [id^="map"]
       top: 360px
 
+  #jobs,#visu
+    display: none
+    &.mobile
+      display: block
+
+
 @media screen and (max-width: 800px)
   .top-line
     .wrap
@@ -1814,10 +1826,7 @@ footer
     margin-top: 5px
 
 @media screen and (max-width: 700px)
-  #jobs,#visu
-    display: none
-    &.mobile
-      display: block
+
 
 
   body .main_slider .sl-slider h2
