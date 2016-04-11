@@ -1208,12 +1208,14 @@ header
           transition: all 0.35s
 
 
-  #map
+  [id^="map"]
     height: 400px
-    display: inline-block
+    //display: inline-block
     vertical-align: top
     width: 760px
-
+    display: none
+    &.show
+      display: inline-block
 
 
 footer
@@ -1341,11 +1343,18 @@ footer
           display: none
           position: absolute
           top: 22px
-          left: 30px
+          left: 0
+          background: #fff
+          width: 100%
+          padding: 0 30px 10px
+          border-radius: 6px
+          box-sizing: border-box
           li
             font-size: 14px
             &.active
               display: none
+            &:hover
+              color: #fdc300
 
 
       .phone_list
@@ -1579,7 +1588,7 @@ footer
 
   #contacts .text-holder
     width: 300px
-  #contacts #map
+  #contacts [id^="map"]
     width: 620px
 
 
@@ -1628,7 +1637,7 @@ footer
     box-sizing: border-box
 
 
-  #contacts #map
+  #contacts [id^="map"]
     width: 600px
 
 
@@ -1648,7 +1657,7 @@ footer
     .text-holder
       width: 100%
 
-    #map
+    [id^="map"]
       height: 230px
       width: 100%
 

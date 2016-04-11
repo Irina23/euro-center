@@ -131,17 +131,27 @@ jQuery(document).ready(function() {
 
     $(window).on('load', function() {
         // Create a map object and specify the DOM element for display.
-        var map = new google.maps.Map(document.getElementById('map'), {
+        var map1 = new google.maps.Map(document.getElementById('map1'), {
             center: {lat:49.4417281, lng: 32.0660435},
             scrollwheel: false,
             zoom: 16
         });
-        var marker = new google.maps.Marker({
+        var marker1 = new google.maps.Marker({
             position: {lat:49.4417281, lng: 32.0660435},
-            map: map
+            map: map1
 
         });
 
+        var map2 = new google.maps.Map(document.getElementById('map2'), {
+            center: {lat:48.7699292, lng: 30.2154405},
+            scrollwheel: false,
+            zoom: 16
+        });
+        var marker2 = new google.maps.Marker({
+            position: {lat:48.7699292, lng: 30.2154405},
+            map: map2
+
+        });
 
     });
 
@@ -161,7 +171,7 @@ jQuery(document).ready(function() {
         var customType = jQuery(this).attr('data-filter');
 
 
-        jQuery('.phone_list div, .address_list div').each(function(){
+        jQuery('.phone_list div, .address_list div,[id^="map"]').each(function(){
             if(jQuery(this).attr('data-filter')==customType) jQuery(this).addClass("show"); else jQuery(this).removeClass("show");
         });
 

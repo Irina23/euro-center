@@ -887,11 +887,13 @@ header .bx-wrapper {
           opacity: 0.8;
           -webkit-transition: all 0.35s;
           transition: all 0.35s; }
-  #contacts #map {
+  #contacts [id^="map"] {
     height: 400px;
-    display: inline-block;
     vertical-align: top;
-    width: 760px; }
+    width: 760px;
+    display: none; }
+    #contacts [id^="map"].show {
+      display: inline-block; }
 
 footer {
   background-color: #fdc300;
@@ -985,11 +987,18 @@ footer {
         display: none;
         position: absolute;
         top: 22px;
-        left: 30px; }
+        left: 0;
+        background: #fff;
+        width: 100%;
+        padding: 0 30px 10px;
+        border-radius: 6px;
+        box-sizing: border-box; }
         .top-line .wrap .header-phone .city ul li {
           font-size: 14px; }
           .top-line .wrap .header-phone .city ul li.active {
             display: none; }
+          .top-line .wrap .header-phone .city ul li:hover {
+            color: #fdc300; }
     .top-line .wrap .header-phone .phone_list {
       display: inline-block;
       vertical-align: middle; }
@@ -1155,7 +1164,7 @@ footer {
     font-size: 13px; }
   #contacts .text-holder {
     width: 300px; }
-  #contacts #map {
+  #contacts [id^="map"] {
     width: 620px; } }
 
 @media screen and (max-width: 1023px) {
@@ -1190,7 +1199,7 @@ footer {
   #how_works .works_items .item {
     padding: 0 10px;
     box-sizing: border-box; }
-  #contacts #map {
+  #contacts [id^="map"] {
     width: 600px; } }
 
 @media screen and (max-width: 959px) {
@@ -1207,7 +1216,7 @@ footer {
     margin-bottom: 50px; }
     #contacts .text-holder {
       width: 100%; }
-    #contacts #map {
+    #contacts [id^="map"] {
       height: 230px;
       width: 100%; }
   #call_back form .row > div {
