@@ -59,7 +59,7 @@ jQuery(document).ready(function() {
 
 
 
-        jQuery('.jobs_slider1,.visa_slider1').each(function() {
+        jQuery('.visa_slider1').each(function() {
             jQuery(this).bxSlider({
                 //auto: true,
                 minSlides: 3,
@@ -79,7 +79,7 @@ jQuery(document).ready(function() {
     });
 
 
-    jQuery('.slider_faq,.jobs_slider2,.visa_slider2').bxSlider({
+    jQuery('.slider_faq,.visa_slider2').bxSlider({
         nextText: "",
         prevText: "",
         adaptiveHeight: true,
@@ -89,8 +89,6 @@ jQuery(document).ready(function() {
                 //auto: true
 
     });
-
-
 
 
 

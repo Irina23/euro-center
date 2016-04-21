@@ -111,9 +111,9 @@ header .bx-wrapper {
   background: #fdc300;
   padding: 20px 0 30px; }
   #call_back h3 {
-    font-size: 24px;
+    font-size: 36px;
     line-height: 1em;
-    font-weight: 600;
+    font-weight: 400;
     text-align: left; }
   #call_back form {
     margin-top: 20px; }
@@ -458,7 +458,7 @@ header .bx-wrapper {
     position: absolute;
     color: #fff;
     font-size: 13px;
-    bottom: 20px;
+    bottom: 10px;
     left: 20px; }
   #visu .visa_item .block_text {
     padding: 40px 20px 30px;
@@ -582,30 +582,31 @@ header .bx-wrapper {
     border: 0 !important; }
 
 #jobs {
-  background: url("../img/bg/bg_jobs.jpg") no-repeat; }
+  background: url("../img/bg/bg_jobs.jpg") no-repeat;
+  background-size: cover; }
   #jobs .job-holder {
     background: rgba(255, 255, 255, 0.7); }
-  #jobs.mobile {
-    display: none; }
   #jobs h3 {
     margin-bottom: 50px; }
   #jobs .job-holder {
     padding: 60px 0; }
   #jobs .tabs .tab-content {
     position: relative;
-    height: 570px;
-    overflow: hidden; }
+    overflow: hidden;
+    width: 1120px;
+    margin: auto; }
     #jobs .tabs .tab-content .tab-pane {
-      position: absolute;
-      top: 700px;
-      left: 0;
-      -webkit-transition: all 0.5s;
-      transition: all 0.5s;
-      width: 100%; }
+      text-align: center;
+      width: 100%;
+      display: none;
+      -webkit-transition: all .5s;
+      transition: all .5s;
+      opacity: 0; }
       #jobs .tabs .tab-content .tab-pane.active {
-        top: 0;
-        -webkit-transition: all 0.5s;
-        transition: all 0.5s; }
+        opacity: 1;
+        display: block;
+        -webkit-transition: all .5s;
+        transition: all .5s; }
   #jobs .tabs .tabs-menu {
     margin-bottom: 20px;
     padding: 0 50px; }
@@ -636,16 +637,23 @@ header .bx-wrapper {
           -webkit-transition: all 0.35s;
           transition: all 0.35s; }
   #jobs .jobs_item {
-    background: #fff; }
+    width: 33%;
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    padding: 0 10px 20px; }
     #jobs .jobs_item .img-holder {
       width: 100%;
       height: 165px;
       position: relative; }
       #jobs .jobs_item .img-holder img {
-        width: 100%; }
+        width: 100%;
+        min-height: 100%; }
     #jobs .jobs_item .text-holder {
       height: 330px;
-      color: #404040; }
+      background: #fff;
+      color: #404040;
+      text-align: left; }
       #jobs .jobs_item .text-holder hr {
         margin-bottom: 0;
         display: none; }
@@ -1119,7 +1127,7 @@ footer {
     #menu-holder #menu li {
       display: inline-block;
       vertical-align: middle;
-      margin: 0 38px; }
+      margin: 0 30px; }
       #menu-holder #menu li:first-child {
         margin-left: 0; }
       #menu-holder #menu li:last-child {
@@ -1128,7 +1136,7 @@ footer {
         color: #fdc300; }
       #menu-holder #menu li a {
         color: #fff;
-        font-size: 14px;
+        font-size: 16px;
         line-height: 1em;
         -webkit-transition: all 0.35s;
         transition: all 0.35s;
@@ -1155,6 +1163,8 @@ footer {
     padding-right: 190px; }
   #menu-holder #menu li {
     margin: 0 19px; }
+    #menu-holder #menu li a {
+      font-size: 14px; }
   #call_back form input[type="text"], #call_back form input[type="email"] {
     width: 250px; }
   #call_back .btn.submit {
@@ -1164,6 +1174,8 @@ footer {
   #visu .tabs-menu .nav.nav-tabs li,
   #jobs .tabs .tabs-menu .nav.nav-tabs li {
     width: 287px; }
+  #jobs .tabs .tab-content {
+    width: 880px; }
   #visu .visa_item .price {
     font-size: 33px; }
   #visu .visa_item .time-holder {
@@ -1213,6 +1225,11 @@ footer {
     width: 267px; }
   #visu .visa_item .price {
     font-size: 32px; }
+  #jobs .tabs .tab-content {
+    width: 820px; }
+    #jobs .tabs .tab-content .jobs_item {
+      width: 49%;
+      padding: 0 5px 10px; }
   #how_works .works_items .item .text-holder {
     font-size: 16px; }
   #how_works .works_items .item {
@@ -1226,11 +1243,15 @@ footer {
     width: 100%;
     box-sizing: border-box;
     padding: 0 20px; }
-  h3 {
-    font-size: 24px; }
+  h3, #call_back h3 {
+    font-size: 28px; }
   #advantage ul li,
   #how_works .works_items .item {
     width: 49%; }
+  #jobs .tabs .tab-content {
+    width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box; }
   #contacts {
     margin-bottom: 50px; }
     #contacts .text-holder {
@@ -1272,8 +1293,6 @@ footer {
     margin-right: 10px; }
   #jobs .job-holder {
     padding: 50px 0; }
-    #jobs .job-holder .tabs .tab-content {
-      height: 505px; }
     #jobs .job-holder .jobs_item .text-holder ul {
       height: 145px; }
   #menu-holder #menu-icon {
@@ -1325,9 +1344,9 @@ footer {
     margin-bottom: 40px; }
   #contacts [id^="map"] {
     top: 360px; }
-  #jobs, #visu {
+  #visu {
     display: none; }
-    #jobs.mobile, #visu.mobile {
+    #visu.mobile {
       display: block; } }
 
 @media screen and (max-width: 800px) {
@@ -1362,7 +1381,10 @@ footer {
   #menu-holder {
     top: 180px; }
   #faq .slider_faq .item_faq h4 {
-    white-space: inherit; } }
+    white-space: inherit; }
+  #jobs .tabs .tab-content .jobs_item {
+    width: 100%;
+    padding: 0 10px 10px; } }
 
 @media screen and (max-width: 500px) {
   .top-line .wrap .header-phone .phone_list > div .block_phone, .top-line .wrap .header-phone .phone_list > div .block_address {
