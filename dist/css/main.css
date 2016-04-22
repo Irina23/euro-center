@@ -410,14 +410,14 @@ header .bx-wrapper {
         line-height: 1em;
         margin-bottom: 10px; }
       #comment .list_comment .item .contact {
-        margin-bottom: 20px; }
-        #comment .list_comment .item .contact a {
-          font-weight: 300;
-          line-height: 1em;
-          display: block;
-          color: #727272; }
+        margin-bottom: 20px;
+        font-weight: 300;
+        line-height: 1em;
+        display: block;
+        color: #727272; }
       #comment .list_comment .item .text-block {
-        line-height: 1.5em; }
+        line-height: 1.5em;
+        font-size: 14px; }
   #comment .link_comment {
     display: inline-block;
     vertical-align: middle;
@@ -950,9 +950,6 @@ header .bx-wrapper {
   #faq .bx-wrapper .bx-controls-direction .bx-prev, #faq .bx-wrapper .bx-controls-direction .bx-next {
     background: url("../img/icons/next4.png") no-repeat;
     background-size: 100%; }
-
-.questions {
-  margin-bottom: 5px; }
 
 body .bx-wrapper .bx-controls-direction a {
   text-indent: 0; }
