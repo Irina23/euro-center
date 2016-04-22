@@ -1,7 +1,7 @@
 jQuery(document).ready(function() {
 
     //form validate
-    jQuery(".call_back_form, .form_visa").validate({
+    jQuery("form").validate({
 
         rules:{
             name:{
