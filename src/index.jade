@@ -1176,9 +1176,16 @@ html(lang="ru")
 
                 #prezentacia
                     .wrap
-                        .img-holder
-                            img(src="img/content/pekar.jpg")
                         h3 Запишись на безкоштовну презентацію
+                        .img-holder
+                            img(src="img/content/computer.png")
+
+                        .text-block.
+                             «Перспективи роботи в Європі»! Презентації проводимо кожної суботи о 12й годині за адресою .....,
+                             ми розповімо про....
+                             Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів.
+                        a(href="#modal_form_prezentacya" class="link_prezentacya  open_modal") Записатись
+
 
 
                 #how_works
@@ -1419,7 +1426,23 @@ html(lang="ru")
                         input(type="hidden" name="visa[price]")
                         input(type="hidden" name="visa[period]")
                         .btn.submit Надіслати
+            #modal_form_prezentacya.modal_div
+                .modal_close
+                form.form_prezentacya
+                    .title-holder
+                        .title Записатся на презентацию
 
+
+
+                    .form-holder
+                        .message_modal  Форма успешно отправлена
+                        div
+                            input(type="text", placeholder="Ім'я:", name="name", minlength="2", data-validate="name")
+                        div
+                            input(type="text", placeholder="Телефон:", name="phone", data-validate="phone")
+
+
+                        .btn.submit Надіслати
             #modal_form_job.modal_div
                 .modal_close
                 form.form_visa

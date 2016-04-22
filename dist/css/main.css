@@ -156,7 +156,7 @@ header .bx-wrapper {
       color: #fff; }
 
 #advantage {
-  padding: 80px 0 50px;
+  padding: 50px 0 50px;
   background: #f8f8f8; }
   #advantage h3 {
     color: #000;
@@ -164,7 +164,7 @@ header .bx-wrapper {
     line-height: 1em;
     font-weight: 300;
     text-align: center;
-    margin-bottom: 70px; }
+    margin-bottom: 90px; }
   #advantage .text-advantage {
     text-align: center;
     line-height: 2em;
@@ -201,7 +201,8 @@ header .bx-wrapper {
         margin-right: 15px;
         font-weight: 600;
         font-size: 60px;
-        line-height: 46px; }
+        line-height: 46px;
+        font-family: "FuturaPT-Demi", sans-serif; }
       #advantage ul li .text-holder {
         overflow: hidden;
         text-align: left;
@@ -257,6 +258,11 @@ header .bx-wrapper {
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis; }
+    [id^="modal_form"] .title-holder .title {
+      font-size: 24px;
+      font-weight: 300;
+      line-height: 35px;
+      color: #fff; }
     [id^="modal_form"] .title-holder .time_visa {
       float: left;
       color: #fff;
@@ -378,6 +384,37 @@ header .bx-wrapper {
         -webkit-transition: all 0.35s;
         transition: all 0.35s; }
 
+#prezentacia {
+  background: #f5f5f5;
+  text-align: center;
+  padding: 50px 0 80px; }
+  #prezentacia .img-holder {
+    margin-bottom: 30px;
+    text-align: center; }
+  #prezentacia h3 {
+    margin-bottom: 90px; }
+  #prezentacia .text-block {
+    line-height: 2em;
+    text-align: center; }
+  #prezentacia .link_prezentacya {
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 30px;
+    color: #000;
+    border: 2px solid #000;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s; }
+    #prezentacia .link_prezentacya:hover {
+      -webkit-transition: all 0.35s;
+      transition: all 0.35s;
+      text-decoration: none;
+      background: #000;
+      color: #fff; }
+
 #modal_form_job {
   height: 540px;
   margin-top: -270px; }
@@ -398,10 +435,10 @@ header .bx-wrapper {
   display: none; }
 
 #visu h3 {
-  margin-bottom: 70px; }
+  margin-bottom: 90px; }
 
 #visu .wrap {
-  padding-top: 60px; }
+  padding-top: 50px; }
 
 #visu .tabs .tab-content {
   position: relative;
@@ -615,9 +652,9 @@ header .bx-wrapper {
   #jobs .job-holder {
     background: rgba(255, 255, 255, 0.7); }
   #jobs h3 {
-    margin-bottom: 50px; }
+    margin-bottom: 90px; }
   #jobs .job-holder {
-    padding: 60px 0; }
+    padding: 50px 0; }
   #jobs .tabs .tab-content {
     position: relative;
     overflow: hidden;
@@ -733,9 +770,10 @@ header .bx-wrapper {
 #how_works {
   padding-top: 50px;
   padding-bottom: 100px;
-  background: url("../img/content/how_works.png") no-repeat center 130px; }
+  background: url("../img/content/how_works.png") no-repeat center;
+  background-size: 15%; }
   #how_works h3 {
-    margin-bottom: 70px; }
+    margin-bottom: 90px; }
   #how_works .works_items .left_item {
     text-align: right;
     padding-right: 200px; }
@@ -795,9 +833,9 @@ header .bx-wrapper {
 #faq {
   background: url("../img/bg/bg_questions.jpg") no-repeat;
   background-size: cover;
-  padding: 60px 0 110px; }
+  padding: 50px 0 110px; }
   #faq h3 {
-    margin-bottom: 70px; }
+    margin-bottom: 90px; }
   #faq .bx-viewport {
     height: auto !important; }
   #faq .slider_faq .item {
@@ -874,7 +912,7 @@ body .bx-wrapper .bx-controls-direction a {
     position: relative;
     min-height: 520px; }
   #contacts h3 {
-    margin-bottom: 70px; }
+    margin-bottom: 90px; }
   #contacts .text-holder {
     width: 400px;
     display: inline-block;
@@ -1270,6 +1308,8 @@ footer {
     width: 600px; } }
 
 @media screen and (max-width: 959px) {
+  h3 {
+    margin-bottom: 50px !important; }
   .wrap {
     width: 100%;
     box-sizing: border-box;

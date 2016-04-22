@@ -16,7 +16,7 @@
     <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <script src="js/modernizr.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto&amp;subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="format-detection" content="telephone=no">
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
@@ -1217,8 +1217,13 @@
         -->
         <div id="prezentacia">
           <div class="wrap">
-            <div class="img-holder"><img src="img/content/pekar.jpg"></div>
             <h3>Запишись на безкоштовну презентацію</h3>
+            <div class="img-holder"><img src="img/content/computer.png"></div>
+            <div class="text-block">
+              «Перспективи роботи в Європі»! Презентації проводимо кожної суботи о 12й годині за адресою .....,
+              ми розповімо про....
+              Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою" аж з XVI сторіччя, коли невідомий друкар взяв шрифтову гранку та склав на ній підбірку зразків шрифтів.
+            </div><a href="#modal_form_prezentacya" class="link_prezentacya  open_modal">Записатись</a>
           </div>
         </div>
         <div id="how_works">
@@ -1441,6 +1446,24 @@
             <input type="hidden" name="visa[country]">
             <input type="hidden" name="visa[price]">
             <input type="hidden" name="visa[period]">
+            <div class="btn submit">Надіслати</div>
+          </div>
+        </form>
+      </div>
+      <div id="modal_form_prezentacya" class="modal_div">
+        <div class="modal_close"></div>
+        <form class="form_prezentacya">
+          <div class="title-holder">
+            <div class="title">Записатся на презентацию</div>
+          </div>
+          <div class="form-holder">
+            <div class="message_modal"> Форма успешно отправлена</div>
+            <div>
+              <input type="text" placeholder="Ім'я:" name="name" minlength="2" data-validate="name">
+            </div>
+            <div>
+              <input type="text" placeholder="Телефон:" name="phone" data-validate="phone">
+            </div>
             <div class="btn submit">Надіслати</div>
           </div>
         </form>
