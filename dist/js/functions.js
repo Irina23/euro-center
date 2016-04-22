@@ -113,9 +113,12 @@ jQuery(document).ready(function() {
     });
 
     jQuery("#jobs .open_modal").click(function() {
-        var title_jobs = jQuery(this).closest(".tabs").find(".tabs-menu .active").text() + ' (' +jQuery(this).closest(".jobs_item").find("h4").text()+ ')';
+        var title_jobs = jQuery(this).closest(".tabs").find(".tabs-menu .active").text();
+        var job_title = jQuery(this).closest(".jobs_item").find("h4").text();
+
         jQuery(".title_visa").text(title_jobs);
-        jQuery(".time_visa").text("");
+        jQuery(".job_title").text(job_title);
+        //jQuery(".time_visa").text("");
         jQuery(".price_visa").text("");
         var country_job = jQuery(this).closest(".tabs").find(".tabs-menu .active").text();
         var name_job = jQuery(this).closest(".jobs_item").find("h4").text();

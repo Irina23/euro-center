@@ -1182,41 +1182,84 @@ html(lang="ru")
 
                         .works_items
                             .item
-                                //.img-holder
-                                    img(src="img/content/advantage4.png")
+
                                 .holder-icon
                                     i.fa.fa-mobile
 
+                                .number 01
+                                .text-holder
+                                    span 01
+                                    | Звяжіться з нами
+                                .text_works Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою"
 
-                                .text-holder Звяжіться з нами
+                            .item
+                                .holder-icon
+                                    i.fa.fa-search
+                                .number 02
+                                .text-holder Пошук вакансій
+                                .text_works Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою"
+
+
+                            .item
+                                .holder-icon
+                                    i.fa.fa-user
+                                .number 03
+                                .text-holder Співбесіда
+                                .text_works Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою"
+
+                            .item
+                                .holder-icon
+                                    i.fa.fa-briefcase
+                                .number 04
+                                .text-holder Підписання договору, передоплата 50%
+                                .text_works Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою"
+
+                            .item
+
+                                .holder-icon
+                                    i.fa.fa-envelope-o
+                                .number 05
+                                .text-holder Надсилаємо запрошення
                                 .text_works Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою"
 
                             .item
                                 .holder-icon
                                     i.fa.fa-pencil-square-o
-                                //.img-holder
-                                    img(src="img/content/advantage3.png")
-                                .text-holder Підписання договору
+                                .number 06
+                                .text-holder Оформлення страховки
                                 .text_works Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою"
 
 
                             .item
                                 .holder-icon
                                     i.fa.fa-briefcase
-                                //.img-holder
-                                    img(src="img/content/advantage6.png")
-                                .text-holder Оформлення документів
+                                .number 07
+                                .text-holder Запис в візовий центр
                                 .text_works Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою"
 
                             .item
                                 .holder-icon
                                     i.fa.fa-check
-                                //.img-holder
-                                    img(src="img/content/advantage1.png")
 
+                                .number 08
+                                .text-holder Відправка Ваших документів, 50% оплати
+                                .text_works Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою"
+
+
+                            .item
+                                .holder-icon
+                                    i.fa.fa-briefcase
+                                .number 09
                                 .text-holder Отримання візи
                                 .text_works Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою"
 
+                            .item
+                                .holder-icon
+                                    i.fa.fa-check
+
+                                .number 10
+                                .text-holder Визначаємо день від'їзду
+                                .text_works Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою"
 
 
 
@@ -1378,15 +1421,31 @@ html(lang="ru")
                     .title-holder
                         .title_visa Польща (Робоча)
                         .price_visa 120€
-                        .time_visa 180/180 днів
+                        .time_visa.job_title
 
 
                     .form-holder
                         .message_modal  Форма успешно отправлена
                         div
-                            input(type="text", placeholder="Ім'я:", name="name", minlength="2", data-validate="name")
+                            input(type="text", placeholder="Ім'я: *", name="name", minlength="2", data-validate="name")
                         div
-                            input(type="text", placeholder="Телефон:", name="phone", data-validate="phone")
+                            input(type="text", placeholder="Телефон: *", name="phone", data-validate="phone")
+                        div
+                            input(type="text", placeholder="E-mail:", name="email", data-validate="emptyButEmail")
+                        div.radio
+                            label Відкрита віза є?
+
+                            div
+                                input(type="radio", name="visa", value="visa_yes", id="visa_yes")
+                                label(for="visa_yes") Да
+
+                            div
+                                input(type="radio", name="visa", value="visa_not" id="visa_not", checked="")
+                                label(for="visa_not")  Ні
+
+                        div
+                            textarea(placeholder="Комментарий:", name="comment")
+
 
                         input(type="hidden" name="job[title]")
                         input(type="hidden" name="job[country]")

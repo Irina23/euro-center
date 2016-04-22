@@ -1222,33 +1222,63 @@
             <!--hr-->
             <div class="works_items">
               <div class="item">
-                <!--.img-holderimg(src="img/content/advantage4.png")
-                -->
                 <div class="holder-icon"><i class="fa fa-mobile"></i></div>
-                <div class="text-holder">Звяжіться з нами</div>
+                <div class="number">01</div>
+                <div class="text-holder"><span>01</span>Звяжіться з нами</div>
                 <div class="text_works">Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою"</div>
               </div>
               <div class="item">
-                <div class="holder-icon"><i class="fa fa-pencil-square-o"></i></div>
-                <!--.img-holderimg(src="img/content/advantage3.png")
-                -->
-                <div class="text-holder">Підписання договору</div>
+                <div class="holder-icon"><i class="fa fa-search"></i></div>
+                <div class="number">02</div>
+                <div class="text-holder">Пошук вакансій</div>
+                <div class="text_works">Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою"</div>
+              </div>
+              <div class="item">
+                <div class="holder-icon"><i class="fa fa-user"></i></div>
+                <div class="number">03</div>
+                <div class="text-holder">Співбесіда</div>
                 <div class="text_works">Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою"</div>
               </div>
               <div class="item">
                 <div class="holder-icon"><i class="fa fa-briefcase"></i></div>
-                <!--.img-holderimg(src="img/content/advantage6.png")
-                -->
-                <div class="text-holder">Оформлення документів</div>
+                <div class="number">04</div>
+                <div class="text-holder">Підписання договору, передоплата 50%</div>
+                <div class="text_works">Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою"</div>
+              </div>
+              <div class="item">
+                <div class="holder-icon"><i class="fa fa-envelope-o"></i></div>
+                <div class="number">05</div>
+                <div class="text-holder">Надсилаємо запрошення</div>
+                <div class="text_works">Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою"</div>
+              </div>
+              <div class="item">
+                <div class="holder-icon"><i class="fa fa-pencil-square-o"></i></div>
+                <div class="number">06</div>
+                <div class="text-holder">Оформлення страховки</div>
+                <div class="text_works">Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою"</div>
+              </div>
+              <div class="item">
+                <div class="holder-icon"><i class="fa fa-briefcase"></i></div>
+                <div class="number">07</div>
+                <div class="text-holder">Запис в візовий центр</div>
                 <div class="text_works">Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою"</div>
               </div>
               <div class="item">
                 <div class="holder-icon"><i class="fa fa-check"></i></div>
-                <!--.img-holder
-                img(src="img/content/advantage1.png")
-                
-                -->
+                <div class="number">08</div>
+                <div class="text-holder">Відправка Ваших документів, 50% оплати</div>
+                <div class="text_works">Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою"</div>
+              </div>
+              <div class="item">
+                <div class="holder-icon"><i class="fa fa-briefcase"></i></div>
+                <div class="number">09</div>
                 <div class="text-holder">Отримання візи</div>
+                <div class="text_works">Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою"</div>
+              </div>
+              <div class="item">
+                <div class="holder-icon"><i class="fa fa-check"></i></div>
+                <div class="number">10</div>
+                <div class="text-holder">Визначаємо день від'їзду</div>
                 <div class="text_works">Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою"</div>
               </div>
             </div>
@@ -1422,15 +1452,32 @@
           <div class="title-holder">
             <div class="title_visa">Польща (Робоча)</div>
             <div class="price_visa">120€</div>
-            <div class="time_visa">180/180 днів</div>
+            <div class="time_visa job_title"></div>
           </div>
           <div class="form-holder">
             <div class="message_modal"> Форма успешно отправлена</div>
             <div>
-              <input type="text" placeholder="Ім'я:" name="name" minlength="2" data-validate="name">
+              <input type="text" placeholder="Ім'я: *" name="name" minlength="2" data-validate="name">
             </div>
             <div>
-              <input type="text" placeholder="Телефон:" name="phone" data-validate="phone">
+              <input type="text" placeholder="Телефон: *" name="phone" data-validate="phone">
+            </div>
+            <div>
+              <input type="text" placeholder="E-mail:" name="email" data-validate="emptyButEmail">
+            </div>
+            <div class="radio">
+              <label>Відкрита віза є?</label>
+              <div>
+                <input type="radio" name="visa" value="visa_yes" id="visa_yes">
+                <label for="visa_yes">Да</label>
+              </div>
+              <div>
+                <input type="radio" name="visa" value="visa_not" id="visa_not" checked="">
+                <label for="visa_not"> Ні</label>
+              </div>
+            </div>
+            <div>
+              <textarea placeholder="Комментарий:" name="comment"></textarea>
             </div>
             <input type="hidden" name="job[title]">
             <input type="hidden" name="job[country]">
