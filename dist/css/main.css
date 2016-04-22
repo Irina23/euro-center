@@ -1490,7 +1490,15 @@ footer {
     left: 50%;
     margin-left: -140px; }
   #visu .visa_item .price {
-    font-size: 26px; } }
+    font-size: 26px; }
+  #comment .img-holder {
+    margin-bottom: 30px; }
+    #comment .img-holder img {
+      width: 100px; }
+  #comment .list_comment .item {
+    width: 100%; }
+  #comment .list_comment .item .name {
+    font-size: 18px; } }
 
 @media screen and (max-width: 800px) {
   .top-line .wrap > div {
