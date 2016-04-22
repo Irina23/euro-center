@@ -732,45 +732,39 @@ header .bx-wrapper {
 #how_works {
   padding-top: 50px;
   padding-bottom: 100px;
-  background: url("../img/content/how_works.png") no-repeat center 150px; }
+  background: url("../img/content/how_works.png") no-repeat center 130px; }
   #how_works h3 {
     margin-bottom: 70px; }
-  #how_works .works_items .item {
+  #how_works .works_items .left_item {
+    text-align: right;
+    padding-right: 200px; }
+    #how_works .works_items .left_item .item .text-holder, #how_works .works_items .left_item .item .text_works {
+      text-align: right; }
+    #how_works .works_items .left_item .item .holder-icon {
+      float: right;
+      margin-left: 20px; }
+  #how_works .works_items .right_item {
+    text-align: left;
+    padding-left: 200px; }
+    #how_works .works_items .right_item .item .text-holder, #how_works .works_items .right_item .item .text_works {
+      text-align: left; }
+    #how_works .works_items .right_item .item .holder-icon {
+      float: left;
+      margin-right: 20px; }
+  #how_works .works_items .left_item, #how_works .works_items .right_item {
     display: inline-block;
     vertical-align: middle;
     width: 49%;
+    box-sizing: border-box; }
+  #how_works .works_items .item {
     text-align: center;
     position: relative;
     margin-bottom: 30px;
     box-sizing: border-box; }
-    #how_works .works_items .item .number {
-      position: absolute;
-      top: 20px;
-      left: 100px;
-      font-size: 100px;
-      color: rgba(114, 114, 114, 0.2);
-      font-weight: 600;
-      line-height: 1em;
-      font-family: "FuturaPT-Demi", sans-serif; }
-    #how_works .works_items .item:nth-child(2n+1) {
-      text-align: left;
-      padding-right: 200px; }
-      #how_works .works_items .item:nth-child(2n+1) .holder-icon {
-        float: left;
-        margin-right: 20px; }
-    #how_works .works_items .item:nth-child(2n) {
-      text-align: right;
-      padding-left: 200px; }
-      #how_works .works_items .item:nth-child(2n) .number {
-        right: 100px;
-        left: inherit; }
-      #how_works .works_items .item:nth-child(2n) .holder-icon {
-        float: right;
-        margin-left: 20px; }
     #how_works .works_items .item:first-child .holder-icon {
       font-size: 40px; }
     #how_works .works_items .item .text_works {
-      line-height: 2em;
+      line-height: 1.5em;
       font-size: 14px;
       color: #727272;
       overflow: hidden; }
@@ -1220,14 +1214,10 @@ footer {
   #visu .visa_item .time-holder {
     font-size: 12px;
     bottom: 10px; }
-  #how_works .works_items .item .holder-icon {
-    width: 130px;
-    height: 130px;
-    border-radius: 130px;
-    line-height: 130px; }
-  #how_works .works_items .item .holder-icon:after {
-    width: 120px;
-    height: 120px; }
+  #how_works .works_items .right_item {
+    padding-left: 150px; }
+  #how_works .works_items .left_item {
+    padding-right: 150px; }
   #how_works .works_items .item .text-holder {
     font-size: 18px; }
   #how_works .works_items .item .text_works {
@@ -1386,7 +1376,20 @@ footer {
   #visu {
     display: none; }
     #visu.mobile {
-      display: block; } }
+      display: block; }
+  #how_works {
+    background: none; }
+    #how_works .works_items .left_item, #how_works .works_items .right_item {
+      width: 100%;
+      padding: 0; }
+      #how_works .works_items .left_item .item, #how_works .works_items .right_item .item {
+        width: 100%; }
+        #how_works .works_items .left_item .item .text-holder, #how_works .works_items .left_item .item .text_works, #how_works .works_items .right_item .item .text-holder, #how_works .works_items .right_item .item .text_works {
+          text-align: left; }
+        #how_works .works_items .left_item .item .holder-icon, #how_works .works_items .right_item .item .holder-icon {
+          float: left;
+          margin-right: 20px;
+          margin-left: 0; } }
 
 @media screen and (max-width: 800px) {
   .top-line .wrap > div {
