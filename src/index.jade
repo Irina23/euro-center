@@ -1275,6 +1275,27 @@ html(lang="ru")
 
 
 
+                #comment
+                    .wrap
+                        h3 Відгуки
+                        .list_comment
+                            .item
+                                .name Максим Максименко
+                                .contact
+                                    a(href="#" target="_blank") vk.com/max_maximenko
+                                .text-block Замовляв польську Шенгенську візу. Оперативно отримав комплект документів, анкету та реєстрацію на подачу документів. У візовому центрі все було без жодних проблем, отримав річну візу. Рекомендую “Євроцентр” без жодних вагань.
+
+                            .item
+                                .name Максим Максименко
+                                .contact
+                                    a(href="#" target="_blank") vk.com/max_maximenko
+                                .text-block Замовляв польську Шенгенську візу. Оперативно отримав комплект документів, анкету та реєстрацію на подачу документів. У візовому центрі все було без жодних проблем, отримав річну візу. Рекомендую “Євроцентр” без жодних вагань.
+
+                        a(href="#modal_form_comment" class="link_comment open_modal") Залишити відгук
+
+
+
+
 
 
                 #faq
@@ -1478,7 +1499,27 @@ html(lang="ru")
                         input(type="hidden" name="job[title]")
                         input(type="hidden" name="job[country]")
                         .btn.submit Надіслати
+            #modal_form_comment.modal_div
+                .modal_close
+                form.form_comment
+                    .title-holder
+                        .title Залишити відгук
 
+
+                    .form-holder
+                        .message_modal.show  Форма успешно отправлена
+                        div
+                            input(type="text", placeholder="Ім'я: *", name="name", minlength="2", data-validate="name")
+                        div
+                            input(type="text", placeholder="Контакти:", name="link")
+
+
+
+                        div
+                            textarea(placeholder="Комментарий:", name="comment")
+
+
+                        .btn.submit Надіслати
 
 
             #overlay
