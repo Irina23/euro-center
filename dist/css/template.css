@@ -216,8 +216,12 @@ img{
 }
 
 
-[id^="modal_form"] .form-holder textarea::-moz-placeholder,
-[id^="modal_form"] .form-holder textarea::-webkit-input-placeholder{
+textarea:-moz-placeholder{
+    color: #404040;
+    line-height: 1em;
+    vertical-align: top;
+}
+textarea::-webkit-input-placeholder{
     color: #404040;
     line-height: 1em;
     vertical-align: top;

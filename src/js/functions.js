@@ -62,9 +62,9 @@ jQuery(document).ready(function() {
         jQuery('.visa_slider1').each(function() {
             jQuery(this).bxSlider({
                 //auto: true,
-                minSlides: 3,
+                minSlides: 1,
                 maxSlides: 3,
-                slideWidth: 500,
+                slideWidth: 355,
                 nextText: "",
                 prevText: "",
                 slideMargin: 20

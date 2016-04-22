@@ -484,9 +484,6 @@ header .bx-wrapper {
   cursor: pointer;
   display: none; }
 
-#visu.mobile {
-  display: none; }
-
 #visu h3 {
   margin-bottom: 90px; }
 
@@ -1304,6 +1301,11 @@ footer {
   #visu .visa_item .time-holder {
     font-size: 12px;
     bottom: 10px; }
+  #visu .tabs .tab-content .tab-pane {
+    width: 840px;
+    margin: 0 auto;
+    left: 50%;
+    margin-left: -420px; }
   #how_works .works_items .right_item {
     padding-left: 150px; }
   #how_works .works_items .left_item {
@@ -1465,10 +1467,6 @@ footer {
     margin-bottom: 40px; }
   #contacts [id^="map"] {
     top: 360px; }
-  #visu {
-    display: none; }
-    #visu.mobile {
-      display: block; }
   #how_works {
     background: none; }
     #how_works .works_items .left_item, #how_works .works_items .right_item {
@@ -1481,7 +1479,14 @@ footer {
         #how_works .works_items .left_item .item .holder-icon, #how_works .works_items .right_item .item .holder-icon {
           float: left;
           margin-right: 20px;
-          margin-left: 0; } }
+          margin-left: 0; }
+  #visu .tabs .tab-content .tab-pane {
+    width: 280px;
+    margin: 0 auto;
+    left: 50%;
+    margin-left: -140px; }
+  #visu .visa_item .price {
+    font-size: 26px; } }
 
 @media screen and (max-width: 800px) {
   .top-line .wrap > div {
