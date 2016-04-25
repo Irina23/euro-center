@@ -541,6 +541,7 @@ header .bx-wrapper {
         transition: all 0.35s; }
 
 #visu .visa_item {
+  min-width: 355px;
   text-align: center;
   box-sizing: border-box; }
   #visu .visa_item.bx-clone {
@@ -599,7 +600,8 @@ header .bx-wrapper {
     box-sizing: border-box;
     line-height: 45px;
     cursor: pointer;
-    display: block; }
+    display: block;
+    margin-top: 20px; }
     #visu .visa_item a:hover {
       color: #404040;
       background: #fdc300;
@@ -791,6 +793,11 @@ header .bx-wrapper {
         text-transform: uppercase; }
       #jobs .jobs_item .text-holder .job_text {
         padding: 20px 20px 20px 30px; }
+      #jobs .jobs_item .text-holder p {
+        line-height: 1.5em;
+        font-size: 14px;
+        color: #727272;
+        margin-bottom: 30px; }
       #jobs .jobs_item .text-holder ul {
         height: 145px;
         overflow: hidden;
@@ -1106,10 +1113,10 @@ footer {
       color: #000;
       font-weight: 400;
       font-size: 16px;
-      line-height: 22px;
+      line-height: 16px;
       position: relative;
       display: inline-block;
-      vertical-align: middle;
+      vertical-align: top;
       cursor: pointer; }
       .top-line .wrap .header-phone .city:hover:after {
         background: url("../img/icons/select2.png") no-repeat;
@@ -1380,7 +1387,7 @@ footer {
     padding: 0 10px;
     box-sizing: border-box; }
   #contacts {
-    margin-bottom: 50px; }
+    margin-bottom: 0; }
     #contacts .text-holder {
       width: 100%; }
     #contacts [id^="map"] {
@@ -1489,6 +1496,8 @@ footer {
     margin: 0 auto;
     left: 50%;
     margin-left: -140px; }
+  #visu .visa_item {
+    min-width: 280px; }
   #visu .visa_item .price {
     font-size: 26px; }
   #comment .img-holder {
@@ -1559,3 +1568,12 @@ footer {
     margin-top: 50px; }
   body .main_slider #slider .sl-slider h2 {
     font-size: 24px !important; } }
+
+@media screen and (max-width: 400px) {
+  footer .wrap > div {
+    display: block;
+    text-align: center;
+    float: none !important;
+    margin-bottom: 10px; }
+    footer .wrap > div:last-child {
+      margin-bottom: 0; } }

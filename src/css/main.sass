@@ -733,6 +733,7 @@ header
           transition: all 0.35s
 
   .visa_item
+    min-width: 355px
     &.bx-clone
       display: none
     text-align: center
@@ -806,6 +807,7 @@ header
         line-height: 45px
         cursor: pointer
         display: block
+        margin-top: 20px
 
 
 
@@ -1081,6 +1083,11 @@ header
 
       .job_text
         padding: 20px 20px 20px 30px
+      p
+        line-height: 1.5em
+        font-size: 14px
+        color: #727272
+        margin-bottom: 30px
       ul
         height: 145px
         overflow: hidden
@@ -1524,10 +1531,10 @@ footer
         //font-family: 'Roboto', sans-serif
         font-weight: 400
         font-size: 16px
-        line-height: 22px
+        line-height: 16px
         position: relative
         display: inline-block
-        vertical-align: middle
+        vertical-align: top
         cursor: pointer
         //margin-right: 30px
         &:hover
@@ -1894,7 +1901,7 @@ footer
     padding: 0 10px
     box-sizing: border-box
   #contacts
-    margin-bottom: 50px
+    margin-bottom: 0
     .text-holder
       width: 100%
 
@@ -2052,6 +2059,8 @@ footer
     margin: 0 auto
     left: 50%
     margin-left: -140px
+  #visu .visa_item
+    min-width: 280px
   #visu .visa_item .price
     font-size: 26px
 
@@ -2151,3 +2160,13 @@ footer
     margin-top: 50px
   body .main_slider #slider .sl-slider h2
     font-size: 24px!important
+
+
+@media screen and (max-width: 400px)
+  footer .wrap > div
+    display: block
+    text-align: center
+    float: none!important
+    margin-bottom: 10px
+    &:last-child
+      margin-bottom: 0
