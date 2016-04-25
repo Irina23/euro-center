@@ -544,7 +544,7 @@ html(lang="ru")
                                 .tab-content
                                     .tab-pane.active#poland_jobs1
                                         .jobs_slider1
-                                            .jobs_item
+                                            .jobs_item(data-id="10")
                                                 .img-holder
                                                     img(src="img/content/cleaning.jpg")
 
@@ -1496,6 +1496,7 @@ html(lang="ru")
 
                         input(type="hidden" name="job[title]")
                         input(type="hidden" name="job[country]")
+                        input(type="hidden" name="job[id]")
                         .btn.submit Надіслати
             #modal_form_comment.modal_div
                 .modal_close

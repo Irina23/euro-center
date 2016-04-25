@@ -117,6 +117,8 @@ jQuery(document).ready(function() {
         var job_title = jQuery(this).closest(".jobs_item").find("h4").text();
 
         jQuery(".title_visa").text(title_jobs);
+        var job_id = jQuery(this).closest(".jobs_item").attr('data-id');
+        jQuery("input[name='job[id]']").attr("value", job_id);
         jQuery(".job_title").text(job_title);
         //jQuery(".time_visa").text("");
         jQuery(".price_visa").text("");
