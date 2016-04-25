@@ -1286,6 +1286,18 @@ footer {
   font-size: 18px;
   font-weight: 600; }
 
+.scrollTop {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  background: url("../img/icons/next3.png") no-repeat;
+  background-size: 100%;
+  width: 22px;
+  height: 38px;
+  position: fixed;
+  display: block;
+  bottom: 5%;
+  right: 5%; }
+
 @media screen and (max-width: 1299px) {
   .wrap {
     width: 960px;
