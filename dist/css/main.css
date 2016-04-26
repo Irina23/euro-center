@@ -1520,7 +1520,11 @@ footer {
   #comment .list_comment .item {
     width: 100%; }
   #comment .list_comment .item .name {
-    font-size: 18px; } }
+    font-size: 18px; }
+  #modal_form_job {
+    height: 400px;
+    margin-top: -170px;
+    overflow: auto; } }
 
 @media screen and (max-width: 800px) {
   .top-line .wrap > div {
