@@ -67,7 +67,8 @@ jQuery(document).ready(function() {
                 slideWidth: 355,
                 nextText: "",
                 prevText: "",
-                slideMargin: 20
+                slideMargin: 20,
+                infiniteLoop: false
 
             });
         });
@@ -79,7 +80,7 @@ jQuery(document).ready(function() {
     });
 
 
-    jQuery('.slider_faq,.visa_slider2').bxSlider({
+    jQuery('.slider_faq').bxSlider({
         nextText: "",
         prevText: "",
         adaptiveHeight: true,
