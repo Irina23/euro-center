@@ -1197,61 +1197,53 @@ html(lang="ru")
                             .left_item
                                 .item
 
-                                    .holder-icon
-                                        i.fa.fa-mobile
+                                    .holder-icon 01
 
 
                                     .text-holder Звяжіться з нами
                                     .text_works Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою"
 
                                 .item
-                                    .holder-icon
-                                        i.fa.fa-search
+                                    .holder-icon 02
 
                                     .text-holder Пошук вакансій
                                     .text_works Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою"
 
 
                                 .item
-                                    .holder-icon
-                                        i.fa.fa-user
+                                    .holder-icon 03
 
                                     .text-holder Співбесіда
                                     .text_works Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою"
 
                                 .item
-                                    .holder-icon
-                                        i.fa.fa-briefcase
+                                    .holder-icon 04
 
                                     .text-holder Підписання договору, передоплата 50%
                                     .text_works Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою"
 
                                 .item
 
-                                    .holder-icon
-                                        i.fa.fa-envelope-o
+                                    .holder-icon 05
 
                                     .text-holder Надсилаємо запрошення
                                     .text_works Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою"
                             .right_item
                                 .item
-                                    .holder-icon
-                                        i.fa.fa-pencil-square-o
+                                    .holder-icon 06
 
                                     .text-holder Оформлення страховки
                                     .text_works Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою"
 
 
                                 .item
-                                    .holder-icon
-                                        i.fa.fa-briefcase
+                                    .holder-icon 07
 
                                     .text-holder Запис в візовий центр
                                     .text_works Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою"
 
                                 .item
-                                    .holder-icon
-                                        i.fa.fa-check
+                                    .holder-icon 08
 
 
                                     .text-holder Відправка Ваших документів, 50% оплати
@@ -1259,15 +1251,13 @@ html(lang="ru")
 
 
                                 .item
-                                    .holder-icon
-                                        i.fa.fa-briefcase
+                                    .holder-icon 09
 
                                     .text-holder Отримання візи
                                     .text_works Lorem Ipsum - це текст-"риба", що використовується в друкарстві та дизайні. Lorem Ipsum є, фактично, стандартною "рибою"
 
                                 .item
-                                    .holder-icon
-                                        i.fa.fa-check
+                                    .holder-icon 10
 
 
                                     .text-holder Визначаємо день від'їзду
@@ -1369,12 +1359,28 @@ html(lang="ru")
                         .list_comment
                             .item
                                 .name Максим Максименко
-                                .contact vk.com/max_maximenko
+                                .contact
+                                    a(href="http://vk.com/max_maximenko") vk.com/max_maximenko
                                 .text-block Замовляв польську Шенгенську візу. Оперативно отримав комплект документів, анкету та реєстрацію на подачу документів. У візовому центрі все було без жодних проблем, отримав річну візу. Рекомендую “Євроцентр” без жодних вагань.
                             .item
                                 .name Максим Максименко
-                                .contact vk.com/max_maximenko
+                                .contact
+                                    a(href="http://vk.com/max_maximenko") vk.com/max_maximenko
                                 .text-block Замовляв польську Шенгенську візу. Оперативно отримав комплект документів, анкету та реєстрацію на подачу документів. У візовому центрі все було без жодних проблем, отримав річну візу. Рекомендую “Євроцентр” без жодних вагань.
+
+                            .item
+                                .name Максим Максименко
+                                .contact
+                                    a(href="http://vk.com/max_maximenko") vk.com/max_maximenko
+                                .text-block Замовляв польську Шенгенську візу. Оперативно отримав комплект документів, анкету та реєстрацію на подачу документів. У візовому центрі все було без жодних проблем, отримав річну візу. Рекомендую “Євроцентр” без жодних вагань.
+
+                            .item
+                                .name Максим Максименко
+                                .contact
+                                    a(href="http://vk.com/max_maximenko") vk.com/max_maximenko
+                                .text-block Замовляв польську Шенгенську візу. Оперативно отримав комплект документів, анкету та реєстрацію на подачу документів. У візовому центрі все було без жодних проблем, отримав річну візу. Рекомендую “Євроцентр” без жодних вагань.
+
+
                         a(href="#modal_form_comment" class="link_comment open_modal") Залишити відгук
                 #contacts
                     .wrap
@@ -1417,12 +1423,61 @@ html(lang="ru")
                                    i.fa.fa-facebook
                         #map1.show(data-filter="cherkassy")
                         #map2(data-filter="uman")
-                footer.cf
+
+
+                        .widget_social_like
+                            div
+                                script(type='text/javascript', src='//vk.com/js/api/openapi.js?121')
+                                #vk_groups
+                                script(type='text/javascript').
+                                    VK.Widgets.Group("vk_groups", {mode: 0, width: "300", height: "300", color1: 'FFFFFF', color2: '2B587A', color3: '5B7FA6'}, 57487899);
+                            div
+                                #fb-root
+                                script.
+                                    (function(d, s, id) {
+                                        var js, fjs = d.getElementsByTagName(s)[0];
+                                        if (d.getElementById(id)) return;
+                                        js = d.createElement(s); js.id = id;
+                                        js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.6&appId=1654103398202049";
+                                        fjs.parentNode.insertBefore(js, fjs);
+                                    }(document, 'script', 'facebook-jssdk'));
+                                .fb-page(data-href='https://www.facebook.com/eurocenterua', data-tabs='timeline', data-width='300', data-height='300', data-small-header='false', data-adapt-container-width='true', data-hide-cover='false', data-show-facepile='true')
+                                    .fb-xfbml-parse-ignore
+                                        blockquote(cite='https://www.facebook.com/eurocenterua')
+                                            a(href='https://www.facebook.com/eurocenterua')
+
+                            div
+                                #ok_group_widget
+                                script.
+                                    !function (d, id, did, st) {
+                                        var js = d.createElement("script");
+                                        js.src = "https://connect.ok.ru/connect.js";
+                                        js.onload = js.onreadystatechange = function () {
+                                            if (!this.readyState || this.readyState == "loaded" || this.readyState == "complete") {
+                                                if (!this.executed) {
+                                                    this.executed = true;
+                                                    setTimeout(function () {
+                                                        OK.CONNECT.insertGroupWidget(id,did,st);
+                                                    }, 0);
+                                                }
+                                            }}
+                                        d.documentElement.appendChild(js);
+                                    }(document,"ok_group_widget","53466199884014","{width:300,height:300}");
+
+
+
+            footer.cf
                     .wrap.cf
                         div © 2013-2016
-                            span Євроцентр
+                            span Євроцентр-Україна
                         div розробка:
                             a(href="http://intertechcompany.com/" class="copyright" target="_blank") INTERTECH
+                        p Товариство з обмеженою відповідальністю "Євроцентр - Україна"
+                        p Юр. адреса: 04111, м. Київ, вул. Щербакова, буд. 52
+                        p Код ЄДРПОУ 40432449
+                        p р/р 26004051521052 в ПАТ КБ «ПриватБанк» МФО 354347
+
+
 
             #modal_form.modal_div
                 .modal_close
@@ -1510,9 +1565,7 @@ html(lang="ru")
                         div
                             input(type="text", placeholder="Ім'я: *", name="name", minlength="2", data-validate="name")
                         div
-                            input(type="text", placeholder="Контакти:", name="link")
-
-
+                            input(type="text", placeholder="Ссылка на вашу соц.сеть:", name="link")
 
                         div
                             textarea(placeholder="Комментарий:", name="comment", data-validate="empty")

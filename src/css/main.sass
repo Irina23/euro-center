@@ -568,7 +568,7 @@ header
       width: 49%
       box-sizing: border-box
       margin-bottom: 30px
-      padding: 0 15px
+      //padding: 0 15px
       .name
         font-weight: 600
         color: #fdc300
@@ -576,13 +576,19 @@ header
         line-height: 1em
         margin-bottom: 10px
         text-align: center
+
+
       .contact
         margin-bottom: 20px
         //font-weight: 300
         line-height: 1em
-        display: block
-        color: #337ab7
         text-align: center
+        a
+          display: block
+          color: #337ab7
+          line-height: 1em
+          text-align: center
+
       .text-block
         line-height: 1.5em
         font-size: 14px
@@ -594,7 +600,7 @@ header
   .link_comment
     display: inline-block
     vertical-align: middle
-    margin-top: 30px
+    margin-top: 90px
     color: #000
     border: 2px solid #000
     padding: 15px 35px
@@ -1189,7 +1195,7 @@ header
 
 
 
-      &:first-child
+      //&:first-child
         .holder-icon
           font-size: 40px
       .text_works
@@ -1199,19 +1205,21 @@ header
         color: #727272
         overflow: hidden
       .holder-icon
-        width: 60px
-        height: 60px
-        background: #fdc300
-        border: 2px solid #FFFFFF
-
-        border-radius: 60px
+        //width: 60px
+        //height: 60px
+        //background: #fdc300
+        //border: 2px solid #FFFFFF
+        //border-radius: 60px
         text-align: center
         line-height: 60px
-        color: #fff
+        //color: #fff
         position: relative
-        font-size: 30px
+        font-size: 60px
         margin: auto
         margin-bottom: 15px
+        font-family: "FuturaPT-Demi", sans-serif
+        color: #fdc300
+
 
 
         //&:after
@@ -1466,7 +1474,11 @@ footer
         color: #fff
         margin-left: 5px
         font-size: 14px
-
+    p
+      text-align: left
+      font-size: 14px
+      color: #fff
+      line-height: 1.5em
 
 
 
@@ -1523,6 +1535,8 @@ footer
         vertical-align: middle
 
     .header-phone
+      float: right
+      margin-top: 7px
       .city
         padding: 0 30px
         //background: url("../img/icons/address_y.png") no-repeat
@@ -1651,7 +1665,8 @@ footer
 
 
     .lang-holder
-      padding-right: 430px
+      //padding-right: 430px
+      margin-top: 3px
       a
         color: #000
         //font-family: "SegoeUILight", sans-serif
@@ -1775,6 +1790,20 @@ footer
   right: 5%
   
 
+.widget_social_like
+  text-align: center
+  margin-top: 130px
+  >div
+    display: inline-block
+    vertical-align: top
+    margin: 0 10px 20px
+    width: 300px
+
+
+
+
+
+
 
 @media screen and (max-width: 1299px)
   .wrap
@@ -1783,7 +1812,7 @@ footer
   .top-line
     .wrap
       .lang-holder
-        padding-right: 190px
+        //padding-right: 190px
 
   #menu-holder
     #menu
@@ -1837,6 +1866,12 @@ footer
     width: 300px
   #contacts [id^="map"]
     width: 620px
+
+  #comment .list_comment
+    width: 740px!important
+    margin: auto
+
+
 
 
 @media screen and (max-width: 1023px)
@@ -1894,6 +1929,8 @@ footer
   #contacts [id^="map"]
     width: 600px
 
+  .bx-wrapper
+    padding: 0 30px !important
 
 @media screen and (max-width: 959px)
   h3
@@ -1994,18 +2031,22 @@ footer
     font-size: 30px!important
     margin-top: 230px
 
-  #menu-holder #menu-icon .menu_title
-    color: #fff
-  #menu-holder.fixed #menu-icon .menu_title
-    color: #000
-    &:hover
-      color: #fdc300
-  #menu-holder.fixed #menu-icon
-    &:hover
+  #menu-holder
+    background: #fff
+    #menu li a
+      color: #000
+    #menu-icon
+      &:hover
+        i .icon-bar
+          background: #fdc300
       i .icon-bar
-        background: #fdc300
-    i .icon-bar
-      background: #000
+        background: #000
+      .menu_title
+        color: #000
+        &:hover
+          color: #fdc300
+
+
 
 
   #visu .tabs-menu, #jobs .tabs .tabs-menu
@@ -2086,10 +2127,21 @@ footer
     font-size: 18px
 
 
-  #modal_form_job
+  #modal_form_job,
+  #modal_form_comment
     height: 400px
     margin-top: -170px
     overflow: auto
+
+  .top-line .wrap .header-phone
+    float: none
+    display: inline-block
+    vertical-align: middle
+
+
+  .widget_social_like
+    margin-top: 240px
+
 
 
 @media screen and (max-width: 800px)
@@ -2106,6 +2158,12 @@ footer
 
   .top-line .wrap .header-phone
     margin-top: 5px
+
+
+
+  #comment .list_comment
+    width: 350px!important
+    margin: auto
 
 @media screen and (max-width: 700px)
 
@@ -2178,8 +2236,13 @@ footer
   body .main_slider #slider .sl-slider h2
     font-size: 24px!important
 
+  #comment .list_comment .item,
+  #comment .list_comment
+    width: 200px!important
+    margin: auto
 
-@media screen and (max-width: 400px)
+
+@media screen and (max-width: 450px)
   footer .wrap > div
     display: block
     text-align: center
@@ -2187,3 +2250,7 @@ footer
     margin-bottom: 10px
     &:last-child
       margin-bottom: 0
+
+@media screen and (max-width: 405px)
+  .top-line .wrap .logo span
+    font-size: 19px

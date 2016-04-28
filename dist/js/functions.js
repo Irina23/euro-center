@@ -73,7 +73,19 @@ jQuery(document).ready(function() {
             });
         });
 
+        jQuery('.list_comment').each(function() {
+            jQuery(this).bxSlider({
+                //auto: true,
+                minSlides: 1,
+                maxSlides: 3,
+                slideWidth: 350,
+                nextText: "",
+                prevText: "",
+                slideMargin: 20,
+                infiniteLoop: false
 
+            });
+        });
 
 
 

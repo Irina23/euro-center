@@ -403,8 +403,7 @@ header .bx-wrapper {
       vertical-align: top;
       width: 49%;
       box-sizing: border-box;
-      margin-bottom: 30px;
-      padding: 0 15px; }
+      margin-bottom: 30px; }
       #comment .list_comment .item .name {
         font-weight: 600;
         color: #fdc300;
@@ -415,9 +414,12 @@ header .bx-wrapper {
       #comment .list_comment .item .contact {
         margin-bottom: 20px;
         line-height: 1em;
-        display: block;
-        color: #337ab7;
         text-align: center; }
+        #comment .list_comment .item .contact a {
+          display: block;
+          color: #337ab7;
+          line-height: 1em;
+          text-align: center; }
       #comment .list_comment .item .text-block {
         line-height: 1.5em;
         font-size: 14px;
@@ -425,7 +427,7 @@ header .bx-wrapper {
   #comment .link_comment {
     display: inline-block;
     vertical-align: middle;
-    margin-top: 30px;
+    margin-top: 90px;
     color: #000;
     border: 2px solid #000;
     padding: 15px 35px;
@@ -861,26 +863,20 @@ header .bx-wrapper {
     position: relative;
     margin-bottom: 30px;
     box-sizing: border-box; }
-    #how_works .works_items .item:first-child .holder-icon {
-      font-size: 40px; }
     #how_works .works_items .item .text_works {
       line-height: 1.5em;
       font-size: 14px;
       color: #727272;
       overflow: hidden; }
     #how_works .works_items .item .holder-icon {
-      width: 60px;
-      height: 60px;
-      background: #fdc300;
-      border: 2px solid #FFFFFF;
-      border-radius: 60px;
       text-align: center;
       line-height: 60px;
-      color: #fff;
       position: relative;
-      font-size: 30px;
+      font-size: 60px;
       margin: auto;
-      margin-bottom: 15px; }
+      margin-bottom: 15px;
+      font-family: "FuturaPT-Demi", sans-serif;
+      color: #fdc300; }
     #how_works .works_items .item .text-holder {
       color: #404040;
       font-size: 20px;
@@ -1075,6 +1071,11 @@ footer {
       color: #fff;
       margin-left: 5px;
       font-size: 14px; }
+  footer .wrap p {
+    text-align: left;
+    font-size: 14px;
+    color: #fff;
+    line-height: 1.5em; }
 
 .top-line {
   position: absolute;
@@ -1108,92 +1109,95 @@ footer {
         padding-left: 10px;
         display: inline-block;
         vertical-align: middle; }
-    .top-line .wrap .header-phone .city {
-      padding: 0 30px;
-      color: #000;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 16px;
-      position: relative;
-      display: inline-block;
-      vertical-align: top;
-      cursor: pointer; }
-      .top-line .wrap .header-phone .city:hover:after {
-        background: url("../img/icons/select2.png") no-repeat;
-        background-size: 100%;
-        -webkit-transition: all 0.35s;
-        transition: all 0.35s; }
-      .top-line .wrap .header-phone .city .city_active {
-        min-width: 65px;
+    .top-line .wrap .header-phone {
+      float: right;
+      margin-top: 7px; }
+      .top-line .wrap .header-phone .city {
+        padding: 0 30px;
+        color: #000;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 16px;
+        position: relative;
         display: inline-block;
-        text-align: left;
-        font-size: 14px; }
-      .top-line .wrap .header-phone .city:after {
-        position: absolute;
-        top: 50%;
-        right: 10px;
-        margin-top: -4px;
-        width: 13px;
-        height: 9px;
-        content: "";
-        background: url("../img/icons/select1.png") no-repeat;
-        background-size: 100%;
-        cursor: pointer;
-        -webkit-transition: all 0.35s;
-        transition: all 0.35s; }
-      .top-line .wrap .header-phone .city ul {
-        display: none;
-        position: absolute;
-        top: 22px;
-        left: 0;
-        background: #fff;
-        width: 100%;
-        padding: 0 30px 10px;
-        border-radius: 6px;
-        box-sizing: border-box; }
-        .top-line .wrap .header-phone .city ul li {
-          font-size: 14px;
-          line-height: 1.3em; }
-          .top-line .wrap .header-phone .city ul li.active {
-            display: none; }
-          .top-line .wrap .header-phone .city ul li:hover {
-            color: #fdc300; }
-    .top-line .wrap .header-phone .phone_list {
-      display: inline-block;
-      vertical-align: middle; }
-      .top-line .wrap .header-phone .phone_list > div {
-        display: none; }
-        .top-line .wrap .header-phone .phone_list > div .block_phone, .top-line .wrap .header-phone .phone_list > div .block_address {
-          display: inline-block;
-          vertical-align: middle;
-          width: 150px;
-          font-size: 14px;
-          margin: 0 5px;
-          height: 39px;
-          overflow: hidden;
-          line-height: 1.3em; }
-        .top-line .wrap .header-phone .phone_list > div .block_phone {
-          position: relative; }
-        .top-line .wrap .header-phone .phone_list > div a {
-          color: #000;
+        vertical-align: top;
+        cursor: pointer; }
+        .top-line .wrap .header-phone .city:hover:after {
+          background: url("../img/icons/select2.png") no-repeat;
+          background-size: 100%;
           -webkit-transition: all 0.35s;
-          transition: all 0.35s;
+          transition: all 0.35s; }
+        .top-line .wrap .header-phone .city .city_active {
+          min-width: 65px;
           display: inline-block;
-          vertical-align: middle;
-          font-weight: 400;
-          margin-right: 20px;
+          text-align: left;
           font-size: 14px; }
-          .top-line .wrap .header-phone .phone_list > div a:last-child {
-            margin-right: 0; }
-          .top-line .wrap .header-phone .phone_list > div a:hover {
-            text-decoration: none;
+        .top-line .wrap .header-phone .city:after {
+          position: absolute;
+          top: 50%;
+          right: 10px;
+          margin-top: -4px;
+          width: 13px;
+          height: 9px;
+          content: "";
+          background: url("../img/icons/select1.png") no-repeat;
+          background-size: 100%;
+          cursor: pointer;
+          -webkit-transition: all 0.35s;
+          transition: all 0.35s; }
+        .top-line .wrap .header-phone .city ul {
+          display: none;
+          position: absolute;
+          top: 22px;
+          left: 0;
+          background: #fff;
+          width: 100%;
+          padding: 0 30px 10px;
+          border-radius: 6px;
+          box-sizing: border-box; }
+          .top-line .wrap .header-phone .city ul li {
+            font-size: 14px;
+            line-height: 1.3em; }
+            .top-line .wrap .header-phone .city ul li.active {
+              display: none; }
+            .top-line .wrap .header-phone .city ul li:hover {
+              color: #fdc300; }
+      .top-line .wrap .header-phone .phone_list {
+        display: inline-block;
+        vertical-align: middle; }
+        .top-line .wrap .header-phone .phone_list > div {
+          display: none; }
+          .top-line .wrap .header-phone .phone_list > div .block_phone, .top-line .wrap .header-phone .phone_list > div .block_address {
+            display: inline-block;
+            vertical-align: middle;
+            width: 150px;
+            font-size: 14px;
+            margin: 0 5px;
+            height: 39px;
+            overflow: hidden;
+            line-height: 1.3em; }
+          .top-line .wrap .header-phone .phone_list > div .block_phone {
+            position: relative; }
+          .top-line .wrap .header-phone .phone_list > div a {
+            color: #000;
             -webkit-transition: all 0.35s;
             transition: all 0.35s;
-            color: #fdc300; }
-        .top-line .wrap .header-phone .phone_list > div.show {
-          display: block; }
+            display: inline-block;
+            vertical-align: middle;
+            font-weight: 400;
+            margin-right: 20px;
+            font-size: 14px; }
+            .top-line .wrap .header-phone .phone_list > div a:last-child {
+              margin-right: 0; }
+            .top-line .wrap .header-phone .phone_list > div a:hover {
+              text-decoration: none;
+              -webkit-transition: all 0.35s;
+              transition: all 0.35s;
+              color: #fdc300; }
+          .top-line .wrap .header-phone .phone_list > div.show {
+            display: block; }
     .top-line .wrap .lang-holder {
-      padding-right: 430px; }
+      margin-top: 3px; }
       .top-line .wrap .lang-holder a {
         color: #000;
         font-weight: 400;
@@ -1299,12 +1303,19 @@ footer {
   bottom: 5%;
   right: 5%; }
 
+.widget_social_like {
+  text-align: center;
+  margin-top: 130px; }
+  .widget_social_like > div {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 10px 20px;
+    width: 300px; }
+
 @media screen and (max-width: 1299px) {
   .wrap {
     width: 960px;
     margin: auto; }
-  .top-line .wrap .lang-holder {
-    padding-right: 190px; }
   #menu-holder #menu li {
     margin: 0 19px; }
     #menu-holder #menu li a {
@@ -1341,7 +1352,10 @@ footer {
   #contacts .text-holder {
     width: 300px; }
   #contacts [id^="map"] {
-    width: 620px; } }
+    width: 620px; }
+  #comment .list_comment {
+    width: 740px !important;
+    margin: auto; } }
 
 @media screen and (max-width: 1023px) {
   .wrap {
@@ -1381,7 +1395,9 @@ footer {
     padding: 0 10px;
     box-sizing: border-box; }
   #contacts [id^="map"] {
-    width: 600px; } }
+    width: 600px; }
+  .bx-wrapper {
+    padding: 0 30px !important; } }
 
 @media screen and (max-width: 959px) {
   h3 {
@@ -1456,16 +1472,18 @@ footer {
   body .main_slider #slider .sl-slider h2 {
     font-size: 30px !important;
     margin-top: 230px; }
-  #menu-holder #menu-icon .menu_title {
-    color: #fff; }
-  #menu-holder.fixed #menu-icon .menu_title {
-    color: #000; }
-    #menu-holder.fixed #menu-icon .menu_title:hover {
-      color: #fdc300; }
-  #menu-holder.fixed #menu-icon:hover i .icon-bar {
-    background: #fdc300; }
-  #menu-holder.fixed #menu-icon i .icon-bar {
-    background: #000; }
+  #menu-holder {
+    background: #fff; }
+    #menu-holder #menu li a {
+      color: #000; }
+    #menu-holder #menu-icon:hover i .icon-bar {
+      background: #fdc300; }
+    #menu-holder #menu-icon i .icon-bar {
+      background: #000; }
+    #menu-holder #menu-icon .menu_title {
+      color: #000; }
+      #menu-holder #menu-icon .menu_title:hover {
+        color: #fdc300; }
   #visu .tabs-menu, #jobs .tabs .tabs-menu {
     padding: 0 20px; }
   #visu .tabs-menu .nav.nav-tabs li, #jobs .tabs .tabs-menu .nav.nav-tabs li {
@@ -1521,10 +1539,17 @@ footer {
     width: 100%; }
   #comment .list_comment .item .name {
     font-size: 18px; }
-  #modal_form_job {
+  #modal_form_job,
+  #modal_form_comment {
     height: 400px;
     margin-top: -170px;
-    overflow: auto; } }
+    overflow: auto; }
+  .top-line .wrap .header-phone {
+    float: none;
+    display: inline-block;
+    vertical-align: middle; }
+  .widget_social_like {
+    margin-top: 240px; } }
 
 @media screen and (max-width: 800px) {
   .top-line .wrap > div {
@@ -1533,7 +1558,10 @@ footer {
     margin-right: 0;
     margin-bottom: 15px; }
   .top-line .wrap .header-phone {
-    margin-top: 5px; } }
+    margin-top: 5px; }
+  #comment .list_comment {
+    width: 350px !important;
+    margin: auto; } }
 
 @media screen and (max-width: 700px) {
   body .main_slider .sl-slider h2 {
@@ -1584,9 +1612,13 @@ footer {
   body .main_slider #slider .sl-slider h2 {
     margin-top: 50px; }
   body .main_slider #slider .sl-slider h2 {
-    font-size: 24px !important; } }
+    font-size: 24px !important; }
+  #comment .list_comment .item,
+  #comment .list_comment {
+    width: 200px !important;
+    margin: auto; } }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
   footer .wrap > div {
     display: block;
     text-align: center;
@@ -1594,3 +1626,7 @@ footer {
     margin-bottom: 10px; }
     footer .wrap > div:last-child {
       margin-bottom: 0; } }
+
+@media screen and (max-width: 405px) {
+  .top-line .wrap .logo span {
+    font-size: 19px; } }
