@@ -1067,7 +1067,7 @@ footer {
     font-size: 14px; }
     footer .wrap > div:first-child {
       float: left; }
-    footer .wrap > div:last-child {
+    footer .wrap > div:nth-child(2) {
       margin-right: 0;
       float: right; }
     footer .wrap > div span {
@@ -1081,7 +1081,8 @@ footer {
     text-align: left;
     font-size: 14px;
     color: #fff;
-    line-height: 1.5em; }
+    line-height: 1.5em;
+    clear: both; }
 
 .top-line {
   position: absolute;
