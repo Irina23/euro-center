@@ -1360,7 +1360,6 @@ footer {
   #contacts [id^="map"] {
     width: 620px; }
   #comment .list_comment {
-    width: 740px !important;
     margin: auto; } }
 
 @media screen and (max-width: 1023px) {
@@ -1566,7 +1565,6 @@ footer {
   .top-line .wrap .header-phone {
     margin-top: 5px; }
   #comment .list_comment {
-    width: 350px !important;
     margin: auto; } }
 
 @media screen and (max-width: 700px) {
@@ -1621,7 +1619,6 @@ footer {
     font-size: 24px !important; }
   #comment .list_comment .item,
   #comment .list_comment {
-    width: 200px !important;
     margin: auto; } }
 
 @media screen and (max-width: 450px) {
