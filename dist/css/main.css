@@ -310,6 +310,12 @@ header .bx-wrapper {
       color: #404040; }
     [id^="modal_form"] .form-holder textarea[placeholder] {
       color: #404040; }
+    [id^="modal_form"] .form-holder span {
+      font-size: 12px;
+      margin-bottom: 20px;
+      margin-top: -10px;
+      display: block;
+      text-align: left; }
     [id^="modal_form"] .form-holder .error input[type="text"],
     [id^="modal_form"] .form-holder .error input[type="email"],
     [id^="modal_form"] .form-holder .error textarea {
