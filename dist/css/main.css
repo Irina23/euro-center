@@ -1312,12 +1312,12 @@ footer {
 
 .widget_social_like {
   text-align: center;
-  margin-top: 130px; }
+  margin: 130px -10px 0; }
   .widget_social_like > div {
     display: inline-block;
     vertical-align: top;
     margin: 0 10px 20px;
-    width: 300px; }
+    width: 280px; }
 
 @media screen and (max-width: 1299px) {
   .wrap {
@@ -1556,7 +1556,10 @@ footer {
     display: inline-block;
     vertical-align: middle; }
   .widget_social_like {
-    margin-top: 240px; } }
+    margin: 240px 0 0; }
+    .widget_social_like > div {
+      width: 280px;
+      margin: 0 auto 20px; } }
 
 @media screen and (max-width: 800px) {
   .top-line .wrap > div {
