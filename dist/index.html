@@ -26,24 +26,53 @@
       <header>
         <div class="top-line cf">
           <div class="wrap">
-            <div class="logo"><a href="/"><img src="img/icons/main-logo.png"><span>Євроцентр-Україна</span></a></div>
-            <div class="lang-holder"><a href="#" data-request="onSwitchLocale" data-request-data="locale: 'uk'" class="active">Укр</a><a href="#" data-request="onSwitchLocale" data-request-data="locale: 'ru'">Рус</a></div>
+            <div class="logo"><a href="/"><img src="img/icons/Logo_gorizont.png"></a></div>
+            <!--.lang-holder
+            a(href="#" class="active" data-request="onSwitchLocale" data-request-data="locale: 'uk'") Укр
+            a(href="#" data-request="onSwitchLocale" data-request-data="locale: 'ru'") Рус
+            
+            
+            -->
             <div class="header-phone">
               <div class="phone_list">
-                <div data-filter="cherkassy" class="show">
-                  <div class="block_phone"><a href="tel:+38 (0472) 38-32-98">+38 (0472) 38-32-98</a><a href="tel:+38 (067) 536-73-73">+38 (067) 536-73-73</a></div>
-                  <div class="block_address">вул. Смілянська, буд. 23, оф. 45</div>
+                <div class="select"><a href="tel:0 800 234 45 67">0 800 234 45 67</a>
+                  <div class="select_toggle"></div>
                 </div>
-                <div data-filter="uman"><a href="tel:+38 (0472) 55-55-55">+38 (0472) 55-55-55</a><a href="tel:+38 (067) 555-55-55">+38 (067) 555-55-55</a></div>
-              </div>
-              <div class="city"><span class="city_active">Черкаси</span>
                 <ul>
-                  <li data-filter="cherkassy" class="active">Черкаси</li>
-                  <li data-filter="uman">Умань</li>
-                  <li data-filter="uman">Умань</li>
+                  <li><a href="tel:0 800 234 45 67">0 800 234 45 67</a></li>
                 </ul>
+                <!--div.show(data-filter="cherkassy")
+                .block_phone
+                    a(href="tel:+38 (0472) 38-32-98") +38 (0472) 38-32-98
+                    a(href="tel:+38 (067) 536-73-73") +38 (067) 536-73-73
+                
+                
+                //.block_address вул. Смілянська, буд. 23, оф. 45
+                
+                
+                -->
+                <!--div(data-filter="uman")
+                a(href="tel:+38 (0472) 55-55-55") +38 (0472) 55-55-55
+                a(href="tel:+38 (067) 555-55-55") +38 (067) 555-55-55
+                -->
               </div>
+              <!--.city
+              span.city_active Черкаси
+              ul
+                  li.active(data-filter="cherkassy") Черкаси
+                  li(data-filter="uman") Умань
+                  li(data-filter="uman") Умань
+              -->
             </div>
+            <div class="text_header">
+              <div class="number">280</div>
+              <div class="text_holder">отримали роботу</div>
+            </div>
+            <div class="text_header">
+              <div class="number">345</div>
+              <div class="text_holder">отримали візи</div>
+            </div>
+            <div class="social"><a href="https://vk.com/eurocenterua" target="_blank"><i class="fa fa-vk"></i></a><a href="http://ok.ru/eurocenterua" target="_blank"><i class="fa fa-odnoklassniki"></i></a><a href="https://www.facebook.com/eurocenterua" target="_blank"><i class="fa fa-facebook"></i></a></div>
           </div>
         </div>
         <div id="menu-holder">
@@ -1447,74 +1476,21 @@
             <h3>Контакти</h3>
             <!--hr-->
             <div class="text-holder">
-              <div class="phone"><i class="fa fa-phone"></i>
-                <h4>Телефони</h4>
+              <div class="item"><i class="fa fa-phone"></i>
+                <h4>Телефонуйте!</h4>
                 <div class="phone_list">
-                  <div data-filter="cherkassy" class="show"><a href="tel:+38 (0472) 38-32-98">+38 (0472) 38-32-98</a><a href="tel:+38 (067) 536-73-73">+38 (067) 536-73-73</a></div>
-                  <div data-filter="uman"><a href="tel:+38 (0472) 55-55-55">+38 (0472) 55-55-55</a><a href="tel:+38 (067) 555-55-55">+38 (067) 555-55-55</a></div>
+                  <div class="show"><a href="tel:+38 (0472) 38-32-98">+38 (0472) 38-32-98</a><a href="tel:+38 (067) 536-73-73">+38 (067) 536-73-73</a></div>
                 </div>
               </div>
-              <div class="address"><i class="fa fa-map-marker"></i>
-                <h4>Адреса</h4>
+              <div class="item email"><i class="fa fa-envelope"></i>
+                <h4>Пишіть!</h4>
+                <div class="phone_list"><a href="mailto:info@vasharobota.com.ua">info@vasharobota.com.ua</a><a href="mailto:info@vasharobota.com.ua">info@vasharobota.com.ua</a></div>
+              </div>
+              <div class="item"><i class="fa fa-map-marker"></i>
+                <h4>Заходьте в гості!</h4>
                 <div class="address_list">
-                  <div data-filter="cherkassy" class="show">
-                    <p>18001, м. Черкаси, вул. Смілянська,<br>буд. 23, оф. 45 (Біля Будинку Торгівлі)</p>
-                  </div>
-                  <div data-filter="uman">
-                    <p>18001, м. Умань, вул. Смілянська,<br>буд. 23, оф. 45 (Біля Будинку Торгівлі)</p>
-                  </div>
-                </div>
-              </div>
-              <div class="social">
-                <h4>Соціальні мережі</h4><a href="https://vk.com/eurocenterua" target="_blank"><i class="fa fa-vk"></i></a><a href="http://ok.ru/eurocenterua" target="_blank"><i class="fa fa-odnoklassniki"></i></a><a href="https://www.facebook.com/eurocenterua" target="_blank"><i class="fa fa-facebook"></i></a>
-              </div>
-            </div>
-            <div id="map1" data-filter="cherkassy" class="show"></div>
-            <div id="map2" data-filter="uman"></div>
-            <div class="widget_social_like">
-              <div>
-                <script type="text/javascript" src="//vk.com/js/api/openapi.js?121"></script>
-                <div id="vk_groups"></div>
-                <script type="text/javascript">
-                  VK.Widgets.Group("vk_groups", {mode: 0, width: "280", height: "215", color1: 'FFFFFF', color2: '2B587A', color3: '5B7FA6'}, 57487899);
-                  
-                  
-                </script>
-              </div>
-              <div>
-                <div id="ok_group_widget"></div>
-                <script>
-                  !function (d, id, did, st) {
-                      var js = d.createElement("script");
-                      js.src = "https://connect.ok.ru/connect.js";
-                      js.onload = js.onreadystatechange = function () {
-                          if (!this.readyState || this.readyState == "loaded" || this.readyState == "complete") {
-                              if (!this.executed) {
-                                  this.executed = true;
-                                  setTimeout(function () {
-                                      OK.CONNECT.insertGroupWidget(id,did,st);
-                                  }, 0);
-                              }
-                          }}
-                      d.documentElement.appendChild(js);
-                  }(document,"ok_group_widget","53466199884014","{width:280,height:215}");
-                </script>
-              </div>
-              <div>
-                <div id="fb-root"></div>
-                <script>
-                  (function(d, s, id) {
-                      var js, fjs = d.getElementsByTagName(s)[0];
-                      if (d.getElementById(id)) return;
-                      js = d.createElement(s); js.id = id;
-                      js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.3";
-                      fjs.parentNode.insertBefore(js, fjs);
-                  }(document, 'script', 'facebook-jssdk'));
-                </script>
-                <div data-href="https://www.facebook.com/intertechcompany/" data-width="280" data-height="215" data-adapt-container-width="true" data-show-facepile="true" class="fb-page">
-                  <div class="fb-xfbml-parse-ignore">
-                    <blockquote cite="https://www.facebook.com/intertechcompany/"><a href="https://www.facebook.com/intertechcompany/"></a></blockquote>
-                  </div>
+                  <p>18001, м. Черкаси, вул. Смілянська, буд. 23, оф. 45 (Біля Будинку Торгівлі)</p>
+                  <p>18001, м. Умань, вул. Смілянська, буд. 23, оф. 45 (Біля Будинку Торгівлі)</p>
                 </div>
               </div>
             </div>
@@ -1523,12 +1499,8 @@
       </div>
       <footer class="cf">
         <div class="wrap cf">
-          <div>© 2013-2016<span>Євроцентр-Україна</span></div>
+          <div>© 2013-2016<span>ТОВ “ВАША РОБОТА”</span></div>
           <div>розробка:<a href="http://intertechcompany.com/" target="_blank" class="copyright">INTERTECH</a></div>
-          <p>Товариство з обмеженою відповідальністю "Євроцентр - Україна"</p>
-          <p>Юр. адреса: 04111, м. Київ, вул. Щербакова, буд. 52</p>
-          <p>Код ЄДРПОУ 40432449</p>
-          <p>р/р 26004051521052 в ПАТ КБ «ПриватБанк» МФО 354347</p>
         </div>
       </footer>
       <div id="modal_form" class="modal_div">

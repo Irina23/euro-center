@@ -1387,95 +1387,46 @@ html(lang="ru")
                         h3 Контакти
                         //hr
                         .text-holder
-                            .phone
+                            .item
                                 i.fa.fa-phone
-                                h4 Телефони
+                                h4 Телефонуйте!
                                 .phone_list
-                                    div.show(data-filter="cherkassy")
+                                    div.show
                                         a(href="tel:+38 (0472) 38-32-98") +38 (0472) 38-32-98
                                         a(href="tel:+38 (067) 536-73-73") +38 (067) 536-73-73
-                                    div(data-filter="uman")
-                                        a(href="tel:+38 (0472) 55-55-55") +38 (0472) 55-55-55
-                                        a(href="tel:+38 (067) 555-55-55") +38 (067) 555-55-55
 
-                            .address
+                            .item.email
+                                i.fa.fa-envelope
+                                h4 Пишіть!
+                                .phone_list
+
+                                        a(href="mailto:info@vasharobota.com.ua") info@vasharobota.com.ua
+                                        a(href="mailto:info@vasharobota.com.ua") info@vasharobota.com.ua
+                            .item
                                 i.fa.fa-map-marker
-                                h4 Адреса
+                                h4 Заходьте в гості!
                                 .address_list
-                                    div.show(data-filter="cherkassy")
+
                                         p
-                                            | 18001, м. Черкаси, вул. Смілянська,
-                                            br
-                                            | буд. 23, оф. 45 (Біля Будинку Торгівлі)
-                                    div(data-filter="uman")
+                                            | 18001, м. Черкаси, вул. Смілянська, буд. 23, оф. 45 (Біля Будинку Торгівлі)
+
                                         p
-                                            | 18001, м. Умань, вул. Смілянська,
-                                            br
-                                            | буд. 23, оф. 45 (Біля Будинку Торгівлі)
-
-                            .social
-                                h4 Соціальні мережі
-                                a(href="https://vk.com/eurocenterua" target="_blank")
-                                   i.fa.fa-vk
-                                a(href="http://ok.ru/eurocenterua" target="_blank")
-                                   i.fa.fa-odnoklassniki
-                                a(href="https://www.facebook.com/eurocenterua" target="_blank")
-                                   i.fa.fa-facebook
-                        #map1.show(data-filter="cherkassy")
-                        #map2(data-filter="uman")
+                                            | 18001, м. Умань, вул. Смілянська, буд. 23, оф. 45 (Біля Будинку Торгівлі)
 
 
-                        .widget_social_like
-                            div
-                                script(type='text/javascript', src='//vk.com/js/api/openapi.js?121')
-                                #vk_groups
-                                script(type='text/javascript').
-                                    VK.Widgets.Group("vk_groups", {mode: 0, width: "280", height: "215", color1: 'FFFFFF', color2: '2B587A', color3: '5B7FA6'}, 57487899);
 
 
-                            div
-                                #ok_group_widget
-                                script.
-                                    !function (d, id, did, st) {
-                                        var js = d.createElement("script");
-                                        js.src = "https://connect.ok.ru/connect.js";
-                                        js.onload = js.onreadystatechange = function () {
-                                            if (!this.readyState || this.readyState == "loaded" || this.readyState == "complete") {
-                                                if (!this.executed) {
-                                                    this.executed = true;
-                                                    setTimeout(function () {
-                                                        OK.CONNECT.insertGroupWidget(id,did,st);
-                                                    }, 0);
-                                                }
-                                            }}
-                                        d.documentElement.appendChild(js);
-                                    }(document,"ok_group_widget","53466199884014","{width:280,height:215}");
-                            div
-                                #fb-root
-                                script.
-                                    (function(d, s, id) {
-                                        var js, fjs = d.getElementsByTagName(s)[0];
-                                        if (d.getElementById(id)) return;
-                                        js = d.createElement(s); js.id = id;
-                                        js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.3";
-                                        fjs.parentNode.insertBefore(js, fjs);
-                                    }(document, 'script', 'facebook-jssdk'));
-                                .fb-page(data-href='https://www.facebook.com/intertechcompany/' data-width='280'  data-height='215' data-adapt-container-width='true' data-show-facepile="true")
-                                    .fb-xfbml-parse-ignore
-                                        blockquote(cite='https://www.facebook.com/intertechcompany/')
-                                            a(href='https://www.facebook.com/intertechcompany/')
+
+
 
 
             footer.cf
                     .wrap.cf
                         div © 2013-2016
-                            span Євроцентр-Україна
+                            span ТОВ “ВАША РОБОТА”
                         div розробка:
                             a(href="http://intertechcompany.com/" class="copyright" target="_blank") INTERTECH
-                        p Товариство з обмеженою відповідальністю "Євроцентр - Україна"
-                        p Юр. адреса: 04111, м. Київ, вул. Щербакова, буд. 52
-                        p Код ЄДРПОУ 40432449
-                        p р/р 26004051521052 в ПАТ КБ «ПриватБанк» МФО 354347
+
 
 
 

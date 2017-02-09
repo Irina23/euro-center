@@ -2,24 +2,53 @@
 <header>
   <div class="top-line cf">
     <div class="wrap">
-      <div class="logo"><a href="/"><img src="img/icons/main-logo.png"/><span>Євроцентр-Україна</span></a></div>
-      <div class="lang-holder"><a href="#" data-request="onSwitchLocale" data-request-data="locale: 'uk'" class="active">Укр</a><a href="#" data-request="onSwitchLocale" data-request-data="locale: 'ru'">Рус</a></div>
+      <div class="logo"><a href="/"><img src="img/icons/Logo_gorizont.png"/></a></div>
+      <!--.lang-holder
+      a(href="#" class="active" data-request="onSwitchLocale" data-request-data="locale: 'uk'") Укр
+      a(href="#" data-request="onSwitchLocale" data-request-data="locale: 'ru'") Рус
+      
+      
+      -->
       <div class="header-phone">
         <div class="phone_list">
-          <div data-filter="cherkassy" class="show">
-            <div class="block_phone"><a href="tel:+38 (0472) 38-32-98">+38 (0472) 38-32-98</a><a href="tel:+38 (067) 536-73-73">+38 (067) 536-73-73</a></div>
-            <div class="block_address">вул. Смілянська, буд. 23, оф. 45</div>
+          <div class="select"><a href="tel:0 800 234 45 67">0 800 234 45 67</a>
+            <div class="select_toggle"></div>
           </div>
-          <div data-filter="uman"><a href="tel:+38 (0472) 55-55-55">+38 (0472) 55-55-55</a><a href="tel:+38 (067) 555-55-55">+38 (067) 555-55-55</a></div>
-        </div>
-        <div class="city"><span class="city_active">Черкаси</span>
           <ul>
-            <li data-filter="cherkassy" class="active">Черкаси</li>
-            <li data-filter="uman">Умань</li>
-            <li data-filter="uman">Умань</li>
+            <li><a href="tel:0 800 234 45 67">0 800 234 45 67</a></li>
           </ul>
+          <!--div.show(data-filter="cherkassy")
+          .block_phone
+              a(href="tel:+38 (0472) 38-32-98") +38 (0472) 38-32-98
+              a(href="tel:+38 (067) 536-73-73") +38 (067) 536-73-73
+          
+          
+          //.block_address вул. Смілянська, буд. 23, оф. 45
+          
+          
+          -->
+          <!--div(data-filter="uman")
+          a(href="tel:+38 (0472) 55-55-55") +38 (0472) 55-55-55
+          a(href="tel:+38 (067) 555-55-55") +38 (067) 555-55-55
+          -->
         </div>
+        <!--.city
+        span.city_active Черкаси
+        ul
+            li.active(data-filter="cherkassy") Черкаси
+            li(data-filter="uman") Умань
+            li(data-filter="uman") Умань
+        -->
       </div>
+      <div class="text_header">
+        <div class="number">280</div>
+        <div class="text_holder">отримали роботу</div>
+      </div>
+      <div class="text_header">
+        <div class="number">345</div>
+        <div class="text_holder">отримали візи</div>
+      </div>
+      <div class="social"><a href="https://vk.com/eurocenterua" target="_blank"><i class="fa fa-vk"></i></a><a href="http://ok.ru/eurocenterua" target="_blank"><i class="fa fa-odnoklassniki"></i></a><a href="https://www.facebook.com/eurocenterua" target="_blank"><i class="fa fa-facebook"></i></a></div>
     </div>
   </div>
   <div id="menu-holder">

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "SegoeUIBold";
   src: url("../fonts/SegoeUIBold.eot");
@@ -561,7 +562,7 @@ header .bx-wrapper {
   #visu .visa_item h4 {
     font-size: 24px;
     font-weight: 300;
-    color: #fff;
+    color: #404040;
     height: 1em;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -570,7 +571,7 @@ header .bx-wrapper {
     float: left;
     text-transform: uppercase; }
   #visu .visa_item .price {
-    color: #fdc300;
+    color: #404040;
     font-size: 40px;
     line-height: 1em;
     float: right;
@@ -584,7 +585,7 @@ header .bx-wrapper {
     clear: both;
     font-weight: 100;
     position: absolute;
-    color: #fff;
+    color: #404040;
     font-size: 13px;
     bottom: 10px;
     left: 20px; }
@@ -619,7 +620,7 @@ header .bx-wrapper {
   #visu .visa_item .text-holder {
     background: #ebebeb; }
     #visu .visa_item .text-holder .title-holder {
-      background: #404040;
+      background: #FDC300;
       padding: 25px 20px;
       text-align: left; }
   #visu .visa_item .block_text {
@@ -761,7 +762,6 @@ header .bx-wrapper {
         letter-spacing: 1px; }
         #jobs .tabs .tabs-menu .nav.nav-tabs li.active, #jobs .tabs .tabs-menu .nav.nav-tabs li:hover {
           background: #fdc300;
-          color: #fff;
           -webkit-transition: all 0.35s;
           transition: all 0.35s; }
   #jobs .jobs_item {
@@ -796,7 +796,7 @@ header .bx-wrapper {
         overflow: hidden;
         margin-bottom: 0;
         background: #fdc300;
-        color: #fff;
+        color: #404040;
         padding: 20px 0;
         text-transform: uppercase; }
       #jobs .jobs_item .text-holder .job_text {
@@ -965,24 +965,21 @@ body .bx-wrapper .bx-controls-direction a {
   text-indent: 0; }
 
 #contacts {
-  margin-bottom: 100px;
-  padding-top: 50px;
+  padding: 50px 0;
   position: relative; }
   #contacts .wrap {
-    position: relative;
-    min-height: 520px; }
+    position: relative; }
   #contacts h3 {
     margin-bottom: 90px; }
   #contacts .text-holder {
-    width: 400px;
-    display: inline-block;
-    vertical-align: top;
-    margin-right: 35px; }
+    width: 800px;
+    margin: auto; }
     #contacts .text-holder h4 {
       font-size: 16px;
-      line-height: 1em;
+      line-height: 20px;
       margin-bottom: 15px;
-      font-weight: 600; }
+      font-weight: 600;
+      padding-left: 25px; }
     #contacts .text-holder a {
       color: #337ab7;
       display: block;
@@ -993,55 +990,20 @@ body .bx-wrapper .bx-controls-direction a {
       font-size: 14px; }
     #contacts .text-holder > div {
       margin-bottom: 30px; }
-    #contacts .text-holder .phone {
+    #contacts .text-holder .item {
       position: relative;
-      padding-left: 25px; }
-      #contacts .text-holder .phone .phone_list > div {
-        display: none; }
-        #contacts .text-holder .phone .phone_list > div.show {
-          display: block; }
-      #contacts .text-holder .phone i {
+      display: inline-block;
+      vertical-align: top;
+      width: 32%;
+      box-sizing: border-box; }
+      #contacts .text-holder .item.email i {
+        font-size: 18px; }
+      #contacts .text-holder .item i {
         position: absolute;
         top: 0;
         left: 0;
         color: #337ab7;
         font-size: 20px; }
-    #contacts .text-holder .address {
-      position: relative;
-      padding-left: 25px; }
-      #contacts .text-holder .address .address_list > div {
-        display: none; }
-        #contacts .text-holder .address .address_list > div.show {
-          display: block; }
-      #contacts .text-holder .address i {
-        position: absolute;
-        top: 0;
-        left: 0;
-        color: #337ab7;
-        font-size: 20px; }
-    #contacts .text-holder .social {
-      padding-left: 25px; }
-      #contacts .text-holder .social a {
-        border-radius: 30px;
-        background: #0e6eb8;
-        height: 30px;
-        width: 30px;
-        display: inline-block;
-        text-align: center;
-        color: #fff;
-        font-size: 14px;
-        margin: 0 7px;
-        -webkit-transition: all 0.35s;
-        transition: all 0.35s;
-        padding-top: 1px;
-        box-sizing: border-box;
-        line-height: 28px; }
-        #contacts .text-holder .social a:nth-child(2) {
-          margin-left: 0; }
-        #contacts .text-holder .social a:hover {
-          opacity: 0.8;
-          -webkit-transition: all 0.35s;
-          transition: all 0.35s; }
   #contacts [id^="map"] {
     height: 400px;
     vertical-align: top;
@@ -1098,14 +1060,47 @@ footer {
       vertical-align: middle; }
       .top-line .wrap > div:last-child {
         padding-right: 0; }
+    .top-line .wrap .social a {
+      border-radius: 30px;
+      background: #0e6eb8;
+      height: 30px;
+      width: 30px;
+      display: inline-block;
+      text-align: center;
+      color: #fff;
+      font-size: 14px;
+      margin: 0 7px;
+      -webkit-transition: all 0.35s;
+      transition: all 0.35s;
+      padding-top: 1px;
+      box-sizing: border-box;
+      line-height: 28px; }
+      .top-line .wrap .social a:last-child {
+        margin-right: 0; }
+      .top-line .wrap .social a:first-child {
+        margin-left: 0; }
+      .top-line .wrap .social a:hover {
+        opacity: 0.8;
+        -webkit-transition: all 0.35s;
+        transition: all 0.35s; }
+    .top-line .wrap .text_header {
+      margin-right: 50px; }
+      .top-line .wrap .text_header .number {
+        color: #0e6eb8;
+        font-size: 24px;
+        margin-bottom: 3px; }
+      .top-line .wrap .text_header .text_holder {
+        color: #727272;
+        font-size: 13px; }
     .top-line .wrap .logo {
-      padding-right: 30px; }
+      padding-right: 240px; }
       .top-line .wrap .logo img {
-        max-width: 60px;
+        max-width: 250px;
         display: inline-block;
         vertical-align: middle; }
       .top-line .wrap .logo a {
-        position: relative; }
+        position: relative;
+        display: block; }
         .top-line .wrap .logo a:hover {
           text-decoration: none; }
       .top-line .wrap .logo span {
@@ -1117,92 +1112,65 @@ footer {
         display: inline-block;
         vertical-align: middle; }
     .top-line .wrap .header-phone {
-      float: right;
-      margin-top: 7px; }
-      .top-line .wrap .header-phone .city {
-        padding: 0 30px;
-        color: #000;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 16px;
-        position: relative;
-        display: inline-block;
-        vertical-align: top;
-        cursor: pointer; }
-        .top-line .wrap .header-phone .city:hover:after {
-          background: url("../img/icons/select2.png") no-repeat;
-          background-size: 100%;
-          -webkit-transition: all 0.35s;
-          transition: all 0.35s; }
-        .top-line .wrap .header-phone .city .city_active {
-          min-width: 65px;
-          display: inline-block;
-          text-align: left;
-          font-size: 14px; }
-        .top-line .wrap .header-phone .city:after {
-          position: absolute;
-          top: 50%;
-          right: 10px;
-          margin-top: -4px;
-          width: 13px;
-          height: 9px;
-          content: "";
-          background: url("../img/icons/select1.png") no-repeat;
-          background-size: 100%;
-          cursor: pointer;
-          -webkit-transition: all 0.35s;
-          transition: all 0.35s; }
-        .top-line .wrap .header-phone .city ul {
-          display: none;
-          position: absolute;
-          top: 22px;
-          left: 0;
-          background: #fff;
-          width: 100%;
-          padding: 0 30px 10px;
-          border-radius: 6px;
-          box-sizing: border-box; }
-          .top-line .wrap .header-phone .city ul li {
-            font-size: 14px;
-            line-height: 1.3em; }
-            .top-line .wrap .header-phone .city ul li.active {
-              display: none; }
-            .top-line .wrap .header-phone .city ul li:hover {
-              color: #fdc300; }
+      margin-right: 50px; }
       .top-line .wrap .header-phone .phone_list {
-        display: inline-block;
-        vertical-align: middle; }
-        .top-line .wrap .header-phone .phone_list > div {
-          display: none; }
-          .top-line .wrap .header-phone .phone_list > div .block_phone, .top-line .wrap .header-phone .phone_list > div .block_address {
-            display: inline-block;
-            vertical-align: middle;
-            width: 150px;
-            font-size: 14px;
-            margin: 0 5px;
-            height: 39px;
-            overflow: hidden;
-            line-height: 1.3em; }
-          .top-line .wrap .header-phone .phone_list > div .block_phone {
-            position: relative; }
-          .top-line .wrap .header-phone .phone_list > div a {
-            color: #000;
+        position: relative;
+        padding-left: 40px; }
+        .top-line .wrap .header-phone .phone_list.open ul {
+          display: block; }
+        .top-line .wrap .header-phone .phone_list a {
+          color: #000;
+          font-size: 20px;
+          -webkit-transition: all 0.35s;
+          transition: all 0.35s; }
+          .top-line .wrap .header-phone .phone_list a:hover {
             -webkit-transition: all 0.35s;
             transition: all 0.35s;
+            color: #fdc300;
+            text-decoration: none; }
+        .top-line .wrap .header-phone .phone_list:before {
+          content: "тел.";
+          position: absolute;
+          left: 0;
+          top: 0; }
+        .top-line .wrap .header-phone .phone_list .select {
+          padding-right: 20px;
+          position: relative; }
+          .top-line .wrap .header-phone .phone_list .select .select_toggle {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            margin-top: -10px;
             display: inline-block;
-            vertical-align: middle;
-            font-weight: 400;
-            margin-right: 20px;
-            font-size: 14px; }
-            .top-line .wrap .header-phone .phone_list > div a:last-child {
-              margin-right: 0; }
-            .top-line .wrap .header-phone .phone_list > div a:hover {
-              text-decoration: none;
-              -webkit-transition: all 0.35s;
-              transition: all 0.35s;
-              color: #fdc300; }
-          .top-line .wrap .header-phone .phone_list > div.show {
-            display: block; }
+            width: 20px;
+            height: 20px;
+            cursor: pointer; }
+            .top-line .wrap .header-phone .phone_list .select .select_toggle:after {
+              content: '';
+              width: 0;
+              height: 0;
+              border-top: 6px solid #000;
+              border-left: 4px solid transparent;
+              border-right: 4px solid transparent;
+              position: absolute;
+              top: 50%;
+              right: 5px;
+              margin-top: -3px; }
+        .top-line .wrap .header-phone .phone_list ul {
+          display: none;
+          position: absolute;
+          background: #fff;
+          z-index: 2;
+          padding: 10px;
+          left: 30px;
+          top: 15px;
+          box-sizing: border-box;
+          border-radius: 0 0 5px 5px;
+          width: calc( 100% - 40px); }
+          .top-line .wrap .header-phone .phone_list ul li {
+            margin-bottom: 5px; }
+            .top-line .wrap .header-phone .phone_list ul li:last-child {
+              margin-bottom: 0; }
     .top-line .wrap .lang-holder {
       margin-top: 3px; }
       .top-line .wrap .lang-holder a {
@@ -1230,10 +1198,11 @@ footer {
   left: 0;
   width: 100%;
   z-index: 1001;
-  padding: 20px 0; }
+  padding: 15px 0 16px; }
   #menu-holder.fixed {
     top: 0;
-    background: #fff; }
+    background: #fff;
+    border-bottom: 1px solid #ebebeb; }
     #menu-holder.fixed #menu li a {
       color: #000; }
   #menu-holder #menu-icon {
@@ -1262,9 +1231,14 @@ footer {
         width: 25px;
         height: 3px;
         margin-bottom: 5px; }
+        #menu-holder #menu-icon i .icon-bar:last-child {
+          margin-bottom: 0; }
     #menu-holder #menu-icon .menu_title {
       text-transform: uppercase;
-      font-size: 14px; }
+      font-size: 14px;
+      line-height: 19px;
+      display: inline-block;
+      vertical-align: middle; }
   #menu-holder #menu {
     text-align: center; }
     #menu-holder #menu li {
@@ -1356,13 +1330,16 @@ footer {
     font-size: 18px; }
   #how_works .works_items .item .text_works {
     font-size: 13px; }
-  #contacts .text-holder {
-    width: 300px; }
   #contacts [id^="map"] {
     width: 620px; }
   #comment .bx-wrapper .bx-viewport {
     width: 740px !important;
-    margin: auto; } }
+    margin: auto; }
+  .top-line .wrap .text_header,
+  .top-line .wrap .header-phone {
+    margin-right: 30px; }
+  .top-line .wrap .logo {
+    padding-right: 70px; } }
 
 @media screen and (max-width: 1023px) {
   .wrap {
@@ -1371,22 +1348,10 @@ footer {
     margin: 0 10px; }
   #call_back form input[type="text"], #call_back form input[type="email"] {
     width: 230px; }
-  #contacts .text-holder {
-    margin-right: 0;
-    width: 295px; }
-    #contacts .text-holder .top-line .wrap .lang-holder {
-      padding-right: 0; }
   .top-line .wrap .lang-holder {
     padding-right: 0; }
-  .top-line .wrap .header-phone {
-    float: right;
-    margin-top: 7px; }
   .top-line .wrap .header-phone .city {
     margin-right: 15px; }
-  .top-line .wrap > div {
-    padding-right: 15px; }
-    .top-line .wrap > div:last-child {
-      padding-right: 0; }
   #visu .tabs-menu .nav.nav-tabs li, #jobs .tabs .tabs-menu .nav.nav-tabs li {
     width: 267px; }
   #visu .visa_item .price {
@@ -1404,7 +1369,14 @@ footer {
   #contacts [id^="map"] {
     width: 600px; }
   .bx-wrapper {
-    padding: 0 30px !important; } }
+    padding: 0 30px !important; }
+  .top-line .wrap .text_header,
+  .top-line .wrap .header-phone {
+    margin-right: 20px; }
+  .top-line .wrap .logo {
+    padding-right: 50px; }
+    .top-line .wrap .logo img {
+      max-width: 220px; } }
 
 @media screen and (max-width: 959px) {
   h3 {
@@ -1501,17 +1473,10 @@ footer {
       margin-bottom: 0; }
   #advantage ul li, #how_works .works_items .item {
     margin-bottom: 30px; }
-  .top-line .wrap .header-phone .phone_list > div a {
-    display: block;
-    line-height: 1.5em; }
-  #advantage {
-    padding: 40px 0 40px; }
-    #advantage h3 {
-      font-size: 24px; }
+  #advantage h3 {
+    font-size: 24px; }
   #advantage ul li .text-holder h4, #faq .slider_faq .item_faq h4 {
     font-size: 16px; }
-  #contacts .wrap {
-    min-height: 590px; }
   #contacts h3 {
     margin-bottom: 40px; }
   #contacts [id^="map"] {
@@ -1551,15 +1516,30 @@ footer {
     height: 400px;
     margin-top: -170px;
     overflow: auto; }
-  .top-line .wrap .header-phone {
-    float: none;
-    display: inline-block;
-    vertical-align: middle; }
+  .top-line .wrap .header-phone,
+  .top-line .wrap .text_header,
+  .top-line .wrap .social {
+    width: 220px; }
+  .top-line .wrap .social {
+    text-align: center; }
   .widget_social_like {
     margin: 240px 0 0; }
     .widget_social_like > div {
       width: 280px;
-      margin: 0 auto 20px; } }
+      margin: 0 auto 20px; }
+  .top-line .wrap .logo {
+    text-align: center; }
+  .top-line .wrap > div {
+    display: block;
+    padding-right: 0 !important;
+    margin: 0 auto 15px !important; }
+    .top-line .wrap > div:last-child {
+      margin-bottom: 0 !important; }
+  #menu-holder {
+    top: 229px; }
+  body .main_slider #slider .sl-slider h2 {
+    margin-top: 100px;
+    padding-top: 250px; } }
 
 @media screen and (max-width: 800px) {
   .top-line .wrap > div {
@@ -1574,16 +1554,13 @@ footer {
     margin: auto; } }
 
 @media screen and (max-width: 700px) {
-  body .main_slider .sl-slider h2 {
-    padding-top: 200px; }
   .top-line .wrap .header-phone {
     float: none; }
-  .top-line .wrap > div {
-    display: block;
-    padding-right: 0;
-    margin-bottom: 20px; }
-  body .main_slider #slider .sl-slider h2 {
-    margin-top: 100px; } }
+  #contacts .text-holder .item {
+    width: 100%;
+    margin-bottom: 30px; }
+    #contacts .text-holder .item:last-child {
+      margin-bottom: 0; } }
 
 @media screen and (max-width: 600px) {
   #advantage ul li,
@@ -1593,8 +1570,6 @@ footer {
     width: calc( 100% - 20px);
     left: 10px;
     margin-left: 0; }
-  #menu-holder {
-    top: 180px; }
   #faq .slider_faq .item_faq h4 {
     white-space: inherit; }
   #jobs .tabs .tab-content .jobs_item {

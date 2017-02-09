@@ -5,37 +5,56 @@ header
         .wrap
             .logo
                 a(href="/")
-                    img(src="img/icons/main-logo.png")
-                    span Євроцентр-Україна
-            .lang-holder
+                    img(src="img/icons/Logo_gorizont.png")
+
+            //.lang-holder
                 a(href="#" class="active" data-request="onSwitchLocale" data-request-data="locale: 'uk'") Укр
                 a(href="#" data-request="onSwitchLocale" data-request-data="locale: 'ru'") Рус
+
+
             .header-phone
 
                 .phone_list
-                    div.show(data-filter="cherkassy")
+                    .select
+                        a(href="tel:0 800 234 45 67") 0 800 234 45 67
+                        .select_toggle
+                    ul
+                        li
+                            a(href="tel:0 800 234 45 67") 0 800 234 45 67
+
+
+                    //div.show(data-filter="cherkassy")
                         .block_phone
                             a(href="tel:+38 (0472) 38-32-98") +38 (0472) 38-32-98
                             a(href="tel:+38 (067) 536-73-73") +38 (067) 536-73-73
 
 
-                        .block_address вул. Смілянська, буд. 23, оф. 45
+                        //.block_address вул. Смілянська, буд. 23, оф. 45
 
 
-
-
-
-                    div(data-filter="uman")
+                    //div(data-filter="uman")
                         a(href="tel:+38 (0472) 55-55-55") +38 (0472) 55-55-55
                         a(href="tel:+38 (067) 555-55-55") +38 (067) 555-55-55
-                .city
+                //.city
                     span.city_active Черкаси
                     ul
                         li.active(data-filter="cherkassy") Черкаси
                         li(data-filter="uman") Умань
                         li(data-filter="uman") Умань
+            .text_header
+                .number 280
+                .text_holder отримали роботу
+            .text_header
+                .number 345
+                .text_holder отримали візи
+            .social
 
-
+                a(href="https://vk.com/eurocenterua" target="_blank")
+                    i.fa.fa-vk
+                a(href="http://ok.ru/eurocenterua" target="_blank")
+                    i.fa.fa-odnoklassniki
+                a(href="https://www.facebook.com/eurocenterua" target="_blank")
+                    i.fa.fa-facebook
 
 
 

@@ -55,10 +55,6 @@ jQuery(document).ready(function() {
     jQuery(window).load(function() {
 
 
-
-
-
-
         jQuery('.visa_slider1').each(function() {
             jQuery(this).bxSlider({
                 //auto: true,
@@ -144,7 +140,7 @@ jQuery(document).ready(function() {
 
 
     //map
-
+    /*
     $(window).on('load', function() {
         // Create a map object and specify the DOM element for display.
         var map1 = new google.maps.Map(document.getElementById('map1'), {
@@ -170,11 +166,12 @@ jQuery(document).ready(function() {
         });
 
     });
+    */
 
 
 
     //city filter
-    jQuery(".header-phone .city").click(function(){
+    /*jQuery(".header-phone .city").click(function(){
         jQuery(this).find("ul").slideToggle();
 
     });
@@ -192,7 +189,7 @@ jQuery(document).ready(function() {
         });
 
 
-    });
+    });*/
 
 
 /*
@@ -237,6 +234,12 @@ jQuery(document).ready(function() {
 
 
     });
+
+    $(".select_toggle").on('click', function () {
+        $(this).parent().parent().toggleClass('open');
+    });
+
+    
 ///main slider
     $(function() {
 
