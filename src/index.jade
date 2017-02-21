@@ -1573,6 +1573,30 @@ html(lang="ru")
                         input(type="hidden" name="job[country]")
                         input(type="hidden" name="job[id]")
                         .btn.submit Надіслати
+
+
+            #modal_form_slider.modal_div
+                .modal_close
+                form.form_visa
+                    .title-holder Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник созд
+
+
+
+                    .form-holder
+                        .message_modal  Форма успешно отправлена
+                        div
+                            input(type="text", placeholder="Ім'я: *", name="name", minlength="2", data-validate="name")
+                        div
+                            input(type="text", placeholder="Телефон: *", name="phone", data-validate="phone")
+                        div
+                            input(type="text", placeholder="E-mail:", name="email", data-validate="emptyButEmail")
+
+                        div
+                            textarea(placeholder="Комментарий:", name="comment")
+
+
+                        .btn.submit Надіслати
+
             #modal_form_comment.modal_div
                 .modal_close
                 form.form_comment
