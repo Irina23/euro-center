@@ -88,7 +88,7 @@ jQuery(document).ready(function() {
     });
 
 
-    jQuery('.slider_faq').bxSlider({
+    jQuery('.slider_faq, [class^="jobs_slider"]').bxSlider({
         nextText: "",
         prevText: "",
         adaptiveHeight: true,
