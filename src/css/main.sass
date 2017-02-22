@@ -984,6 +984,7 @@ header
       //overflow: hidden
       width: 1120px
       margin: auto
+      min-height: 1550px
 
       .tab-pane
         //position: absolute
@@ -993,9 +994,11 @@ header
 
 
         width: 100%
-        display: none
+        //display: none
         transition:  all .5s
         opacity: 0
+        position: absolute
+        top: 0
         //transform-style: preserve-3d
         //padding-top: 700px
         &.active
@@ -1003,6 +1006,7 @@ header
           opacity: 1
           display: block
           transition:  all .5s
+
           .jobs_item
             //transform: translateY(0)
             //transition:  transform .5s
@@ -1789,6 +1793,7 @@ footer
 #modal_form_slider
   height: 470px
   margin-top: -235px
+  z-index: 1001
   .title-holder
     color: #fff
     font-weight: 300
@@ -1809,7 +1814,7 @@ footer
   #menu-holder
     #menu
       li
-        margin: 0 19px
+        margin: 0 10px
         a
           font-size: 14px
 
@@ -1869,6 +1874,10 @@ footer
 
   .top-line .wrap .logo
     padding-right: 70px
+
+
+  #jobs .tabs .tab-content
+    min-height: 4725px
 
 
 @media screen and (max-width: 1023px)
