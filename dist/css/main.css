@@ -1328,11 +1328,11 @@ footer {
     -webkit-transition: all 0.35s;
     transition: all 0.35s; }
 
-#modal_form_slider {
+.modal_form_slider {
   height: 470px;
   margin-top: -235px;
   z-index: 1001; }
-  #modal_form_slider .title-holder {
+  .modal_form_slider .title-holder {
     color: #fff;
     font-weight: 300;
     font-size: 13px; }
@@ -1383,9 +1383,7 @@ footer {
   .top-line .wrap .header-phone {
     margin-right: 30px; }
   .top-line .wrap .logo {
-    padding-right: 70px; }
-  #jobs .tabs .tab-content {
-    min-height: 4725px; } }
+    padding-right: 70px; } }
 
 @media screen and (max-width: 1023px) {
   .wrap {
@@ -1422,7 +1420,9 @@ footer {
   .top-line .wrap .logo {
     padding-right: 50px; }
     .top-line .wrap .logo img {
-      max-width: 220px; } }
+      max-width: 220px; }
+  #jobs .tabs .tab-content {
+    min-height: 4725px; } }
 
 @media screen and (max-width: 959px) {
   h3 {
@@ -1559,7 +1559,7 @@ footer {
     font-size: 18px; }
   #modal_form_job,
   #modal_form_comment,
-  #modal_form_slider {
+  .modal_form_slider {
     height: 400px;
     margin-top: -170px;
     overflow: auto; }
