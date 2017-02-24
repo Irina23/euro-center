@@ -329,4 +329,19 @@ jQuery(document).ready(function($){
     $(window).scroll( function(){ show_scrollTop(); } );
     show_scrollTop();
 
+
+    $('.text_header .number').each(function () {
+        var $this = $(this);
+        var split = $(this).text().split('');
+        console.log(split);
+        $this.text('');
+        for (var i = 0; i < 3; i++) {
+            var n = i+1;
+            console.log(split[i]);
+            $this.append('<div class="number'+n+'">'+split[i]+'</div>');
+        }
+    });
+
+
+
 });
