@@ -1791,6 +1791,7 @@ footer
 
   .main_slider .bg-img
     background-position: center
+    background-size: cover
 
   .link_more
     text-transform: uppercase
@@ -1802,7 +1803,7 @@ footer
     bottom: 60px
     left: 50%
     width: 200px
-    margin-left: -100px
+    margin-left: -117px
     //right: 0
     z-index: 100
     font-weight: 600
@@ -2211,6 +2212,22 @@ footer
     margin-top: 100px
     padding-top: 250px
 
+  .main_slider .bg-img
+    background-size: auto 100%!important
+  .top-line, #menu-holder
+    position: relative
+    top: inherit
+
+  .sl-content-wrapper, .sl-slider,
+  body .main_slider .sl-slider-wrapper
+    height: 300px!important
+
+  #menu-holder.fixed
+    position: fixed
+
+  #main_slider .link_more
+    bottom: 20px
+    padding: 10px 5px
 
 @media screen and (max-width: 800px)
   .top-line
